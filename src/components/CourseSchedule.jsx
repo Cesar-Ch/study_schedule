@@ -1,9 +1,9 @@
 import { PropTypes } from 'prop-types'
 
 const CourseSchedule = ({ item, selectedCourses, setSelectedCourses }) => {
-
     const addCourse = (e, sc) => {
-        console.log(sc)
+        let newInfo = []
+        let grupoValido = true
         sc.horario.map((schedule) => {
             const day = schedule.dia
             const hour = schedule.hora
@@ -33,38 +33,36 @@ const CourseSchedule = ({ item, selectedCourses, setSelectedCourses }) => {
                 default:
                     break;
             }
-            if (e.target.checked) {
-                let libre = true
-                for (let i = 0; i < countHours; i++) {
-                    if (selectedCourses[indexStartHour + i][indexDay] != "") {
-                        libre = false
-                    }
-                }
-                if (libre) {
-                    for (let i = 0; i < countHours; i++) {
-                        const updatedHours = [...selectedCourses];
-                        updatedHours[indexStartHour + i][indexDay] = sc.seccion
-                        setSelectedCourses(updatedHours)
-                    }
-                } else{
-                    e.target.checked = false
-                    alert("Horario no disponible")
-                }
-
-            } else {
-                for (let i = 0; i < countHours; i++) {
-                    const updatedHours = [...selectedCourses];
-                    updatedHours[indexStartHour + i][indexDay] = ""
-                    setSelectedCourses(updatedHours)
+            for (let i = 0; i < countHours; i++) {
+                newInfo.push([indexDay, indexStartHour + i])
+                if (selectedCourses[indexStartHour + i][indexDay] !== "") {
+                    grupoValido = false
                 }
             }
-
-
         })
 
-
+        if (e.target.checked) {
+            if (grupoValido) {
+                for (let i = 0; i < newInfo.length; i++) {
+                    const updatedCourses = [...selectedCourses]
+                    updatedCourses[newInfo[i][1]][newInfo[i][0]] = sc.seccion
+                    setSelectedCourses(updatedCourses)
+                }
+            } else {
+                e.target.checked = false
+                alert("Horario no disponible")
+            }
+        } else {
+            for (let i = 0; i < newInfo.length; i++) {
+                const updatedCourses = [...selectedCourses]
+                updatedCourses[newInfo[i][1]][newInfo[i][0]] = ""
+                setSelectedCourses(updatedCourses)
+            }
+        }
 
     }
+
+
 
     return (
 
