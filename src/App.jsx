@@ -38,7 +38,7 @@ function App() {
       <div className="w-[35%] flex flex-col justify-center items-center flex-wrap gap-5">
         {
           courses.map((course, index) => (
-            <CourseSchedule key={index}  item={schedule[0][course]} setSelectedCourses={setSelectedCourses}/>
+            <CourseSchedule key={index}  item={schedule[0][course]} selectedCourses={selectedCourses} setSelectedCourses={setSelectedCourses}/>
           ))
         }
       </div>
