@@ -34,16 +34,23 @@ const CourseSchedule = ({ item, selectedCourses, setSelectedCourses }) => {
                     break;
             }
             if (e.target.checked) {
+                let libre = true
                 for (let i = 0; i < countHours; i++) {
-                    const updatedHours = [...selectedCourses];
-                    if (updatedHours[indexStartHour + i][indexDay] != "") {
-                        alert("Horario ocupado")
-                        break
-                    } else{
+                    if (selectedCourses[indexStartHour + i][indexDay] != "") {
+                        libre = false
+                    }
+                }
+                if (libre) {
+                    for (let i = 0; i < countHours; i++) {
+                        const updatedHours = [...selectedCourses];
                         updatedHours[indexStartHour + i][indexDay] = sc.seccion
                         setSelectedCourses(updatedHours)
                     }
+                } else{
+                    e.target.checked = false
+                    alert("Horario no disponible")
                 }
+
             } else {
                 for (let i = 0; i < countHours; i++) {
                     const updatedHours = [...selectedCourses];
