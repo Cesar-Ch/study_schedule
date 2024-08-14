@@ -23,22 +23,12 @@ function App() {
     ["21:00 - 22:00", "", "", "", "", "", "", "", ""],
 ])
 
-  const courses = [
-    "ANTROPOLOGIA_FILOSOFICA",
-    "BASE_DE_DATOS",
-    "DISENO_DE_SOFTWARE",
-    "ECUACIONES_DIFERENCIALES_Y_METODOS_NUMERICOS",
-    "ELECTRICIDAD_Y_MAGNETISMO",
-    "ESTRUCTURA_DE_DATOS_Y_ALGORITMOS"
-  ]
-
-  console.log(selectedCourses)
   return (
-    <section className="bg-[#111827] p-5 gap-5 flex justify-center">
-      <div className="w-[35%] flex flex-col justify-center items-center flex-wrap gap-5">
+    <section className=" p-5 gap-5 flex justify-center flex-col md:flex-row ">
+      <div className="md:w-[50%] flex md:flex-col  justify-center items-center flex-wrap gap-5">
         {
-          courses.map((course, index) => (
-            <CourseSchedule key={index}  item={schedule[0][course]} selectedCourses={selectedCourses} setSelectedCourses={setSelectedCourses}/>
+          Object.keys(schedule).map((course, index) => (
+            <CourseSchedule key={index} courseName={course} item={schedule[course]} selectedCourses={selectedCourses} setSelectedCourses={setSelectedCourses}/>
           ))
         }
       </div>

@@ -1,4 +1,5 @@
-export const schedule = [{
+export const schedule = 
+    {
     "ANTROPOLOGIA_FILOSOFICA": [
         {
             "seccion": "A",
@@ -547,4 +548,4 @@ export const schedule = [{
             "estado": "Vacante"
         }
     ]
-}]
+}
