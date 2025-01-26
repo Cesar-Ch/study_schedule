@@ -6,8 +6,23 @@ const horas = Array.from({ length: 16 }, (_, i) => i + 7)
 
 const Schedule = ({selectedCourse, setSelectedCourse}) => {
 
+    const downloadCap = (e) => {
+        e.preventDefault()
+        const table = document.querySelector('table')
+        import('https://cdn.jsdelivr.net/npm/html2canvas-pro@1.5.8/+esm')
+        .then(({ default: html2canvas }) => {
+            html2canvas(table).then((canvas) => {
+                const link = document.createElement('a')
+                link.download = 'horario.png'
+                link.href = canvas.toDataURL()
+                link.click()
+            })
+
+        })
+    }
+
     return (
-        <div className="overflow-x-auto">
+        <div className="overflow-x-auto flex flex-col justify-center items-center">
             <table className="w-full border-collapse">
                 <thead>
                     <tr>
@@ -48,6 +63,12 @@ const Schedule = ({selectedCourse, setSelectedCourse}) => {
                     ))}
                 </tbody>
             </table>
+            <div>
+                <button className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 mt-5" onClick={(e)=> downloadCap(e)}
+                    >
+                        Guardar Horario
+                    </button>
+            </div>
         </div>
     )
 }
