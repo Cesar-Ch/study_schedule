@@ -1,72 +1,34 @@
-import { PropTypes } from 'prop-types'
+const dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes","Sábado", "Domingo"]
+const horas = Array.from({ length: 16 }, (_, i) => i + 7)
 
-const Schedule = ({ selectedCourses }) => {
+
+
+const Schedule = () => {
 
     return (
-
-        <div className="w-full relative">
-            <table className="w-full text-sm text-left  text-gray-500 dark:text-white table-fixed">
-                <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-main-700 dark:text-secondary">
+        <div className="overflow-x-auto">
+            <table className="w-full border-collapse">
+                <thead>
                     <tr>
-                        <th scope="col" className="px-2">
-                            Hora
-                        </th>
-                        <th scope="col" className="px-2 py-3">
-                            Lunes
-                        </th>
-                        <th scope="col" className="px-2 py-3">
-                            Martes
-                        </th>
-                        <th scope="col" className="px-2 py-3">
-                            Miercoles
-                        </th>
-                        <th scope="col" className="px-2 py-3">
-                            Jueves
-                        </th>
-                        <th scope="col" className="px-2 py-3">
-                            Viernes
-                        </th>
-                        <th scope="col" className="px-2 py-3">
-                            Sabado
-                        </th>
+                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-[#27272a] dark:text-[#a1a1aa]">Hora</th>
+                        {dias.map((dia) => (
+                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-[#27272a] dark:text-[#a1a1aa]">
+                                {dia}
+                            </th>
+                        ))}
                     </tr>
                 </thead>
-                <tbody >
-                    {
-                        selectedCourses.map((hour, index) => (
-                            <tr key={index} className="bg-white border dark:bg-[#18181b] dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-[#393941]">
-                                <td className="">
-                                    {hour[0]}
-                                </td>
-                                <td className="px-6 py-2 text-ellipsis contain-inline-size overflow-hidden ">
-                                    {hour[1]}
-                                </td>
-                                <td className="px-6 py-2 text-ellipsis contain-inline-size overflow-hidden ">
-                                    {hour[2]}
-                                </td>
-                                <td className="px-6 py-2 text-ellipsis contain-inline-size overflow-hidden ">
-                                    {hour[3]}
-                                </td>
-                                <td className="px-6 py-2 text-ellipsis contain-inline-size overflow-hidden ">
-                                    {hour[4]}
-                                </td>
-                                <td className="px-6 py-2 text-ellipsis contain-inline-size overflow-hidden ">
-                                    {hour[5]}
-                                </td>
-                                <td className="px-6 py-2 text-ellipsis contain-inline-size overflow-hidden ">
-                                    {hour[6]}
-                                </td>
-                            </tr>
-                        ))
-                    }
+                <tbody>
+                    {horas.map((hora) => (
+                        <tr key={hora}>
+                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] dark:bg-[#27272a] dark:text-[#a1a1aa]">{`${hora}:00`}</td>
+                        </tr>
+                    ))}
                 </tbody>
             </table>
         </div>
     )
 }
 
-Schedule.propTypes = {
-    selectedCourses: PropTypes.array.isRequired
-}
 
 export default Schedule
