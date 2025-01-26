@@ -1,5 +1,6 @@
 import { useState } from "react"
 import { PropTypes } from 'prop-types'
+import IconX from "./IconX"
 
 const AddCourse = ({ datos, setDatos }) => {
 
@@ -8,7 +9,7 @@ const AddCourse = ({ datos, setDatos }) => {
 
     const [horarios, setHorarios] = useState([{
         id: 1,
-        day: 'Monday',
+        day: 'Lunes',
         start: '',
         end: '',
     }])
@@ -24,9 +25,9 @@ const AddCourse = ({ datos, setDatos }) => {
 
             for (let i = 0; i < horarios.length; i++) {
                 const horario = horarios[i]
-                horario.day = e.target[i + 3].value
-                horario.start = e.target[i + 4].value
-                horario.end = e.target[i + 5].value
+                horario.day = e.target[i * 3 + 3].value
+                horario.start = e.target[i * 3 + 4].value
+                horario.end = e.target[i * 3 + 5].value
             }
 
 
@@ -61,7 +62,7 @@ const AddCourse = ({ datos, setDatos }) => {
             setHorarios([
                 {
                     id: 1,
-                    day: 'Monday',
+                    day: 'Lunes',
                     start: '',
                     end: '',
                 }
@@ -71,7 +72,7 @@ const AddCourse = ({ datos, setDatos }) => {
     }
 
     const agregarHorario = () => {
-        setHorarios([...horarios, { id: Date.now().toString(), day: "Monday", start: "", end: "" }])
+        setHorarios([...horarios, { id: Date.now().toString(), day: "Lunes", start: "", end: "" }])
     }
 
     const updateSchedule = (id, value, field) => {
@@ -84,7 +85,7 @@ const AddCourse = ({ datos, setDatos }) => {
 
     }
 
-    const eliminarHorario = (id) => {
+    const deleteSchedule = (id) => {
         if (horarios.length > 1) {
             setHorarios(horarios.filter((horario) => horario.id !== id))
         }
@@ -116,19 +117,18 @@ const AddCourse = ({ datos, setDatos }) => {
                 {
                     horarios.map((horario) => (
                         <div key={horario.id} className="relative py-4 pl-3 pr-10 bg-[#f1f5f9] dark:bg-[#27272a] rounded-lg mt-4 grid grid-cols-2 md:grid-cols-3 gap-4 ">
-                            <div className={`absolute top-2 right-2 rounded-md hover:scale-110  hover:bg-[#3c3c3f] p-1 ${horarios.length === 1 ? "pointer-events-none text-[#919192]" : ""}`}
-                                onClick={() => eliminarHorario(horario.id)}>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
+                            <div className={`absolute top-2 right-2 ${horarios.length === 1 ? "pointer-events-none text-[#919192]" : ""}`}
+                                onClick={() => deleteSchedule(horario.id)}>
+                                <IconX />
                             </div>
                             <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-[#1f2023] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                                 onChange={(e) => updateSchedule(horario.id, e.target.value, 'day')} required>
-                                <option selected value="Monday">Lunes</option>
-                                <option value="Tuesday">Martes</option>
-                                <option value="Wednesday">Miércoles</option>
-                                <option value="Thursday">Jueves</option>
-                                <option value="Friday">Viernes</option>
-                                <option value="Saturday">Sábado</option>
-                                <option value="Sunday">Domingo</option>
+                                <option selected value="Lunes">Lunes</option>
+                                <option value="Martes">Martes</option>
+                                <option value="Miércoles">Miércoles</option>
+                                <option value="Jueves">Jueves</option>
+                                <option value="Viernes">Viernes</option>
+                                <option value="Sábado">Sábado</option>
                             </select>
 
                             <input type="time" id="time" className="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-[#1f2023] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:[color-scheme:dark]" min="07:00" max="22:00" onChange={(e) => updateSchedule(horario.id, e.target.value, 'start')} required />
@@ -152,8 +152,6 @@ const AddCourse = ({ datos, setDatos }) => {
         </div>
     )
 }
-
-// 3a72ec
 
 AddCourse.propTypes = {
     datos: PropTypes.object.isRequired,

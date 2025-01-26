@@ -1,12 +1,93 @@
 import { useState } from "react";
 import { PropTypes } from 'prop-types'
+import IconX from "./IconX";
 
-const ListCourses = ({ datos, setDatos }) => {
+const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse }) => {
     const [openSection, setOpenSection] = useState(null);
 
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
     };
+
+    const deleteCourse = (e, curso, j) => {
+
+        // saber el input al que esta asociado el boton
+        const input = e.target.closest(".relative").querySelector("input[type='radio']")
+        console.log(input)
+
+        if (input.checked) {
+            setSelectedCourse((prevSelectedCourse) => {
+                const selectedCourseCopy = { ...prevSelectedCourse }
+                delete selectedCourseCopy[curso]
+                return selectedCourseCopy
+            })
+        }
+        setDatos((prevdatos) => {
+            const cursosActualizados = { ...prevdatos };
+            cursosActualizados[curso].splice(j, 1)
+            if (cursosActualizados[curso].length === 0) {
+                delete cursosActualizados[curso]
+            }
+            return cursosActualizados;
+        });
+    }
+
+    const checkCross = (e, curso, dato) => {
+        const selectedCourseKeys = Object.keys(selectedCourse)
+        const seletedCourseValues = Object.values(selectedCourse)
+        let cruce = false
+        for (let i = 0; i < selectedCourseKeys.length; i++) {
+            const horario = seletedCourseValues[i].horario[0]
+            const horarioDato = dato.horario[0]
+            
+            if(selectedCourseKeys[i] === curso) continue
+
+            for (let j = 0; j < horario.length; j++) {
+                for (let k = 0; k < horarioDato.length; k++) {
+                    if (horario[j].day === horarioDato[k].day) {
+                        const start = parseInt(horario[j].start.split(":")[0])
+                        const end = parseInt(horario[j].end.split(":")[0])
+                        const startDato = parseInt(horarioDato[k].start.split(":")[0])
+                        const endDato = parseInt(horarioDato[k].end.split(":")[0])
+                        if ((start >= startDato && start < endDato) || (end > startDato && end <= endDato) || (start <= startDato && end >= endDato)) {
+                            cruce = true
+                            break
+                        }
+                    }
+                }
+            } 
+        }
+
+        if (cruce) {
+            alert("Horario en conflicto")
+            e.target.checked = false
+            return
+        }
+
+        setSelectedCourse((prevSelectedCourse) => {
+            return {
+                ...prevSelectedCourse,
+                [curso]: dato
+            }
+
+        })
+    }
+
+    const editSelectedCourse = (e,curso,dato) => {
+
+        e.target.checked = !e.target.checked
+        if (e.target.checked) {
+            checkCross(e, curso, dato)
+        } else {
+            setSelectedCourse((prevSelectedCourse) => {
+                const selectedCourseCopy = { ...prevSelectedCourse }
+                delete selectedCourseCopy[curso]
+                return selectedCourseCopy
+            })
+        }
+    }
+
+    console.log(selectedCourse)
 
     return (
         <div>
@@ -15,17 +96,17 @@ const ListCourses = ({ datos, setDatos }) => {
             {
                 Object.keys(datos).map((curso, i) => (
                     <div key={curso}>
-                        <h2 id="accordion-collapse-heading-1">
+                        <h2 id={`accordion-collapse-heading-${i}`}>
                             <button
                                 type="button"
-                                className={`flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border  border-gray-200   dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#27272a] gap-3 ${openSection === 1 ? "bg-gray-100 dark:bg-[#27272a]" : ""
+                                className={`flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border  border-gray-200   dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#27272a] gap-3 ${openSection === i ? "bg-gray-100 dark:bg-[#27272a]" : ""
                                     }`}
-                                onClick={() => toggleSection(1)}
+                                onClick={() => toggleSection(i)}
                             >
                                 <span>{curso}</span>
                                 <svg
                                     data-accordion-icon
-                                    className={`w-3 h-3 transform ${openSection === 1 ? "rotate-180" : ""
+                                    className={`w-3 h-3 transform ${openSection === i ? "rotate-180" : ""
                                         } shrink-0`}
                                     xmlns="http://www.w3.org/2000/svg"
                                     fill="none"
@@ -45,16 +126,26 @@ const ListCourses = ({ datos, setDatos }) => {
                             datos[curso].map((dato, j) => (
 
                                 <div key={`${curso}-${j}`}
-                                    id="accordion-collapse-body-1"
-                                    className={`${openSection === 1 ? "block" : "hidden"} p-5 dark:bg-[#0e0e11] border  border-gray-200 dark:border-gray-700`}
+                                    id={`accordion-collapse-body-${i}`}
+                                    className={`relative ${openSection === i ? "flex" : "hidden"} p-5 dark:bg-[#0e0e11] border  border-gray-200 dark:border-gray-700 items-center`}
                                 >
-                                    <label htmlFor="checkbox-table-search-2" className="flex items-center gap-2">
-                                        <input
-                                            id="checkbox-table-search-2" type="checkbox" className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded dark:bg-gray-700 dark:border-gray-600" />
-                                        <span className="text-gray-900 dark:text-white">{dato.teacher}</span>
-                                        <span className="text-gray-500 dark:text-gray-400">{dato.section} {dato.horario[0][0].start} - {dato.horario[0][0].end}</span>
+                                    <div className="absolute right-3" onClick={(e) => deleteCourse(e, curso, j)}>
+                                        <IconX />
+                                    </div>
+                                    <div className="flex items-center justify-center">
+                                        <input id={`schedule-${i}-${j}`} type="radio" value="" name={`course-${i}`} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600"
+                                            onChange={(e) => editSelectedCourse(e, curso, dato)} onClick={(e) => editSelectedCourse(e,curso,dato)} />
+                                        <label htmlFor={`schedule-${i}-${j}`} className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{dato.teacher} ({dato.section})
+                                            <div className="flex items-center gap-2">
+                                                {
+                                                    dato.horario[0].map((horario, k) => (
+                                                        <span key={`${curso}-${j}-${k}`} className="text-gray-500 dark:text-gray-400">{horario.day} {horario.start} - {horario.end}</span>
+                                                    ))
+                                                }
+                                            </div>
+                                        </label>
+                                    </div>
 
-                                    </label>
                                 </div>
                             ))}
                     </div>
@@ -66,7 +157,9 @@ const ListCourses = ({ datos, setDatos }) => {
 
 ListCourses.propTypes = {
     datos: PropTypes.object.isRequired,
-    setDatos: PropTypes.func.isRequired
+    setDatos: PropTypes.func.isRequired,
+    selectedCourse: PropTypes.object.isRequired,
+    setSelectedCourse: PropTypes.func.isRequired
 }
 
 export default ListCourses;
