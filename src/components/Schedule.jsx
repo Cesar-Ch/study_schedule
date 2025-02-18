@@ -22,13 +22,13 @@ const Schedule = ({selectedCourse, setSelectedCourse}) => {
     }
 
     return (
-        <div className="overflow-x-auto flex flex-col justify-center items-center">
-            <table className="w-full border-collapse">
+        <div className="overflow-x-auto w-full flex  flex-col justify-center items-start relative">
+            <table className="w-full">
                 <thead>
                     <tr>
-                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-[#27272a] dark:text-[#a1a1aa]">Hora</th>
+                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-transparent dark:text-[#a1a1aa]">Hora</th>
                         {dias.map((dia) => (
-                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-[#27272a] dark:text-[#a1a1aa]">
+                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-transparent dark:text-[#a1a1aa]">
                                 {dia}
                             </th>
                         ))}
@@ -37,7 +37,7 @@ const Schedule = ({selectedCourse, setSelectedCourse}) => {
                 <tbody>
                     {horas.map((hora) => (
                         <tr key={hora}>
-                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] dark:bg-[#27272a] dark:text-[#a1a1aa]">{`${hora}:00`}</td>
+                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] dark:bg-transparent dark:text-[#a1a1aa]">{`${hora}:00`}</td>
                             {
                                 dias.map((dia) => (
                                     <td key={`${dia}-${hora}`} className="border border-[#64748b]/20 dark:border-[#a1a1aa]/20 p-2">
