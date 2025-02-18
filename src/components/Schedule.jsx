@@ -4,7 +4,7 @@ const horas = Array.from({ length: 16 }, (_, i) => i + 7)
 
 
 
-const Schedule = ({selectedCourse, setSelectedCourse}) => {
+const Schedule = ({selectedCourse}) => {
 
     const downloadCap = (e) => {
         e.preventDefault()
@@ -26,9 +26,9 @@ const Schedule = ({selectedCourse, setSelectedCourse}) => {
             <table className="w-full">
                 <thead>
                     <tr>
-                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-transparent dark:text-[#a1a1aa]">Hora</th>
+                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] font-bold dark:bg-transparent dark:text-[#a1a1aa]">Hora</th>
                         {dias.map((dia) => (
-                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] font-bold dark:bg-transparent dark:text-[#a1a1aa]">
+                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] font-bold dark:bg-transparent dark:text-[#a1a1aa]">
                                 {dia}
                             </th>
                         ))}
@@ -37,7 +37,7 @@ const Schedule = ({selectedCourse, setSelectedCourse}) => {
                 <tbody>
                     {horas.map((hora) => (
                         <tr key={hora}>
-                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#64748b] dark:bg-transparent dark:text-[#a1a1aa]">{`${hora}:00`}</td>
+                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] dark:bg-transparent dark:text-[#a1a1aa]">{`${hora}:00`}</td>
                             {
                                 dias.map((dia) => (
                                     <td key={`${dia}-${hora}`} className="border border-[#64748b]/20 dark:border-[#a1a1aa]/20 p-2">
@@ -64,7 +64,7 @@ const Schedule = ({selectedCourse, setSelectedCourse}) => {
                 </tbody>
             </table>
             <div>
-                <button className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 mt-5" onClick={(e)=> downloadCap(e)}
+                <button className="text-white bg-[#0a0a0a] hover:bg-[#383838] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#d2d8e5] dark:text-black dark:hover:bg-[#aab5cf] mt-5" onClick={(e)=> downloadCap(e)}
                     >
                         Guardar Horario
                     </button>

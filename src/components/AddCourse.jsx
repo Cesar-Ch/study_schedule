@@ -99,7 +99,7 @@ const AddCourse = ({ datos, setDatos }) => {
         <div>
             <form onSubmit={guardarCurso}>
                 <h2 className="text-2xl font-semibold mb-4">Agregar Curso</h2>
-                <input list="teachers" type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre del curso" required />
+                <input list="teachers" type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
                 <datalist id="teachers">
                     {
                         cursos.map((curso, i) => (
@@ -109,9 +109,9 @@ const AddCourse = ({ datos, setDatos }) => {
                 </datalist>
 
                 <div className="mt-5 grid grid-cols-2 gap-4">
-                    <input type="text" id="first_name" className="col-span-[span 3] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Nombre del profesor" required />
+                    <input type="text" id="first_name" className="col-span-[span 3] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del profesor" required />
 
-                    <input type="text" id="first_name" className="col-span-[50%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sección" required />
+                    <input type="text" id="first_name" className="col-span-[50%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Sección" required />
                 </div>
 
                 {
@@ -121,18 +121,30 @@ const AddCourse = ({ datos, setDatos }) => {
                                 onClick={() => deleteSchedule(horario.id)}>
                                 <IconX />
                             </div>
-                            <select className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-[#0f1118] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-white"
-                                onChange={(e) => updateSchedule(horario.id, e.target.value, 'day')} required>
-                                <option selected value="Lunes">Lunes</option>
-                                <option value="Martes">Martes</option>
-                                <option value="Miércoles">Miércoles</option>
-                                <option value="Jueves">Jueves</option>
-                                <option value="Viernes">Viernes</option>
-                                <option value="Sábado">Sábado</option>
-                            </select>
+                            <label htmlFor="day" className="flex flex-col  gap-2">
 
-                            <input type="time" id="time" className="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:[color-scheme:dark]" min="07:00" max="22:00" onChange={(e) => updateSchedule(horario.id, e.target.value, 'start')} required />
-                            <input type="time" id="time" className="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500  p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:[color-scheme:dark]" min="07:00" max="22:00" onChange={(e) => updateSchedule(horario.id, e.target.value, 'end')} required />
+                                <span className="text-sm text-gray-900 dark:text-white">Día:</span>
+
+                                <select id="day" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black  p-2.5 dark:bg-[#0f1118] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-white"
+                                    onChange={(e) => updateSchedule(horario.id, e.target.value, 'day')} required>
+                                    <option selected value="Lunes">Lunes</option>
+                                    <option value="Martes">Martes</option>
+                                    <option value="Miércoles">Miércoles</option>
+                                    <option value="Jueves">Jueves</option>
+                                    <option value="Viernes">Viernes</option>
+                                    <option value="Sábado">Sábado</option>
+                                </select>
+                            </label>
+
+                            <label htmlFor="time_start" className="flex flex-col  gap-2">
+                                <span className=" text-sm text-gray-900 dark:text-white">Hora de inicio:</span>
+                                <input type="time" id="time_start" className="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg  p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:[color-scheme:dark]" min="07:00" max="22:00" onChange={(e) => updateSchedule(horario.id, e.target.value, 'start')} required />
+                            </label>
+
+                            <label htmlFor="time_end" className="flex flex-col  gap-2">
+                                <span className=" text-sm text-gray-900 dark:text-white">Hora de fin:</span>
+                                <input type="time" id="time_end" className="bg-gray-50 border leading-none border-gray-300 text-gray-900 text-sm rounded-lg   p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white  dark:[color-scheme:dark]" min="07:00" max="22:00" onChange={(e) => updateSchedule(horario.id, e.target.value, 'end')} required />
+                            </label>
                         </div>
                     ))
                 }
@@ -143,7 +155,7 @@ const AddCourse = ({ datos, setDatos }) => {
                         onClick={agregarHorario}>
                         Añadir otro horario
                     </button>
-                    <button type="submit" className="text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700"
+                    <button type="submit" className="text-white bg-[#0a0a0a] hover:bg-[#383838] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#d2d8e5] dark:text-black dark:hover:bg-[#aab5cf] "
                     >
                         Guardar curso
                     </button>

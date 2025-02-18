@@ -2,7 +2,7 @@ import { useState } from "react";
 import { PropTypes } from 'prop-types'
 import IconX from "./IconX";
 
-const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse }) => {
+const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTimeCross }) => {
     const [openSection, setOpenSection] = useState(null);
 
     const toggleSection = (section) => {
@@ -39,8 +39,8 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse }) => 
         for (let i = 0; i < selectedCourseKeys.length; i++) {
             const horario = seletedCourseValues[i].horario[0]
             const horarioDato = dato.horario[0]
-            
-            if(selectedCourseKeys[i] === curso) continue
+
+            if (selectedCourseKeys[i] === curso) continue
 
             for (let j = 0; j < horario.length; j++) {
                 for (let k = 0; k < horarioDato.length; k++) {
@@ -55,11 +55,14 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse }) => 
                         }
                     }
                 }
-            } 
+            }
         }
 
         if (cruce) {
-            alert("Horario en conflicto")
+            setTimeCross(true)
+            setTimeout(() => {
+                setTimeCross(false);
+              }, 3000)
             e.target.checked = false
             return
         }
@@ -73,7 +76,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse }) => 
         })
     }
 
-    const editSelectedCourse = (e,curso,dato) => {
+    const editSelectedCourse = (e, curso, dato) => {
 
         e.target.checked = !e.target.checked
         if (e.target.checked) {
@@ -86,8 +89,6 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse }) => 
             })
         }
     }
-
-    console.log(selectedCourse)
 
     return (
         <div>
@@ -134,7 +135,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse }) => 
                                     </div>
                                     <div className="flex items-center justify-center">
                                         <input id={`schedule-${i}-${j}`} type="radio" value="" name={`course-${i}`} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600"
-                                            onChange={(e) => editSelectedCourse(e, curso, dato)} onClick={(e) => editSelectedCourse(e,curso,dato)} />
+                                            onChange={(e) => editSelectedCourse(e, curso, dato)} onClick={(e) => editSelectedCourse(e, curso, dato)} />
                                         <label htmlFor={`schedule-${i}-${j}`} className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{dato.teacher} ({dato.section})
                                             <div className="flex items-center gap-2">
                                                 {
@@ -159,7 +160,8 @@ ListCourses.propTypes = {
     datos: PropTypes.object.isRequired,
     setDatos: PropTypes.func.isRequired,
     selectedCourse: PropTypes.object.isRequired,
-    setSelectedCourse: PropTypes.func.isRequired
+    setSelectedCourse: PropTypes.func.isRequired,
+    setTimeCross: PropTypes.func.isRequired
 }
 
 export default ListCourses;
