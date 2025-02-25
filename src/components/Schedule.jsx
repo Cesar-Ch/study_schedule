@@ -38,7 +38,7 @@ const Schedule = ({ selectedCourse }) => {
                 <tbody>
                     {horas.map((hora) => (
                         <tr key={hora}>
-                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] dark:bg-transparent dark:text-[#a1a1aa]">{`${hora}`}</td>
+                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] dark:bg-transparent dark:text-[#a1a1aa] text-center">{`${hora}`}</td>
                             {
                                 dias.map((dia) => (
                                     <td key={`${dia}-${hora}`} className="border border-[#64748b]/20 dark:border-[#a1a1aa]/20 p-2">

@@ -92,7 +92,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
 
     return (
         <div>
-            <h2 className="text-2xl font-semibold mb-4">Lista de cursos</h2>
+            <h2 className="text-2xl font-semibold mb-4 ">Lista de cursos</h2>
 
             {
                 Object.keys(datos).map((curso, i) => (

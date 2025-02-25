@@ -95,9 +95,9 @@ const AddCourse = ({ datos, setDatos }) => {
     return (
         <div>
             <form onSubmit={guardarCurso}>
-                <h2 className="text-2xl font-semibold mb-4">Agregar Curso</h2>
-                <input list="teachers" type="text" id="course" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
-                <datalist id="teachers">
+                <h2 className="text-2xl font-semibold mb-4 ">Agregar Curso</h2>
+                <input list="courses" type="text" id="course" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
+                <datalist id="courses">
                     {
                         cursos.map((curso, i) => (
                             <option key={i} value={curso} ></option>
@@ -146,7 +146,7 @@ const AddCourse = ({ datos, setDatos }) => {
                     ))
                 }
 
-                <div className="mt-5 flex justify-between items-center ">
+                <div className="mt-5 flex justify-between items-center gap-4">
 
                     <Button type="button" variant="secondary" onClick={agregarHorario}>Agregar horario</Button>
 

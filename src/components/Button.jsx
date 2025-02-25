@@ -1,5 +1,5 @@
 const Button = ({ children, variant = "primary", className = "", ...props }) => {
-    const baseStyles = "font-medium rounded-lg text-sm px-5 py-2.5 transition";
+    const baseStyles = "font-medium rounded-lg text-sm px-5 py-2.5 transition transition-all duration-300 ease-in-out";
     
     const variants = {
         primary: "text-white bg-primary hover:bg-primary-hover dark:bg-dark-primary dark:text-black dark:hover:bg-dark-hover border border-transparent",
