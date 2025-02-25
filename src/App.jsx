@@ -26,17 +26,17 @@ function App() {
       }
 
       <div>
-        <section className="p-6 rounded-lg border bg-[#eff3ff]/10 backdrop-blur-lg border-black dark:border-white dark:bg-[#172754]/10">
+        <section className="section-custom">
           <AddCourse setDatos={setDatos} datos={datos} />
         </section>
 
-        <section className="p-6 mt-6 rounded-lg border bg-[#eff3ff]/10 backdrop-blur-lg  border-black dark:border-white dark:bg-[#172754]/10 ">
+        <section className="mt-6 section-custom">
           <ListCourses setDatos={setDatos} datos={datos} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} setTimeCross={setTimeCross} />
         </section>
       </div>
 
 
-      <section className="p-6 rounded-lg border bg-[#eff3ff]/10 backdrop-blur-lg  border-black dark:border-white dark:bg-[#172754]/10">
+      <section className="section-custom">
         <Schedule selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} />
       </section>
     </div>

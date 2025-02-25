@@ -1,8 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+
+@theme {
+    --font-poppins: "Poppins", sans-serif;
+    --color-primary: #0a0a0a;
+    --color-primary-hover: #383838;
+    --color-dark-primary: #d2d8e5;
+    --color-dark-hover: #aab5cf;
+}
+
+.section-custom {
+    @apply p-6 rounded-lg border bg-[#eff3ff]/10 backdrop-blur-lg border-black dark:border-white dark:bg-[#172754]/10;
+  }
+
 
 .animation__toast {
     animation: toast 500ms ease-in-out;
@@ -13,6 +25,7 @@
         transform: translateX(100%);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;

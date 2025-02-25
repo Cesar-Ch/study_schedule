@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { PropTypes } from 'prop-types'
-import IconX from "./IconX"
+import {IconX} from "./Icons"
+import Button from "./Button"
 
 const AddCourse = ({ datos, setDatos }) => {
 
@@ -91,15 +92,11 @@ const AddCourse = ({ datos, setDatos }) => {
         }
     }
 
-    console.log(horarios)
-    console.log(cursos)
-    console.log(datos)
-
     return (
         <div>
             <form onSubmit={guardarCurso}>
                 <h2 className="text-2xl font-semibold mb-4">Agregar Curso</h2>
-                <input list="teachers" type="text" id="first_name" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
+                <input list="teachers" type="text" id="course" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
                 <datalist id="teachers">
                     {
                         cursos.map((curso, i) => (
@@ -109,9 +106,9 @@ const AddCourse = ({ datos, setDatos }) => {
                 </datalist>
 
                 <div className="mt-5 grid grid-cols-2 gap-4">
-                    <input type="text" id="first_name" className="col-span-[span 3] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del profesor" required />
+                    <input type="text" id="teacher" className="col-span-[span 3] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del profesor" required />
 
-                    <input type="text" id="first_name" className="col-span-[50%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Sección" required />
+                    <input type="text" id="section" className="col-span-[50%] bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Sección" required />
                 </div>
 
                 {
@@ -125,7 +122,7 @@ const AddCourse = ({ datos, setDatos }) => {
 
                                 <span className="text-sm text-gray-900 dark:text-white">Día:</span>
 
-                                <select id="day" className="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black  p-2.5 dark:bg-[#0f1118] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-white"
+                                <select id="day" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black  p-2.5 dark:bg-[#0f1118] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-white"
                                     onChange={(e) => updateSchedule(horario.id, e.target.value, 'day')} required>
                                     <option selected value="Lunes">Lunes</option>
                                     <option value="Martes">Martes</option>
@@ -151,14 +148,9 @@ const AddCourse = ({ datos, setDatos }) => {
 
                 <div className="mt-5 flex justify-between items-center ">
 
-                    <button type="button" className="text-black bg-white hover:bg-[#f1f5f9] border border-black font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-black dark:text-white dark:hover:bg-[#27272a] dark:border-white "
-                        onClick={agregarHorario}>
-                        Añadir otro horario
-                    </button>
-                    <button type="submit" className="text-white bg-[#0a0a0a] hover:bg-[#383838] font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-[#d2d8e5] dark:text-black dark:hover:bg-[#aab5cf] "
-                    >
-                        Guardar curso
-                    </button>
+                    <Button type="button" variant="secondary" onClick={agregarHorario}>Agregar horario</Button>
+
+                    <Button type="submit">Guardar curso</Button>
                 </div>
             </form>
         </div>

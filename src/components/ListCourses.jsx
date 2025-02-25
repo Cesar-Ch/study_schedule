@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PropTypes } from 'prop-types'
-import IconX from "./IconX";
+import {IconX} from "./Icons";
 
 const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTimeCross }) => {
     const [openSection, setOpenSection] = useState(null);
@@ -62,7 +62,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
             setTimeCross(true)
             setTimeout(() => {
                 setTimeCross(false);
-              }, 3000)
+            }, 3000)
             e.target.checked = false
             return
         }
