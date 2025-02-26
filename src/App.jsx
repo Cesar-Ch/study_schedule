@@ -8,7 +8,8 @@ import { IconGithub, IconLogo } from "./components/Icons"
 
 function App() {
 
-  const [timeCross, setTimeCross] = useState(false)
+  const [timeError, setTimeError] = useState(false)
+  const [messageError, setMessageError] = useState('')
   const [datos, setDatos] = useState(() => {
     const storedDatos = localStorage.getItem('datos')
     return storedDatos ? JSON.parse(storedDatos) : {}
@@ -27,7 +28,7 @@ function App() {
       <header className="border-b-1">
         <div className="flex justify-between items-center mx-auto px-6 py-3">
           <div className="flex items-center gap-2 transition-all duration-500 ease-in-out">
-          <IconLogo className="text-white dark:text-black" />
+            <IconLogo className="text-white dark:text-black" />
             Schedule
           </div>
           <a href="https://github.com/Cesar-Ch/study_schedule" target="_blank" className="transition-all duration-500 ease-in-out">
@@ -39,23 +40,15 @@ function App() {
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4">
         {
-          timeCross && <ToastError />
+          timeError && <ToastError>{messageError}</ToastError>
         }
 
         <div>
-          <section className="section-custom">
-            <AddCourse setDatos={setDatos} datos={datos} />
-          </section>
+          <AddCourse setDatos={setDatos} datos={datos} setTimeError={setTimeError} setMessageError={setMessageError} />
 
-          <section className="mt-6 section-custom">
-            <ListCourses setDatos={setDatos} datos={datos} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} setTimeCross={setTimeCross} />
-          </section>
+          <ListCourses setDatos={setDatos} datos={datos} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} setTimeError={setTimeError} setMessageError={setMessageError} />
         </div>
-
-
-        <section className="section-custom">
-          <Schedule selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} />
-        </section>
+        <Schedule selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} />
       </div>
     </div>
   )

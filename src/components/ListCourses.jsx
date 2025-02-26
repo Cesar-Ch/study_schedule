@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { PropTypes } from 'prop-types'
-import {IconX} from "./Icons";
+import { IconX } from "./Icons";
+import ToastError from "./ToastError"
 
-const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTimeCross }) => {
+const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTimeError, setMessageError }) => {
     const [openSection, setOpenSection] = useState(null);
 
     const toggleSection = (section) => {
@@ -45,11 +46,17 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
             for (let j = 0; j < horario.length; j++) {
                 for (let k = 0; k < horarioDato.length; k++) {
                     if (horario[j].day === horarioDato[k].day) {
-                        const start = parseInt(horario[j].start.split(":")[0])
-                        const end = parseInt(horario[j].end.split(":")[0])
-                        const startDato = parseInt(horarioDato[k].start.split(":")[0])
-                        const endDato = parseInt(horarioDato[k].end.split(":")[0])
-                        if ((start >= startDato && start < endDato) || (end > startDato && end <= endDato) || (start <= startDato && end >= endDato)) {
+                        const [hourStart, minuteStart] = horario[j].start.split(":")
+                        const [hourEnd, minuteEnd] = horario[j].end.split(":")
+                        const [hourStartDato, minuteStartDato] = horarioDato[k].start.split(":")
+                        const [hourEndDato, minuteEndDato] = horarioDato[k].end.split(":")
+
+                        const start = new Date(0, 0, 0, hourStart, minuteStart).getTime()
+                        const end = new Date(0, 0, 0, hourEnd, minuteEnd).getTime()
+                        const startDato = new Date(0, 0, 0, hourStartDato, minuteStartDato).getTime()
+                        const endDato = new Date(0, 0, 0, hourEndDato, minuteEndDato).getTime()
+
+                        if ((startDato >= start && startDato < end) || (endDato > start && endDato <= end) || (startDato <= start && endDato >= end)) {
                             cruce = true
                             break
                         }
@@ -59,9 +66,10 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
         }
 
         if (cruce) {
-            setTimeCross(true)
+            setTimeError(true)
+            setMessageError('Cruce de horarios')
             setTimeout(() => {
-                setTimeCross(false);
+                setTimeError(false);
             }, 3000)
             e.target.checked = false
             return
@@ -91,9 +99,8 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
     }
 
     return (
-        <div>
+        <section className="mt-6 section-custom">
             <h2 className="text-2xl font-semibold mb-4 ">Lista de cursos</h2>
-
             {
                 Object.keys(datos).map((curso, i) => (
                     <div key={curso}>
@@ -152,7 +159,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
                     </div>
                 ))}
 
-        </div>
+        </section>
     );
 };
 
@@ -161,7 +168,8 @@ ListCourses.propTypes = {
     setDatos: PropTypes.func.isRequired,
     selectedCourse: PropTypes.object.isRequired,
     setSelectedCourse: PropTypes.func.isRequired,
-    setTimeCross: PropTypes.func.isRequired
+    setTimeError: PropTypes.func.isRequired,
+    setMessageError: PropTypes.func.isRequired
 }
 
 export default ListCourses;

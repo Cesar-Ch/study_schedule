@@ -1,9 +1,9 @@
 import { useState } from "react"
 import { PropTypes } from 'prop-types'
-import {IconX} from "./Icons"
+import { IconX } from "./Icons"
 import Button from "./Button"
 
-const AddCourse = ({ datos, setDatos }) => {
+const AddCourse = ({ datos, setDatos, setTimeError, setMessageError }) => {
 
 
     const [cursos, setCursos] = useState([])
@@ -29,6 +29,15 @@ const AddCourse = ({ datos, setDatos }) => {
                 horario.day = e.target[i * 3 + 3].value
                 horario.start = e.target[i * 3 + 4].value
                 horario.end = e.target[i * 3 + 5].value
+
+                if (horario.start >= horario.end) {
+                    setTimeError(true)
+                    setMessageError('Datos incorrectos')
+                    setTimeout(() => {
+                        setTimeError(false);
+                    }, 3000)
+                    return
+                }
             }
 
 
@@ -93,7 +102,7 @@ const AddCourse = ({ datos, setDatos }) => {
     }
 
     return (
-        <div>
+        <section className="section-custom">
             <form onSubmit={guardarCurso}>
                 <h2 className="text-2xl font-semibold mb-4 ">Agregar Curso</h2>
                 <input list="courses" type="text" id="course" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
@@ -153,13 +162,15 @@ const AddCourse = ({ datos, setDatos }) => {
                     <Button type="submit">Guardar curso</Button>
                 </div>
             </form>
-        </div>
+        </section>
     )
 }
 
 AddCourse.propTypes = {
     datos: PropTypes.object.isRequired,
-    setDatos: PropTypes.func.isRequired
+    setDatos: PropTypes.func.isRequired,
+    setTimeError: PropTypes.func.isRequired,
+    setMessageError: PropTypes.func.isRequired,
 }
 
 export default AddCourse
