@@ -59,7 +59,7 @@ const Schedule = ({ selectedCourse }) => {
                                                         console.log(horario)
                                                         console.log(hora)
 
-                                                        if (horario.day === dia && ((currentStart >= start && currentEnd <= end) || (currentStart <= start && currentEnd >= end))) {
+                                                        if (horario.day === dia && ((currentStart >= start && currentEnd <= end) || (currentStart <= start && currentEnd >= end) || (currentStart <= start && currentEnd > start) || (currentStart < end && currentEnd >= end))) {
                                                             return (
                                                                 <div key={`${i}-${j}`} className="p-1 rounded text-[10px] text-white bg-blue-700 dark:bg-blue-600">
                                                                     <p className="font-bold">{Object.keys(selectedCourse)[i]} - {curso.section}</p>
