@@ -1,43 +1,68 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import { IconAdd, IconCheck, IconX } from "./Icons"
-import {courseData} from '../data/cursos.json'
+import courseData from '../data/cursos.json'
 
-const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setTypeToast, setMessage, showToast }) => {
+const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setTypeToast, setMessage, showToast, datos, setDatos }) => {
     const [cicloAdd, setCicloAdd] = useState(Array.from({ length: 10 }).map(() => false))
+    const timeoutRef = useRef(false)
 
     const handleAddCiclo = (i) => {
-        const newCicloAdd = [...cicloAdd]
-        newCicloAdd[i] = !newCicloAdd[i]
-        setCicloAdd(newCicloAdd)
+
+        for (let j = 0; j < courseData[i + 1].length; j++) {
+
+            if (!datos[Object.keys(courseData[i + 1][j])]) {
+
+                setDatos((prevDatos) => {
+                    const newDatos = { ...prevDatos };
+                    newDatos[Object.keys(courseData[i + 1][j])] = [...Object.values(courseData[i + 1][j])[0]]
+                    return newDatos;
+                });
+            }
+        }
+
+
+
+        setCicloAdd((prevCicloAdd) => {
+            const newCicloAdd = [...prevCicloAdd];
+            newCicloAdd[i] = true;
+            return newCicloAdd;
+        });
 
         setShowToast(true)
         setTypeToast('success')
         setMessage('Ciclo agregado')
 
-        const newInterval = setTimeout(
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current)
+        }
+
+        timeoutRef.current = setTimeout(
             () => {
-                
-                const newCicloAdd = [...cicloAdd]
-                newCicloAdd[i] = false
-                setCicloAdd(newCicloAdd)
+                setCicloAdd((prevCicloAdd) => {
+                    const newCicloAdd = [...prevCicloAdd];
+                    newCicloAdd.forEach((_, index) => newCicloAdd[index] = false)
+                    return newCicloAdd;
+                });
 
                 setShowToast(false)
                 setTypeToast('')
                 setMessage('')
-                clearTimeout(newInterval)
-            }
-            , 1500)
+                timeoutRef.current = null
+            }, 1500)
+
     }
 
     console.log(courseData)
+    console.log(Object.values(courseData[1][0])[0])
+    console.log(datos)
 
     return (
 
-        <section className='top-0 left-0 fixed w-screen h-screen  z-30 bg-black/70 place-content-center grid'>
-            <div className="rounded-lg border p-5">
+        <section className='top-0 left-0 fixed w-screen h-screen  z-30 bg-black/80 place-content-center grid text-white '>
+            <div className="rounded-lg border p-5 border-white ">
                 <div className="flex justify-between items-center mb-5">
-                    <h3>Ciclo: 25 - I</h3>
-                    <div className=" top-10 right-10" onClick={() => setShowAcdCourses(!showAcdCourses)}>
+                    <h3 className="text-white ">Ciclo: 25 - I</h3>
+                    <div className=" top-10 right-10 hover:text-black dark:hover:text-white" onClick={() => setShowAcdCourses(!showAcdCourses)}>
                         <IconX />
                     </div>
                 </div>
@@ -48,7 +73,7 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                             <div key={i} className="flex justify-between items-center my-1">
                                 <p className="">Ciclo {i + 1}</p>
 
-                                <div className={`${showToast ? "pointer-events-none" : ""}`}>
+                                <div >
                                     {
                                         cicloAdd[i] ?
                                             (
@@ -64,9 +89,6 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                         ))
                     }
                 </div>
-
-
-
             </div>
         </section>
     )

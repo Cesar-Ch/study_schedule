@@ -39,7 +39,7 @@ const Schedule = ({ selectedCourse }) => {
                     <tbody>
                         {horas.map((hora) => (
                             <tr key={hora}>
-                                <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] dark:bg-[#0f1117] dark:text-[#a1a1aa] text-center">{`${hora}`}</td>
+                                <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] dark:bg-[#0f1117] dark:text-[#a1a1aa] text-center min-w-[150px]">{`${hora}`}</td>
                                 {
                                     dias.map((dia) => (
                                         <td key={`${dia}-${hora}`} className="border border-[#64748b]/20 dark:border-[#a1a1aa]/20 p-2 dark:bg-[#0f1117]">
@@ -56,14 +56,12 @@ const Schedule = ({ selectedCourse }) => {
                                                         let currentStart = new Date(0, 0, 0, currentHourStart, currentMinuteStart).getTime()
                                                         let currentEnd = new Date(0, 0, 0, currentHourEnd, currentMinuteEnd).getTime()
 
-                                                        console.log(horario)
-                                                        console.log(hora)
-
                                                         if (horario.day === dia && ((currentStart >= start && currentEnd <= end) || (currentStart <= start && currentEnd >= end) || (currentStart <= start && currentEnd > start) || (currentStart < end && currentEnd >= end))) {
                                                             return (
-                                                                <div key={`${i}-${j}`} className="p-1 rounded text-[10px] text-white bg-blue-700 dark:bg-blue-600">
-                                                                    <p className="font-bold">{Object.keys(selectedCourse)[i]} - {curso.section}</p>
-                                                                    <p className="">{curso.teacher}</p>
+                                                                <div key={`${i}-${j}`} className="p-1 rounded text-[10px] text-white bg-blue-700 dark:bg-blue-600 max-w-[120px] h-full overflow-hidden">
+                                                                    <p className="font-bold text-nowrap   overflow-hidden overflow-ellipsis">{Object.keys(selectedCourse)[i]} ({curso.section})  </p>
+                                                                    
+                                                                    <p className=" overflow-hidden overflow-ellipsis text-nowrap">{curso.teacher}</p>
                                                                 </div>
                                                             )
                                                         }

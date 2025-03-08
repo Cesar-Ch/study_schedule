@@ -103,7 +103,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
         <section className="mt-6 section-custom">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-2xl font-semibold  ">Lista de cursos</h2>
-                <div className="hover:bg-[#3c3c3f] px-1 rounded-lg" onClick={() => setShowAcdCourses(!showAcdCourses)}>
+                <div className="dark:hover:bg-[#3c3c3f] px-1 rounded-lg hover:bg-gray-100" onClick={() => setShowAcdCourses(!showAcdCourses)}>
                     <UsatLogo />
                 </div>
             </div>

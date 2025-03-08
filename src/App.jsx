@@ -45,7 +45,7 @@ function App() {
           showToast && <Toast typeToast={typeToast}>{message}</Toast>
         }
         {
-          showAcdCourses && <AcademicCourses setShowAcdCourses={setShowAcdCourses} showAcdCourses={showAcdCourses} setShowToast={setShowToast} setTypeToast={setTypeToast} setMessage={setMessage} showToast={showToast} />
+          showAcdCourses && <AcademicCourses setShowAcdCourses={setShowAcdCourses} showAcdCourses={showAcdCourses} setShowToast={setShowToast} setTypeToast={setTypeToast} setMessage={setMessage} showToast={showToast} datos={datos} setDatos={setDatos} />
         }
         <div>
           <AddCourse setDatos={setDatos} datos={datos} setShowToast={setShowToast} setMessage={setMessage} setTypeToast={setTypeToast} />

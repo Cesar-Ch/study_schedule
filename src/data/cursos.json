@@ -1,11 +1,10 @@
-
 {
     "1": [
         {
-            "COMPRENSIÓN DE TEXTOS Y REDACCIÓN BÁSICA ": [
+            "Comprensión de textos y redacción básica ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Chumacero Ancajima, Shirley Veronica]",
+                    "section": "A",
+                    "teacher": "Chumacero Ancajima, Shirley Veronica",
                     "horario": [
                         [
                             {
@@ -30,8 +29,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Chumacero Ancajima, Shirley Veronica]",
+                    "section": "B",
+                    "teacher": "Chumacero Ancajima, Shirley Veronica",
                     "horario": [
                         [
                             {
@@ -50,8 +49,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Chumacero Ancajima, Shirley Veronica]",
+                    "section": "C",
+                    "teacher": "Chumacero Ancajima, Shirley Veronica",
                     "horario": [
                         [
                             {
@@ -72,10 +71,10 @@
             ]
         },
         {
-            "DESARROLLO DE COMPETENCIAS DIGITALES ": [
+            "Desarrollo de competencias digitales ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Torres Benavides, Juan Antonio]",
+                    "section": "A",
+                    "teacher": "Torres Benavides, Juan Antonio",
                     "horario": [
                         [
                             {
@@ -94,8 +93,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Aquino Trujillo, Jury Yesenia]",
+                    "section": "B",
+                    "teacher": "Aquino Trujillo, Jury Yesenia",
                     "horario": [
                         [
                             {
@@ -114,8 +113,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Torres Benavides, Juan Antonio]",
+                    "section": "C",
+                    "teacher": "Torres Benavides, Juan Antonio",
                     "horario": [
                         [
                             {
@@ -136,10 +135,10 @@
             ]
         },
         {
-            "ESTRATEGIAS PARA EL APRENDIZAJE AUTÓNOMO ": [
+            "Estrategias para el aprendizaje autónomo ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Sampertegui Olivera, Blanca Deise]",
+                    "section": "A",
+                    "teacher": "Sampertegui Olivera, Blanca Deise",
                     "horario": [
                         [
                             {
@@ -152,8 +151,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Sampertegui Olivera, Blanca Deise]",
+                    "section": "B",
+                    "teacher": "Sampertegui Olivera, Blanca Deise",
                     "horario": [
                         [
                             {
@@ -166,8 +165,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Sampertegui Olivera, Blanca Deise]",
+                    "section": "C",
+                    "teacher": "Sampertegui Olivera, Blanca Deise",
                     "horario": [
                         [
                             {
@@ -182,10 +181,10 @@
             ]
         },
         {
-            "INTRODUCCIÓN A LA INGENIERÍA DE SISTEMAS Y COMPUTACIÓN ": [
+            "Introducción a la ingeniería de sistemas y computación ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Diaz Espino, Miguel Angel]",
+                    "section": "A",
+                    "teacher": "Diaz Espino, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -210,8 +209,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Reyes Burgos, Karla Cecilia]",
+                    "section": "B",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
                     "horario": [
                         [
                             {
@@ -230,8 +229,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Noblecilla Vinces, William Alfredo]",
+                    "section": "C",
+                    "teacher": "Noblecilla Vinces, William Alfredo",
                     "horario": [
                         [
                             {
@@ -252,10 +251,10 @@
             ]
         },
         {
-            "MATEMÁTICA BÁSICA ": [
+            "Matemática básica ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Silva Rivera, Consuelo]",
+                    "section": "A",
+                    "teacher": "Silva Rivera, Consuelo",
                     "horario": [
                         [
                             {
@@ -274,8 +273,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Silva Rivera, Consuelo]",
+                    "section": "B",
+                    "teacher": "Silva Rivera, Consuelo",
                     "horario": [
                         [
                             {
@@ -294,8 +293,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Martinez Monteza, Roxana Elizabeth]",
+                    "section": "C",
+                    "teacher": "Martinez Monteza, Roxana Elizabeth",
                     "horario": [
                         [
                             {
@@ -316,10 +315,10 @@
             ]
         },
         {
-            "MATEMÁTICA DISCRETA ": [
+            "Matemática discreta ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Gonzales Lopez, David Ysrael]",
+                    "section": "A",
+                    "teacher": "Gonzales Lopez, David Ysrael",
                     "horario": [
                         [
                             {
@@ -344,8 +343,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Gonzales Lopez, David Ysrael]",
+                    "section": "B",
+                    "teacher": "Gonzales Lopez, David Ysrael",
                     "horario": [
                         [
                             {
@@ -370,8 +369,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Gonzales Lopez, David Ysrael]",
+                    "section": "C",
+                    "teacher": "Gonzales Lopez, David Ysrael",
                     "horario": [
                         [
                             {
@@ -400,10 +399,10 @@
     ],
     "2": [
         {
-            "CÁLCULO DE UNA VARIABLE ": [
+            "Cálculo de una variable ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Diaz Albujar, Jorge Guillermo]",
+                    "section": "A",
+                    "teacher": "Diaz Albujar, Jorge Guillermo",
                     "horario": [
                         [
                             {
@@ -428,8 +427,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Cruzado Quiroz, Alexander Omar]",
+                    "section": "B",
+                    "teacher": "Cruzado Quiroz, Alexander Omar",
                     "horario": [
                         [
                             {
@@ -456,10 +455,10 @@
             ]
         },
         {
-            "COMPRENSIÓN Y REDACCIÓN DE TEXTOS ACADÉMICOS ": [
+            "Comprensión y redacción de textos académicos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Moscol Mogollon, Doris Liliana]",
+                    "section": "A",
+                    "teacher": "Moscol Mogollon, Doris Liliana",
                     "horario": [
                         [
                             {
@@ -486,10 +485,10 @@
             ]
         },
         {
-            "ECOLOGÍA Y DESARROLLO SOSTENIBLE ": [
+            "Ecología y desarrollo sostenible ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Suclupe Farro, Erick Giancarlo]",
+                    "section": "A",
+                    "teacher": "Suclupe Farro, Erick Giancarlo",
                     "horario": [
                         [
                             {
@@ -510,10 +509,10 @@
             ]
         },
         {
-            "ECONOMÍA Y REALIDAD NACIONAL ": [
+            "Economía y realidad nacional ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Estela Siancas, Jose Francisco]",
+                    "section": "A",
+                    "teacher": "Estela Siancas, Jose Francisco",
                     "horario": [
                         [
                             {
@@ -532,8 +531,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Estela Siancas, Jose Francisco]",
+                    "section": "B",
+                    "teacher": "Estela Siancas, Jose Francisco",
                     "horario": [
                         [
                             {
@@ -554,10 +553,10 @@
             ]
         },
         {
-            "FUNDAMENTOS DE PROGRAMACIÓN ": [
+            "Fundamentos de programación ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Nicho Cordova, Ernesto Ludwin]",
+                    "section": "A",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
                     "horario": [
                         [
                             {
@@ -582,8 +581,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Del Castillo Castro, Consuelo Ivonne]",
+                    "section": "B",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
                     "horario": [
                         [
                             {
@@ -610,10 +609,10 @@
             ]
         },
         {
-            "TEORÍA Y PROCESOS ORGANIZACIONALES ": [
+            "Teoría y procesos organizacionales ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Diaz Espino, Miguel Angel]",
+                    "section": "A",
+                    "teacher": "Diaz Espino, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -638,8 +637,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Diaz Espino, Miguel Angel]",
+                    "section": "B",
+                    "teacher": "Diaz Espino, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -668,10 +667,10 @@
     ],
     "3": [
         {
-            "ANÁLISIS Y ESPECIFICACIÓN DE REQUISITOS ": [
+            "Análisis y especificación de requisitos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Torres Benavides, Juan Antonio]",
+                    "section": "A",
+                    "teacher": "Torres Benavides, Juan Antonio",
                     "horario": [
                         [
                             {
@@ -696,8 +695,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Torres Benavides, Juan Antonio]",
+                    "section": "B",
+                    "teacher": "Torres Benavides, Juan Antonio",
                     "horario": [
                         [
                             {
@@ -722,8 +721,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Cachay Maco, Junior Eugenio]",
+                    "section": "C",
+                    "teacher": "Cachay Maco, Junior Eugenio",
                     "horario": [
                         [
                             {
@@ -756,10 +755,10 @@
             ]
         },
         {
-            "CÁLCULO DE VARIAS VARIABLES ": [
+            "Cálculo de varias variables ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Garcia Apestegui, Rony Rafael]",
+                    "section": "A",
+                    "teacher": "Garcia Apestegui, Rony Rafael",
                     "horario": [
                         [
                             {
@@ -784,8 +783,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Huertas Lluncor, Yovanna Marisol]",
+                    "section": "B",
+                    "teacher": "Huertas Lluncor, Yovanna Marisol",
                     "horario": [
                         [
                             {
@@ -812,10 +811,10 @@
             ]
         },
         {
-            "CONTABILIDAD Y FINANZAS ": [
+            "Contabilidad y finanzas ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Vergara Wekselman, Betty Liliana De Los Milagros]",
+                    "section": "A",
+                    "teacher": "Vergara Wekselman, Betty Liliana De Los Milagros",
                     "horario": [
                         [
                             {
@@ -840,8 +839,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Vergara Wekselman, Betty Liliana De Los Milagros]",
+                    "section": "B",
+                    "teacher": "Vergara Wekselman, Betty Liliana De Los Milagros",
                     "horario": [
                         [
                             {
@@ -868,10 +867,10 @@
             ]
         },
         {
-            "FILOSOFÍA ": [
+            "Filosofía ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Palomino Frias, Silvia Rosa]",
+                    "section": "A",
+                    "teacher": "Palomino Frias, Silvia Rosa",
                     "horario": [
                         [
                             {
@@ -884,8 +883,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "B",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -898,8 +897,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "C",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -912,8 +911,8 @@
                     ]
                 },
                 {
-                    "section": "[D]",
-                    "teacher": "[Bobadilla Vasquez, Leodan]",
+                    "section": "D",
+                    "teacher": "Bobadilla Vasquez, Leodan",
                     "horario": [
                         [
                             {
@@ -926,8 +925,8 @@
                     ]
                 },
                 {
-                    "section": "[E]",
-                    "teacher": "[Palomino Frias, Silvia Rosa]",
+                    "section": "E",
+                    "teacher": "Palomino Frias, Silvia Rosa",
                     "horario": [
                         [
                             {
@@ -940,8 +939,8 @@
                     ]
                 },
                 {
-                    "section": "[F]",
-                    "teacher": "[Bobadilla Vasquez, Leodan]",
+                    "section": "F",
+                    "teacher": "Bobadilla Vasquez, Leodan",
                     "horario": [
                         [
                             {
@@ -954,8 +953,8 @@
                     ]
                 },
                 {
-                    "section": "[G]",
-                    "teacher": "[Palomino Frias, Silvia Rosa]",
+                    "section": "G",
+                    "teacher": "Palomino Frias, Silvia Rosa",
                     "horario": [
                         [
                             {
@@ -968,8 +967,8 @@
                     ]
                 },
                 {
-                    "section": "[H]",
-                    "teacher": "[Alberca Balarezo, Marco Antonio]",
+                    "section": "H",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -982,8 +981,8 @@
                     ]
                 },
                 {
-                    "section": "[I]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "I",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -996,8 +995,8 @@
                     ]
                 },
                 {
-                    "section": "[J]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "J",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -1010,8 +1009,8 @@
                     ]
                 },
                 {
-                    "section": "[K]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "K",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -1024,8 +1023,8 @@
                     ]
                 },
                 {
-                    "section": "[L]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "L",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -1038,8 +1037,8 @@
                     ]
                 },
                 {
-                    "section": "[M]",
-                    "teacher": "[Palomino Frias, Silvia Rosa]",
+                    "section": "M",
+                    "teacher": "Palomino Frias, Silvia Rosa",
                     "horario": [
                         [
                             {
@@ -1052,8 +1051,8 @@
                     ]
                 },
                 {
-                    "section": "[N]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "N",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -1066,8 +1065,8 @@
                     ]
                 },
                 {
-                    "section": "[O]",
-                    "teacher": "[Cuyate Reque, Jesus Simon]",
+                    "section": "O",
+                    "teacher": "Cuyate Reque, Jesus Simon",
                     "horario": [
                         [
                             {
@@ -1080,8 +1079,8 @@
                     ]
                 },
                 {
-                    "section": "[P]",
-                    "teacher": "[Torres Rubio, Miguel Angel]",
+                    "section": "P",
+                    "teacher": "Torres Rubio, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -1094,8 +1093,8 @@
                     ]
                 },
                 {
-                    "section": "[Q]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "Q",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -1108,8 +1107,8 @@
                     ]
                 },
                 {
-                    "section": "[R]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "R",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -1122,8 +1121,8 @@
                     ]
                 },
                 {
-                    "section": "[S]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "S",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -1138,10 +1137,10 @@
             ]
         },
         {
-            "FÍSICA DE LOS CUERPOS RÍGIDOS ": [
+            "Física de los cuerpos rígidos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Quiroz Vidarte, Jose Fernando]",
+                    "section": "A",
+                    "teacher": "Quiroz Vidarte, Jose Fernando",
                     "horario": [
                         [
                             {
@@ -1160,8 +1159,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Quiroz Vidarte, Jose Fernando]",
+                    "section": "B",
+                    "teacher": "Quiroz Vidarte, Jose Fernando",
                     "horario": [
                         [
                             {
@@ -1182,10 +1181,10 @@
             ]
         },
         {
-            "METODOLOGÍAS DE PROGRAMACIÓN ": [
+            "Metodologías de programación ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Zelada Valdivieso, Hector Miguel]",
+                    "section": "A",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
                     "horario": [
                         [
                             {
@@ -1210,8 +1209,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Zelada Valdivieso, Hector Miguel]",
+                    "section": "B",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
                     "horario": [
                         [
                             {
@@ -1236,8 +1235,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Alarcon Garcia, Roger Ernesto]",
+                    "section": "C",
+                    "teacher": "Alarcon Garcia, Roger Ernesto",
                     "horario": [
                         [
                             {
@@ -1266,10 +1265,10 @@
     ],
     "4": [
         {
-            "ANTROPOLOGÍA FILOSÓFICA ": [
+            "Antropología filosófica ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "A",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -1282,8 +1281,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "B",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -1296,8 +1295,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "C",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -1310,8 +1309,8 @@
                     ]
                 },
                 {
-                    "section": "[D]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "D",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -1324,8 +1323,8 @@
                     ]
                 },
                 {
-                    "section": "[E]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "E",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -1338,8 +1337,8 @@
                     ]
                 },
                 {
-                    "section": "[F]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "F",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -1352,8 +1351,8 @@
                     ]
                 },
                 {
-                    "section": "[G]",
-                    "teacher": "[Palacios Cruz, Victor Hugo]",
+                    "section": "G",
+                    "teacher": "Palacios Cruz, Victor Hugo",
                     "horario": [
                         [
                             {
@@ -1366,8 +1365,8 @@
                     ]
                 },
                 {
-                    "section": "[H]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "H",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -1380,8 +1379,8 @@
                     ]
                 },
                 {
-                    "section": "[I]",
-                    "teacher": "[Bravo Diaz, Cesar Eduardo]",
+                    "section": "I",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
                     "horario": [
                         [
                             {
@@ -1394,8 +1393,8 @@
                     ]
                 },
                 {
-                    "section": "[J]",
-                    "teacher": "[Bravo Diaz, Cesar Eduardo]",
+                    "section": "J",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
                     "horario": [
                         [
                             {
@@ -1408,8 +1407,8 @@
                     ]
                 },
                 {
-                    "section": "[K]",
-                    "teacher": "[Cotrina Alvarran, Ruth Giovania]",
+                    "section": "K",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
                     "horario": [
                         [
                             {
@@ -1422,8 +1421,8 @@
                     ]
                 },
                 {
-                    "section": "[L]",
-                    "teacher": "[Palomino Frias, Silvia Rosa]",
+                    "section": "L",
+                    "teacher": "Palomino Frias, Silvia Rosa",
                     "horario": [
                         [
                             {
@@ -1436,8 +1435,8 @@
                     ]
                 },
                 {
-                    "section": "[M]",
-                    "teacher": "[Palacios Cruz, Victor Hugo]",
+                    "section": "M",
+                    "teacher": "Palacios Cruz, Victor Hugo",
                     "horario": [
                         [
                             {
@@ -1452,10 +1451,10 @@
             ]
         },
         {
-            "BASE DE DATOS ": [
+            "Base de datos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Zelada Valdivieso, Hector Miguel]",
+                    "section": "A",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
                     "horario": [
                         [
                             {
@@ -1476,10 +1475,10 @@
             ]
         },
         {
-            "DISEÑO DE SOFTWARE ": [
+            "Diseño de software ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Del Castillo Castro, Consuelo Ivonne]",
+                    "section": "A",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
                     "horario": [
                         [
                             {
@@ -1504,8 +1503,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Del Castillo Castro, Consuelo Ivonne]",
+                    "section": "B",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
                     "horario": [
                         [
                             {
@@ -1532,10 +1531,10 @@
             ]
         },
         {
-            "ECUACIONES DIFERENCIALES Y MÉTODOS NUMÉRICOS ": [
+            "Ecuaciones diferenciales y métodos numéricos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Brenis Delgado, Yesabella Katherine]",
+                    "section": "A",
+                    "teacher": "Brenis Delgado, Yesabella Katherine",
                     "horario": [
                         [
                             {
@@ -1560,8 +1559,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Brenis Delgado, Yesabella Katherine]",
+                    "section": "B",
+                    "teacher": "Brenis Delgado, Yesabella Katherine",
                     "horario": [
                         [
                             {
@@ -1588,10 +1587,10 @@
             ]
         },
         {
-            "ELECTRICIDAD Y MAGNETISMO ": [
+            "Electricidad y magnetismo ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Zuloaga Cachay, Jose Fortunato]",
+                    "section": "A",
+                    "teacher": "Zuloaga Cachay, Jose Fortunato",
                     "horario": [
                         [
                             {
@@ -1612,10 +1611,10 @@
             ]
         },
         {
-            "ESTRUCTURA DE DATOS Y ALGORITMOS ": [
+            "Estructura de datos y algoritmos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Bravo Jaico, Jessie Leila]",
+                    "section": "A",
+                    "teacher": "Bravo Jaico, Jessie Leila",
                     "horario": [
                         [
                             {
@@ -1640,8 +1639,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Diaz Vidarte, Miguel Orlando]",
+                    "section": "B",
+                    "teacher": "Diaz Vidarte, Miguel Orlando",
                     "horario": [
                         [
                             {
@@ -1670,10 +1669,10 @@
     ],
     "5": [
         {
-            "ADMINISTRACIÓN DE BASE DE DATOS ": [
+            "Administración de base de datos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Castillo Zumaran, Segundo Jose]",
+                    "section": "A",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
                     "horario": [
                         [
                             {
@@ -1698,8 +1697,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Castillo Zumaran, Segundo Jose]",
+                    "section": "B",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
                     "horario": [
                         [
                             {
@@ -1718,8 +1717,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Castillo Zumaran, Segundo Jose]",
+                    "section": "C",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
                     "horario": [
                         [
                             {
@@ -1740,10 +1739,10 @@
             ]
         },
         {
-            "ARQUITECTURA Y ORGANIZACIÓN DE COMPUTADORAS ": [
+            "Arquitectura y organización de computadoras ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Zuñe Bispo, Luis Augusto]",
+                    "section": "A",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
                     "horario": [
                         [
                             {
@@ -1762,8 +1761,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Zuñe Bispo, Luis Augusto]",
+                    "section": "B",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
                     "horario": [
                         [
                             {
@@ -1784,10 +1783,10 @@
             ]
         },
         {
-            "DISEÑO WEB ": [
+            "Diseño web ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Nicho Cordova, Ernesto Ludwin]",
+                    "section": "A",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
                     "horario": [
                         [
                             {
@@ -1812,8 +1811,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Nicho Cordova, Ernesto Ludwin]",
+                    "section": "B",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
                     "horario": [
                         [
                             {
@@ -1838,8 +1837,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Nicho Cordova, Ernesto Ludwin]",
+                    "section": "C",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
                     "horario": [
                         [
                             {
@@ -1860,10 +1859,10 @@
             ]
         },
         {
-            "ESTADÍSTICA Y PROBABILIDADES ": [
+            "Estadística y probabilidades ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Gonzales Hidalgo, Carlos Daniel]",
+                    "section": "A",
+                    "teacher": "Gonzales Hidalgo, Carlos Daniel",
                     "horario": [
                         [
                             {
@@ -1888,8 +1887,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Rodriguez Ortiz, Claudia Emperatriz]",
+                    "section": "B",
+                    "teacher": "Rodriguez Ortiz, Claudia Emperatriz",
                     "horario": [
                         [
                             {
@@ -1916,10 +1915,10 @@
             ]
         },
         {
-            "ÉTICA ": [
+            "Ética ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Estela Salazar, Nancy Emilia]",
+                    "section": "A",
+                    "teacher": "Estela Salazar, Nancy Emilia",
                     "horario": [
                         [
                             {
@@ -1932,8 +1931,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Villalobos Peña, Raquel Viviana]",
+                    "section": "B",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
                     "horario": [
                         [
                             {
@@ -1946,8 +1945,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Estela Salazar, Nancy Emilia]",
+                    "section": "C",
+                    "teacher": "Estela Salazar, Nancy Emilia",
                     "horario": [
                         [
                             {
@@ -1960,8 +1959,8 @@
                     ]
                 },
                 {
-                    "section": "[D]",
-                    "teacher": "[Bravo Diaz, Cesar Eduardo]",
+                    "section": "D",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
                     "horario": [
                         [
                             {
@@ -1974,8 +1973,8 @@
                     ]
                 },
                 {
-                    "section": "[E]",
-                    "teacher": "[Bravo Diaz, Cesar Eduardo]",
+                    "section": "E",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
                     "horario": [
                         [
                             {
@@ -1988,8 +1987,8 @@
                     ]
                 },
                 {
-                    "section": "[F]",
-                    "teacher": "[Villalobos Peña, Raquel Viviana]",
+                    "section": "F",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
                     "horario": [
                         [
                             {
@@ -2002,8 +2001,8 @@
                     ]
                 },
                 {
-                    "section": "[G]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "G",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -2016,8 +2015,8 @@
                     ]
                 },
                 {
-                    "section": "[H]",
-                    "teacher": "[Villalobos Peña, Raquel Viviana]",
+                    "section": "H",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
                     "horario": [
                         [
                             {
@@ -2030,8 +2029,8 @@
                     ]
                 },
                 {
-                    "section": "[I]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "I",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -2044,8 +2043,8 @@
                     ]
                 },
                 {
-                    "section": "[J]",
-                    "teacher": "[Torres Rubio, Miguel Angel]",
+                    "section": "J",
+                    "teacher": "Torres Rubio, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -2058,8 +2057,8 @@
                     ]
                 },
                 {
-                    "section": "[K]",
-                    "teacher": "[Mera Rodas, Armando]",
+                    "section": "K",
+                    "teacher": "Mera Rodas, Armando",
                     "horario": [
                         [
                             {
@@ -2072,8 +2071,8 @@
                     ]
                 },
                 {
-                    "section": "[L]",
-                    "teacher": "[Limo Figueroa, David Fernando]",
+                    "section": "L",
+                    "teacher": "Limo Figueroa, David Fernando",
                     "horario": [
                         [
                             {
@@ -2086,8 +2085,8 @@
                     ]
                 },
                 {
-                    "section": "[M]",
-                    "teacher": "[Villalobos Peña, Raquel Viviana]",
+                    "section": "M",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
                     "horario": [
                         [
                             {
@@ -2100,8 +2099,8 @@
                     ]
                 },
                 {
-                    "section": "[N]",
-                    "teacher": "[Jara Cotrina, Araceli]",
+                    "section": "N",
+                    "teacher": "Jara Cotrina, Araceli",
                     "horario": [
                         [
                             {
@@ -2114,8 +2113,8 @@
                     ]
                 },
                 {
-                    "section": "[O]",
-                    "teacher": "[Limo Figueroa, David Fernando]",
+                    "section": "O",
+                    "teacher": "Limo Figueroa, David Fernando",
                     "horario": [
                         [
                             {
@@ -2128,8 +2127,8 @@
                     ]
                 },
                 {
-                    "section": "[P]",
-                    "teacher": "[Torres Rubio, Miguel Angel]",
+                    "section": "P",
+                    "teacher": "Torres Rubio, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -2142,8 +2141,8 @@
                     ]
                 },
                 {
-                    "section": "[Q]",
-                    "teacher": "[Estela Salazar, Nancy Emilia]",
+                    "section": "Q",
+                    "teacher": "Estela Salazar, Nancy Emilia",
                     "horario": [
                         [
                             {
@@ -2158,10 +2157,10 @@
             ]
         },
         {
-            "INGENIERÍA DE PROCESOS ": [
+            "Ingeniería de procesos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Ñopo Torres, Maria Guadalupe]",
+                    "section": "A",
+                    "teacher": "Ñopo Torres, Maria Guadalupe",
                     "horario": [
                         [
                             {
@@ -2180,8 +2179,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Diaz Espino, Miguel Angel]",
+                    "section": "B",
+                    "teacher": "Diaz Espino, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -2200,8 +2199,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Ñopo Torres, Maria Guadalupe]",
+                    "section": "C",
+                    "teacher": "Ñopo Torres, Maria Guadalupe",
                     "horario": [
                         [
                             {
@@ -2222,10 +2221,10 @@
             ]
         },
         {
-            "TEORÍA GENERAL DE SISTEMAS ": [
+            "Teoría general de sistemas ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Noblecilla Vinces, William Alfredo]",
+                    "section": "A",
+                    "teacher": "Noblecilla Vinces, William Alfredo",
                     "horario": [
                         [
                             {
@@ -2244,8 +2243,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Noblecilla Vinces, William Alfredo]",
+                    "section": "B",
+                    "teacher": "Noblecilla Vinces, William Alfredo",
                     "horario": [
                         [
                             {
@@ -2268,10 +2267,10 @@
     ],
     "6": [
         {
-            "DESARROLLO DE APLICACIONES DE ESCRITORIO ": [
+            "Desarrollo de aplicaciones de escritorio ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Alarcon Garcia, Roger Ernesto]",
+                    "section": "A",
+                    "teacher": "Alarcon Garcia, Roger Ernesto",
                     "horario": [
                         [
                             {
@@ -2298,10 +2297,10 @@
             ]
         },
         {
-            "DESARROLLO DE APLICACIONES WEB ": [
+            "Desarrollo de aplicaciones web ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Cachay Maco, Junior Eugenio]",
+                    "section": "A",
+                    "teacher": "Cachay Maco, Junior Eugenio",
                     "horario": [
                         [
                             {
@@ -2328,10 +2327,10 @@
             ]
         },
         {
-            "FE Y CULTURA ": [
+            "Fe y cultura ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "A",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2344,8 +2343,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "B",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2358,8 +2357,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "C",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2372,8 +2371,8 @@
                     ]
                 },
                 {
-                    "section": "[D]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "D",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2386,8 +2385,8 @@
                     ]
                 },
                 {
-                    "section": "[E]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "E",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2400,8 +2399,8 @@
                     ]
                 },
                 {
-                    "section": "[F]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "F",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2414,8 +2413,8 @@
                     ]
                 },
                 {
-                    "section": "[G]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "G",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2428,8 +2427,8 @@
                     ]
                 },
                 {
-                    "section": "[H]",
-                    "teacher": "[Perez Guevara, Luis Enrique]",
+                    "section": "H",
+                    "teacher": "Perez Guevara, Luis Enrique",
                     "horario": [
                         [
                             {
@@ -2442,8 +2441,8 @@
                     ]
                 },
                 {
-                    "section": "[I]",
-                    "teacher": "[Niño Effio, Alicia Lizet]",
+                    "section": "I",
+                    "teacher": "Niño Effio, Alicia Lizet",
                     "horario": [
                         [
                             {
@@ -2456,8 +2455,8 @@
                     ]
                 },
                 {
-                    "section": "[J]",
-                    "teacher": "[Niño Effio, Alicia Lizet]",
+                    "section": "J",
+                    "teacher": "Niño Effio, Alicia Lizet",
                     "horario": [
                         [
                             {
@@ -2470,8 +2469,8 @@
                     ]
                 },
                 {
-                    "section": "[K]",
-                    "teacher": "[Niño Effio, Alicia Lizet]",
+                    "section": "K",
+                    "teacher": "Niño Effio, Alicia Lizet",
                     "horario": [
                         [
                             {
@@ -2484,8 +2483,8 @@
                     ]
                 },
                 {
-                    "section": "[L]",
-                    "teacher": "[Alberca Balarezo, Marco Antonio]",
+                    "section": "L",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -2500,10 +2499,10 @@
             ]
         },
         {
-            "INTELIGENCIA ARTIFICIAL ": [
+            "Inteligencia artificial ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Villegas Cubas, Juan Elias]",
+                    "section": "A",
+                    "teacher": "Villegas Cubas, Juan Elias",
                     "horario": [
                         [
                             {
@@ -2522,8 +2521,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Villegas Cubas, Juan Elias]",
+                    "section": "B",
+                    "teacher": "Villegas Cubas, Juan Elias",
                     "horario": [
                         [
                             {
@@ -2550,10 +2549,10 @@
             ]
         },
         {
-            "INVESTIGACIÓN DE OPERACIONES ": [
+            "Investigación de operaciones ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Rivasplata Sanchez, Absalon]",
+                    "section": "A",
+                    "teacher": "Rivasplata Sanchez, Absalon",
                     "horario": [
                         [
                             {
@@ -2578,8 +2577,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Rivasplata Sanchez, Absalon]",
+                    "section": "B",
+                    "teacher": "Rivasplata Sanchez, Absalon",
                     "horario": [
                         [
                             {
@@ -2606,10 +2605,10 @@
             ]
         },
         {
-            "SISTEMAS OPERATIVOS ": [
+            "Sistemas operativos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Reyes Burgos, Karla Cecilia]",
+                    "section": "A",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
                     "horario": [
                         [
                             {
@@ -2628,8 +2627,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Reyes Burgos, Karla Cecilia]",
+                    "section": "B",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
                     "horario": [
                         [
                             {
@@ -2658,10 +2657,10 @@
     ],
     "7": [
         {
-            "DESARROLLO DE SISTEMAS INTELIGENTES ": [
+            "Desarrollo de sistemas inteligentes ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Valqui Sipiran, Alexanders]",
+                    "section": "A",
+                    "teacher": "Valqui Sipiran, Alexanders",
                     "horario": [
                         [
                             {
@@ -2680,8 +2679,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Valqui Sipiran, Alexanders]",
+                    "section": "B",
+                    "teacher": "Valqui Sipiran, Alexanders",
                     "horario": [
                         [
                             {
@@ -2696,10 +2695,10 @@
             ]
         },
         {
-            "FUNDAMENTOS Y DISEÑO DE REDES DE DATOS ": [
+            "Fundamentos y diseño de redes de datos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Bravo Jaico, Jessie Leila]",
+                    "section": "A",
+                    "teacher": "Bravo Jaico, Jessie Leila",
                     "horario": [
                         [
                             {
@@ -2724,8 +2723,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Rojas Cerna, Miguel Angel]",
+                    "section": "B",
+                    "teacher": "Rojas Cerna, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -2750,8 +2749,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Rojas Cerna, Miguel Angel]",
+                    "section": "C",
+                    "teacher": "Rojas Cerna, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -2778,10 +2777,10 @@
             ]
         },
         {
-            "INGENIERÍA Y CALIDAD DE SOFTWARE ": [
+            "Ingeniería y calidad de software ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Vilchez Rivas, Marlon Eugenio]",
+                    "section": "A",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
                     "horario": [
                         [
                             {
@@ -2806,8 +2805,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Aranguri Garcia, Maria Ysabel]",
+                    "section": "B",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
                     "horario": [
                         [
                             {
@@ -2834,10 +2833,10 @@
             ]
         },
         {
-            "INTELIGENCIA DE NEGOCIOS ": [
+            "Inteligencia de negocios ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Zelada Valdivieso, Hector Miguel]",
+                    "section": "A",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
                     "horario": [
                         [
                             {
@@ -2862,8 +2861,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Castillo Zumaran, Segundo Jose]",
+                    "section": "B",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
                     "horario": [
                         [
                             {
@@ -2890,10 +2889,10 @@
             ]
         },
         {
-            "INVESTIGACIÓN EN INGENIERÍA ": [
+            "Investigación en ingeniería ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Aranguri Garcia, Maria Ysabel]",
+                    "section": "A",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
                     "horario": [
                         [
                             {
@@ -2912,8 +2911,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Aranguri Garcia, Maria Ysabel]",
+                    "section": "B",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
                     "horario": [
                         [
                             {
@@ -2934,10 +2933,10 @@
             ]
         },
         {
-            "MORAL CATÓLICA ": [
+            "Moral católica ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Niño Effio, Alicia Lizet]",
+                    "section": "A",
+                    "teacher": "Niño Effio, Alicia Lizet",
                     "horario": [
                         [
                             {
@@ -2950,8 +2949,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Alberca Balarezo, Marco Antonio]",
+                    "section": "B",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -2964,8 +2963,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Niño Effio, Alicia Lizet]",
+                    "section": "C",
+                    "teacher": "Niño Effio, Alicia Lizet",
                     "horario": [
                         [
                             {
@@ -2978,8 +2977,8 @@
                     ]
                 },
                 {
-                    "section": "[D]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "D",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -2992,8 +2991,8 @@
                     ]
                 },
                 {
-                    "section": "[E]",
-                    "teacher": "[Villalobos Peña, Raquel Viviana]",
+                    "section": "E",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
                     "horario": [
                         [
                             {
@@ -3006,8 +3005,8 @@
                     ]
                 },
                 {
-                    "section": "[F]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "F",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -3020,8 +3019,8 @@
                     ]
                 },
                 {
-                    "section": "[G]",
-                    "teacher": "[Niño Effio, Alicia Lizet]",
+                    "section": "G",
+                    "teacher": "Niño Effio, Alicia Lizet",
                     "horario": [
                         [
                             {
@@ -3034,8 +3033,8 @@
                     ]
                 },
                 {
-                    "section": "[H]",
-                    "teacher": "[Alberca Balarezo, Marco Antonio]",
+                    "section": "H",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -3048,8 +3047,8 @@
                     ]
                 },
                 {
-                    "section": "[I]",
-                    "teacher": "[Fiestas Martinez, Felix]",
+                    "section": "I",
+                    "teacher": "Fiestas Martinez, Felix",
                     "horario": [
                         [
                             {
@@ -3062,8 +3061,8 @@
                     ]
                 },
                 {
-                    "section": "[J]",
-                    "teacher": "[Cordova Huaman, Milagros Clotilde]",
+                    "section": "J",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
                     "horario": [
                         [
                             {
@@ -3076,8 +3075,8 @@
                     ]
                 },
                 {
-                    "section": "[K]",
-                    "teacher": "[Fernandez Diaz, Jose Elmer]",
+                    "section": "K",
+                    "teacher": "Fernandez Diaz, Jose Elmer",
                     "horario": [
                         [
                             {
@@ -3090,8 +3089,8 @@
                     ]
                 },
                 {
-                    "section": "[L]",
-                    "teacher": "[Carranza Delgado, Jose Marcial]",
+                    "section": "L",
+                    "teacher": "Carranza Delgado, Jose Marcial",
                     "horario": [
                         [
                             {
@@ -3104,8 +3103,8 @@
                     ]
                 },
                 {
-                    "section": "[M]",
-                    "teacher": "[Alberca Balarezo, Marco Antonio]",
+                    "section": "M",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -3118,8 +3117,8 @@
                     ]
                 },
                 {
-                    "section": "[N]",
-                    "teacher": "[Alberca Balarezo, Marco Antonio]",
+                    "section": "N",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -3132,8 +3131,8 @@
                     ]
                 },
                 {
-                    "section": "[O]",
-                    "teacher": "[Vallejos Malca, Fabian]",
+                    "section": "O",
+                    "teacher": "Vallejos Malca, Fabian",
                     "horario": [
                         [
                             {
@@ -3146,8 +3145,8 @@
                     ]
                 },
                 {
-                    "section": "[P]",
-                    "teacher": "[Carranza Delgado, Jose Marcial]",
+                    "section": "P",
+                    "teacher": "Carranza Delgado, Jose Marcial",
                     "horario": [
                         [
                             {
@@ -3162,10 +3161,10 @@
             ]
         },
         {
-            "SISTEMAS DISTRIBUIDOS ": [
+            "Sistemas distribuidos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Del Castillo Castro, Consuelo Ivonne]",
+                    "section": "A",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
                     "horario": [
                         [
                             {
@@ -3190,8 +3189,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Castillo Zumaran, Segundo Jose]",
+                    "section": "B",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
                     "horario": [
                         [
                             {
@@ -3220,10 +3219,10 @@
     ],
     "8": [
         {
-            "CONFIGURACIÓN Y ADMINISTRACIÓN DE REDES DE DATOS ": [
+            "Configuración y administración de redes de datos ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Leon Tenorio, Gregorio Manuel]",
+                    "section": "A",
+                    "teacher": "Leon Tenorio, Gregorio Manuel",
                     "horario": [
                         [
                             {
@@ -3242,8 +3241,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Leon Tenorio, Gregorio Manuel]",
+                    "section": "B",
+                    "teacher": "Leon Tenorio, Gregorio Manuel",
                     "horario": [
                         [
                             {
@@ -3264,10 +3263,10 @@
             ]
         },
         {
-            "DESARROLLO DE APLICACIONES MÓVILES ": [
+            "Desarrollo de aplicaciones móviles ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Mera Montenegro, Huilder Juanito]",
+                    "section": "A",
+                    "teacher": "Mera Montenegro, Huilder Juanito",
                     "horario": [
                         [
                             {
@@ -3292,8 +3291,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Cachay Maco, Junior Eugenio]",
+                    "section": "B",
+                    "teacher": "Cachay Maco, Junior Eugenio",
                     "horario": [
                         [
                             {
@@ -3320,10 +3319,10 @@
             ]
         },
         {
-            "DOCTRINA SOCIAL DE LA IGLESIA ": [
+            "Doctrina social de la iglesia ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Arqueros Chicoma, Marlyn Rosseline]",
+                    "section": "A",
+                    "teacher": "Arqueros Chicoma, Marlyn Rosseline",
                     "horario": [
                         [
                             {
@@ -3336,8 +3335,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Cuyate Reque, Jesus Simon]",
+                    "section": "B",
+                    "teacher": "Cuyate Reque, Jesus Simon",
                     "horario": [
                         [
                             {
@@ -3350,8 +3349,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Cuyate Reque, Jesus Simon]",
+                    "section": "C",
+                    "teacher": "Cuyate Reque, Jesus Simon",
                     "horario": [
                         [
                             {
@@ -3364,8 +3363,8 @@
                     ]
                 },
                 {
-                    "section": "[D]",
-                    "teacher": "[Cieza Dominguez, Marco Antonio]",
+                    "section": "D",
+                    "teacher": "Cieza Dominguez, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -3378,8 +3377,8 @@
                     ]
                 },
                 {
-                    "section": "[E]",
-                    "teacher": "[Cuyate Reque, Jesus Simon]",
+                    "section": "E",
+                    "teacher": "Cuyate Reque, Jesus Simon",
                     "horario": [
                         [
                             {
@@ -3392,8 +3391,8 @@
                     ]
                 },
                 {
-                    "section": "[F]",
-                    "teacher": "[Cuyate Reque, Jesus Simon]",
+                    "section": "F",
+                    "teacher": "Cuyate Reque, Jesus Simon",
                     "horario": [
                         [
                             {
@@ -3406,8 +3405,8 @@
                     ]
                 },
                 {
-                    "section": "[G]",
-                    "teacher": "[Cieza Dominguez, Marco Antonio]",
+                    "section": "G",
+                    "teacher": "Cieza Dominguez, Marco Antonio",
                     "horario": [
                         [
                             {
@@ -3420,8 +3419,8 @@
                     ]
                 },
                 {
-                    "section": "[H]",
-                    "teacher": "[Burga Ludeña, Jose Marco]",
+                    "section": "H",
+                    "teacher": "Burga Ludeña, Jose Marco",
                     "horario": [
                         [
                             {
@@ -3434,8 +3433,8 @@
                     ]
                 },
                 {
-                    "section": "[I]",
-                    "teacher": "[Segura Gonzales, Elky]",
+                    "section": "I",
+                    "teacher": "Segura Gonzales, Elky",
                     "horario": [
                         [
                             {
@@ -3448,8 +3447,8 @@
                     ]
                 },
                 {
-                    "section": "[J]",
-                    "teacher": "[Segura Gonzales, Elky]",
+                    "section": "J",
+                    "teacher": "Segura Gonzales, Elky",
                     "horario": [
                         [
                             {
@@ -3462,8 +3461,8 @@
                     ]
                 },
                 {
-                    "section": "[K]",
-                    "teacher": "[Cuyate Reque, Jesus Simon]",
+                    "section": "K",
+                    "teacher": "Cuyate Reque, Jesus Simon",
                     "horario": [
                         [
                             {
@@ -3476,8 +3475,8 @@
                     ]
                 },
                 {
-                    "section": "[L]",
-                    "teacher": "[Limo Figueroa, David Fernando]",
+                    "section": "L",
+                    "teacher": "Limo Figueroa, David Fernando",
                     "horario": [
                         [
                             {
@@ -3492,10 +3491,10 @@
             ]
         },
         {
-            "GOBIERNO Y GESTIÓN DE TECNOLOGÍAS DE INFORMACIÓN ": [
+            "Gobierno y gestión de tecnologías de información ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Rojas Cerna, Miguel Angel]",
+                    "section": "A",
+                    "teacher": "Rojas Cerna, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -3516,10 +3515,10 @@
             ]
         },
         {
-            "MINERÍA DE DATOS Y BIG DATA ": [
+            "Minería de datos y big data ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Chavarry Chankay, Mariana]",
+                    "section": "A",
+                    "teacher": "Chavarry Chankay, Mariana",
                     "horario": [
                         [
                             {
@@ -3544,8 +3543,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Chavarry Chankay, Mariana]",
+                    "section": "B",
+                    "teacher": "Chavarry Chankay, Mariana",
                     "horario": [
                         [
                             {
@@ -3572,10 +3571,10 @@
             ]
         },
         {
-            "PROYECTO DE INVESTIGACIÓN ": [
+            "Proyecto de investigación ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Reyes Burgos, Karla Cecilia]",
+                    "section": "A",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
                     "horario": [
                         [
                             {
@@ -3594,8 +3593,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Aquino Trujillo, Jury Yesenia]",
+                    "section": "B",
+                    "teacher": "Aquino Trujillo, Jury Yesenia",
                     "horario": [
                         [
                             {
@@ -3614,8 +3613,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Aquino Trujillo, Jury Yesenia]",
+                    "section": "C",
+                    "teacher": "Aquino Trujillo, Jury Yesenia",
                     "horario": [
                         [
                             {
@@ -3638,10 +3637,10 @@
     ],
     "9": [
         {
-            "CONFIGURACIÓN Y ADMINISTRACIÓN DE SERVIDORES ": [
+            "Configuración y administración de servidores ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Rojas Cerna, Miguel Angel]",
+                    "section": "A",
+                    "teacher": "Rojas Cerna, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -3660,8 +3659,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Rojas Cerna, Miguel Angel]",
+                    "section": "B",
+                    "teacher": "Rojas Cerna, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -3682,10 +3681,10 @@
             ]
         },
         {
-            "DEONTOLOGÍA Y LEGISLACIÓN LABORAL E INFORMÁTICA ": [
+            "Deontología y legislación laboral e informática ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Torres Benavides, Juan Antonio]",
+                    "section": "A",
+                    "teacher": "Torres Benavides, Juan Antonio",
                     "horario": [
                         [
                             {
@@ -3706,10 +3705,10 @@
             ]
         },
         {
-            "GESTIÓN DE RIESGOS Y SEGURIDAD DE LA INFORMACIÓN ": [
+            "Gestión de riesgos y seguridad de la información ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Zuñe Bispo, Luis Augusto]",
+                    "section": "A",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
                     "horario": [
                         [
                             {
@@ -3728,8 +3727,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Zuñe Bispo, Luis Augusto]",
+                    "section": "B",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
                     "horario": [
                         [
                             {
@@ -3750,10 +3749,10 @@
             ]
         },
         {
-            "GESTIÓN DE SERVICIOS DE TECNOLOGÍAS DE INFORMACIÓN ": [
+            "Gestión de servicios de tecnologías de información ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Diaz Espino, Miguel Angel]",
+                    "section": "A",
+                    "teacher": "Diaz Espino, Miguel Angel",
                     "horario": [
                         [
                             {
@@ -3780,10 +3779,10 @@
             ]
         },
         {
-            "NEGOCIOS ELECTRÓNICOS Y MARKETING DIGITAL ": [
+            "Negocios electrónicos y marketing digital ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Cachay Maco, Junior Eugenio]",
+                    "section": "A",
+                    "teacher": "Cachay Maco, Junior Eugenio",
                     "horario": [
                         [
                             {
@@ -3808,8 +3807,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Cachay Maco, Junior Eugenio]",
+                    "section": "B",
+                    "teacher": "Cachay Maco, Junior Eugenio",
                     "horario": [
                         [
                             {
@@ -3836,10 +3835,10 @@
             ]
         },
         {
-            "SEMINARIO DE TESIS I ": [
+            "Seminario de tesis i ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Vilchez Rivas, Marlon Eugenio]",
+                    "section": "A",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
                     "horario": [
                         [
                             {
@@ -3858,8 +3857,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Vilchez Rivas, Marlon Eugenio]",
+                    "section": "B",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
                     "horario": [
                         [
                             {
@@ -3884,8 +3883,8 @@
                     ]
                 },
                 {
-                    "section": "[C]",
-                    "teacher": "[Vilchez Rivas, Marlon Eugenio]",
+                    "section": "C",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
                     "horario": [
                         [
                             {
@@ -3914,10 +3913,10 @@
     ],
     "10": [
         {
-            "AUDITORÍA DE SISTEMAS DE INFORMACIÓN ": [
+            "Auditoría de sistemas de información ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Barreto Stein, Karla Vanessa]",
+                    "section": "A",
+                    "teacher": "Barreto Stein, Karla Vanessa",
                     "horario": [
                         [
                             {
@@ -3944,10 +3943,10 @@
             ]
         },
         {
-            "DESARROLLO DE VIDEO JUEGOS E": [
+            "Desarrollo de video juegos e": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Robles Pizarro, Luis David]",
+                    "section": "A",
+                    "teacher": "Robles Pizarro, Luis David",
                     "horario": [
                         [
                             {
@@ -3968,10 +3967,10 @@
             ]
         },
         {
-            "EMPRENDIMIENTO DE BASE TECNOLÓGICA ": [
+            "Emprendimiento de base tecnológica ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Reyes Burgos, Karla Cecilia]",
+                    "section": "A",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
                     "horario": [
                         [
                             {
@@ -3992,10 +3991,10 @@
             ]
         },
         {
-            "GESTIÓN DE PROYECTOS DE SISTEMAS DE INFORMACIÓN ": [
+            "Gestión de proyectos de sistemas de información ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Iman Espinoza, Ricardo David]",
+                    "section": "A",
+                    "teacher": "Iman Espinoza, Ricardo David",
                     "horario": [
                         [
                             {
@@ -4022,10 +4021,10 @@
             ]
         },
         {
-            "SEGURIDAD INFORMÁTICA ": [
+            "Seguridad informática ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Zuñe Bispo, Luis Augusto]",
+                    "section": "A",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
                     "horario": [
                         [
                             {
@@ -4050,8 +4049,8 @@
                     ]
                 },
                 {
-                    "section": "[B]",
-                    "teacher": "[Cachay Maco, Junior Eugenio]",
+                    "section": "B",
+                    "teacher": "Cachay Maco, Junior Eugenio",
                     "horario": [
                         [
                             {
@@ -4078,10 +4077,10 @@
             ]
         },
         {
-            "SEMINARIO DE TESIS II ": [
+            "Seminario de tesis ii ": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Aranguri Garcia, Maria Ysabel]",
+                    "section": "A",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
                     "horario": [
                         [
                             {
@@ -4102,10 +4101,10 @@
             ]
         },
         {
-            "SISTEMAS ERP E": [
+            "Sistemas erp e": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Alarcon Garcia, Roger Ernesto]",
+                    "section": "A",
+                    "teacher": "Alarcon Garcia, Roger Ernesto",
                     "horario": [
                         [
                             {
@@ -4126,10 +4125,10 @@
             ]
         },
         {
-            "TÓPICOS AVANZADOS EN DESARROLLO DE SOFTWARE": [
+            "Tópicos avanzados en desarrollo de software": [
                 {
-                    "section": "[A]",
-                    "teacher": "[Diaz Vidarte, Miguel Orlando]",
+                    "section": "A",
+                    "teacher": "Diaz Vidarte, Miguel Orlando",
                     "horario": [
                         [
                             {
