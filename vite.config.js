@@ -47,5 +47,5 @@ export default defineConfig({
       }
     }
   )],
-  base: "/study_schedule/",
+  base: "/study_schedule/"
 })
