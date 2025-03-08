@@ -58,8 +58,8 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
 
     return (
 
-        <section className='top-0 left-0 fixed w-screen h-screen  z-30 bg-black/80 place-content-center grid text-white '>
-            <div className="rounded-lg border p-5 border-white ">
+        <section className='top-0 left-0 fixed w-screen h-screen  z-30 dark:bg-black/50 bg-black/80  backdrop-blur-[4px] place-content-center grid text-white '>
+            <div className="rounded-lg border p-5 border-white bg-black/30 ">
                 <div className="flex justify-between items-center mb-5">
                     <h3 className="text-white ">Ciclo: 25 - I</h3>
                     <div className=" top-10 right-10 hover:text-black dark:hover:text-white" onClick={() => setShowAcdCourses(!showAcdCourses)}>

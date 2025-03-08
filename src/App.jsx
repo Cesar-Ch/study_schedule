@@ -33,7 +33,7 @@ function App() {
             <IconLogo className="text-white dark:text-black" />
             Schedule
           </div>
-          <a href="https://github.com/Cesar-Ch/study_schedule" target="_blank" className="transition-all duration-500 ease-in-out">
+          <a href="https://github.com/Cesar-Ch/study_schedule" target="_blank" title="Visita el repositorio de este proyecto en GitHub" className="transition-all duration-500 ease-in-out">
             <IconGithub />
           </a>
         </div>
