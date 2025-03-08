@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { PropTypes } from 'prop-types'
-import { IconX } from "./Icons";
-import ToastError from "./ToastError"
+import { IconX, UsatLogo } from "./Icons";
 
-const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTimeError, setMessageError }) => {
+const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setShowToast, setMessage, showAcdCourses, setShowAcdCourses, setTypeToast }) => {
     const [openSection, setOpenSection] = useState(null);
+
 
     const toggleSection = (section) => {
         setOpenSection(openSection === section ? null : section);
@@ -66,10 +66,11 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
         }
 
         if (cruce) {
-            setTimeError(true)
-            setMessageError('Cruce de horarios')
+            setShowToast(true)
+            setMessage('Cruce de horarios')
+            setTypeToast('error')
             setTimeout(() => {
-                setTimeError(false);
+                setShowToast(false);
             }, 3000)
             e.target.checked = false
             return
@@ -100,7 +101,13 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setTi
 
     return (
         <section className="mt-6 section-custom">
-            <h2 className="text-2xl font-semibold mb-4 ">Lista de cursos</h2>
+            <div className="flex justify-between items-center mb-4">
+                <h2 className="text-2xl font-semibold  ">Lista de cursos</h2>
+                <div className="hover:bg-[#3c3c3f] px-1 rounded-lg" onClick={() => setShowAcdCourses(!showAcdCourses)}>
+                    <UsatLogo />
+                </div>
+            </div>
+
             {
                 Object.keys(datos).map((curso, i) => (
                     <div key={curso}>
@@ -168,8 +175,10 @@ ListCourses.propTypes = {
     setDatos: PropTypes.func.isRequired,
     selectedCourse: PropTypes.object.isRequired,
     setSelectedCourse: PropTypes.func.isRequired,
-    setTimeError: PropTypes.func.isRequired,
-    setMessageError: PropTypes.func.isRequired
+    setShowToast: PropTypes.func.isRequired,
+    setMessage: PropTypes.func.isRequired,
+    showAcdCourses: PropTypes.bool.isRequired,
+    setShowAcdCourses: PropTypes.func.isRequired
 }
 
 export default ListCourses;
