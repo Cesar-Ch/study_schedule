@@ -23,6 +23,7 @@ function App() {
     localStorage.setItem('datos', JSON.stringify(datos))
   }, [datos])
 
+  console.log('Iniciando...')
 
 
   return (
