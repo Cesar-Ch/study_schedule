@@ -3,10 +3,8 @@ import { PropTypes } from 'prop-types'
 import { IconX } from "./Icons"
 import Button from "./Button"
 
-const AddCourse = ({ datos, setDatos, setTimeError, setMessageError }) => {
-
-
-    const [cursos, setCursos] = useState([])
+const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) => {
+    const [cursos, setCursos] = useState()
 
     const [horarios, setHorarios] = useState([{
         id: 1,
@@ -31,10 +29,11 @@ const AddCourse = ({ datos, setDatos, setTimeError, setMessageError }) => {
                 horario.end = e.target[i * 3 + 5].value
 
                 if (horario.start >= horario.end) {
-                    setTimeError(true)
-                    setMessageError('Datos incorrectos')
+                    setShowToast(true)
+                    setMessage('Datos incorrectos')
+                    setTypeToast('error')
                     setTimeout(() => {
-                        setTimeError(false);
+                        setShowToast(false);
                     }, 3000)
                     return
                 }
@@ -101,6 +100,9 @@ const AddCourse = ({ datos, setDatos, setTimeError, setMessageError }) => {
         }
     }
 
+    console.log(cursos)
+    console.log(Object.keys(datos))
+
     return (
         <section className="section-custom">
             <form onSubmit={guardarCurso}>
@@ -108,7 +110,7 @@ const AddCourse = ({ datos, setDatos, setTimeError, setMessageError }) => {
                 <input list="courses" type="text" id="course" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
                 <datalist id="courses">
                     {
-                        cursos.map((curso, i) => (
+                        Object.keys(datos).map((curso, i) => (
                             <option key={i} value={curso} ></option>
                         ))
                     }
@@ -133,7 +135,7 @@ const AddCourse = ({ datos, setDatos, setTimeError, setMessageError }) => {
 
                                 <select id="day" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black  p-2.5 dark:bg-[#0f1118] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-white"
                                     onChange={(e) => updateSchedule(horario.id, e.target.value, 'day')} required>
-                                    <option selected value="Lunes">Lunes</option>
+                                    <option value="Lunes">Lunes</option>
                                     <option value="Martes">Martes</option>
                                     <option value="Miércoles">Miércoles</option>
                                     <option value="Jueves">Jueves</option>
@@ -169,8 +171,9 @@ const AddCourse = ({ datos, setDatos, setTimeError, setMessageError }) => {
 AddCourse.propTypes = {
     datos: PropTypes.object.isRequired,
     setDatos: PropTypes.func.isRequired,
-    setTimeError: PropTypes.func.isRequired,
-    setMessageError: PropTypes.func.isRequired,
+    setShowToast: PropTypes.func.isRequired,
+    setMessage: PropTypes.func.isRequired,
+    setTypeToast: PropTypes.func.isRequired
 }
 
 export default AddCourse

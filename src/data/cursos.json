@@ -1,0 +1,4158 @@
+{
+    "1": [
+        {
+            "Comprensión de textos y redacción básica ": [
+                {
+                    "section": "A",
+                    "teacher": "Chumacero Ancajima, Shirley Veronica",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374196882",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374199050",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741374201217",
+                                "day": "Miércoles",
+                                "start": "11:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Chumacero Ancajima, Shirley Veronica",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374207378",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374209583",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Chumacero Ancajima, Shirley Veronica",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374215675",
+                                "day": "Lunes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741374217902",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Desarrollo de competencias digitales ": [
+                {
+                    "section": "A",
+                    "teacher": "Torres Benavides, Juan Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374228597",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741374230775",
+                                "day": "Jueves",
+                                "start": "08:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Aquino Trujillo, Jury Yesenia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374236958",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741374239152",
+                                "day": "Lunes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Torres Benavides, Juan Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374245281",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741374247498",
+                                "day": "Viernes",
+                                "start": "08:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Estrategias para el aprendizaje autónomo ": [
+                {
+                    "section": "A",
+                    "teacher": "Sampertegui Olivera, Blanca Deise",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374258254",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Sampertegui Olivera, Blanca Deise",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374264383",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Sampertegui Olivera, Blanca Deise",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374270544",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Introducción a la ingeniería de sistemas y computación ": [
+                {
+                    "section": "A",
+                    "teacher": "Diaz Espino, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374281237",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374283453",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741374285676",
+                                "day": "Viernes",
+                                "start": "08:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374291899",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374294112",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Noblecilla Vinces, William Alfredo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374300239",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374302470",
+                                "day": "Martes",
+                                "start": "09:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Matemática básica ": [
+                {
+                    "section": "A",
+                    "teacher": "Silva Rivera, Consuelo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374313368",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741374315587",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "09:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Silva Rivera, Consuelo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374321820",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374324061",
+                                "day": "Viernes",
+                                "start": "09:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Martinez Monteza, Roxana Elizabeth",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374330280",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741374332497",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Matemática discreta ": [
+                {
+                    "section": "A",
+                    "teacher": "Gonzales Lopez, David Ysrael",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374343395",
+                                "day": "Lunes",
+                                "start": "09:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374345620",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741374347856",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Gonzales Lopez, David Ysrael",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374354053",
+                                "day": "Martes",
+                                "start": "09:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374356261",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741374358484",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Gonzales Lopez, David Ysrael",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374364680",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374366887",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741374369095",
+                                "day": "Jueves",
+                                "start": "08:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "2": [
+        {
+            "Cálculo de una variable ": [
+                {
+                    "section": "A",
+                    "teacher": "Diaz Albujar, Jorge Guillermo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374380000",
+                                "day": "Martes",
+                                "start": "13:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741374382237",
+                                "day": "Martes",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374384457",
+                                "day": "Viernes",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Cruzado Quiroz, Alexander Omar",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374390558",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741374392716",
+                                "day": "Lunes",
+                                "start": "18:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741374394890",
+                                "day": "Jueves",
+                                "start": "15:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Comprensión y redacción de textos académicos ": [
+                {
+                    "section": "A",
+                    "teacher": "Moscol Mogollon, Doris Liliana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374405702",
+                                "day": "Lunes",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741374408203",
+                                "day": "Lunes",
+                                "start": "14:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374410684",
+                                "day": "Viernes",
+                                "start": "16:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Ecología y desarrollo sostenible ": [
+                {
+                    "section": "A",
+                    "teacher": "Suclupe Farro, Erick Giancarlo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374422796",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374424993",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "09:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Economía y realidad nacional ": [
+                {
+                    "section": "A",
+                    "teacher": "Estela Siancas, Jose Francisco",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374436093",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741374438380",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Estela Siancas, Jose Francisco",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374444751",
+                                "day": "Miércoles",
+                                "start": "14:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374447045",
+                                "day": "Viernes",
+                                "start": "14:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Fundamentos de programación ": [
+                {
+                    "section": "A",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374459117",
+                                "day": "Miércoles",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741374461322",
+                                "day": "Miércoles",
+                                "start": "14:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374463530",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374469704",
+                                "day": "Martes",
+                                "start": "19:00",
+                                "end": "21:00"
+                            },
+                            {
+                                "id": "1741374471890",
+                                "day": "Jueves",
+                                "start": "18:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741374474291",
+                                "day": "Jueves",
+                                "start": "19:00",
+                                "end": "21:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Teoría y procesos organizacionales ": [
+                {
+                    "section": "A",
+                    "teacher": "Diaz Espino, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374485127",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741374487347",
+                                "day": "Lunes",
+                                "start": "17:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741374489526",
+                                "day": "Jueves",
+                                "start": "14:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Diaz Espino, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374495696",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741374497916",
+                                "day": "Martes",
+                                "start": "17:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741374500105",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "3": [
+        {
+            "Análisis y especificación de requisitos ": [
+                {
+                    "section": "A",
+                    "teacher": "Torres Benavides, Juan Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374510854",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741374513056",
+                                "day": "Jueves",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741374515264",
+                                "day": "Viernes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Torres Benavides, Juan Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374521455",
+                                "day": "Martes",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741374523649",
+                                "day": "Martes",
+                                "start": "14:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374525848",
+                                "day": "Miércoles",
+                                "start": "13:00",
+                                "end": "15:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Cachay Maco, Junior Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374532042",
+                                "day": "Lunes",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374534251",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741374536469",
+                                "day": "Sábado",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374538711",
+                                "day": "Sábado",
+                                "start": "16:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Cálculo de varias variables ": [
+                {
+                    "section": "A",
+                    "teacher": "Garcia Apestegui, Rony Rafael",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374549650",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741374551881",
+                                "day": "Lunes",
+                                "start": "12:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741374554085",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Huertas Lluncor, Yovanna Marisol",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374560342",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374562492",
+                                "day": "Jueves",
+                                "start": "09:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374564713",
+                                "day": "Sábado",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Contabilidad y finanzas ": [
+                {
+                    "section": "A",
+                    "teacher": "Vergara Wekselman, Betty Liliana De Los Milagros",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374575654",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741374577873",
+                                "day": "Lunes",
+                                "start": "08:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741374580108",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Vergara Wekselman, Betty Liliana De Los Milagros",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374586367",
+                                "day": "Lunes",
+                                "start": "09:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374588577",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741374590832",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Filosofía ": [
+                {
+                    "section": "A",
+                    "teacher": "Palomino Frias, Silvia Rosa",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374601910",
+                                "day": "Viernes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374608221",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374614465",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "D",
+                    "teacher": "Bobadilla Vasquez, Leodan",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374620784",
+                                "day": "Sábado",
+                                "start": "08:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "E",
+                    "teacher": "Palomino Frias, Silvia Rosa",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374627048",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "F",
+                    "teacher": "Bobadilla Vasquez, Leodan",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374633272",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "G",
+                    "teacher": "Palomino Frias, Silvia Rosa",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374639589",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "H",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374645910",
+                                "day": "Lunes",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "I",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374652155",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "J",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374658429",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "K",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374664678",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "L",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374670927",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "M",
+                    "teacher": "Palomino Frias, Silvia Rosa",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374677149",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "N",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374683425",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "O",
+                    "teacher": "Cuyate Reque, Jesus Simon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374689640",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "P",
+                    "teacher": "Torres Rubio, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374695784",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "Q",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374702003",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "R",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374708230",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "S",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374714467",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Física de los cuerpos rígidos ": [
+                {
+                    "section": "A",
+                    "teacher": "Quiroz Vidarte, Jose Fernando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374725414",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374727661",
+                                "day": "Sábado",
+                                "start": "07:00",
+                                "end": "09:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Quiroz Vidarte, Jose Fernando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374733912",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741374736129",
+                                "day": "Sábado",
+                                "start": "10:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Metodologías de programación ": [
+                {
+                    "section": "A",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374746979",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741374749191",
+                                "day": "Martes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741374751422",
+                                "day": "Miércoles",
+                                "start": "11:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374757664",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741374759899",
+                                "day": "Miércoles",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374762161",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Alarcon Garcia, Roger Ernesto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374768404",
+                                "day": "Martes",
+                                "start": "19:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741374770699",
+                                "day": "Martes",
+                                "start": "20:00",
+                                "end": "22:00"
+                            },
+                            {
+                                "id": "1741374772961",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "4": [
+        {
+            "Antropología filosófica ": [
+                {
+                    "section": "A",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374783778",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374790004",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374796228",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "D",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374802514",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "E",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374808794",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "F",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374815131",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "G",
+                    "teacher": "Palacios Cruz, Victor Hugo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374821333",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "H",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374827576",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "I",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374833876",
+                                "day": "Jueves",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "J",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374840055",
+                                "day": "Viernes",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "K",
+                    "teacher": "Cotrina Alvarran, Ruth Giovania",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374846314",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "L",
+                    "teacher": "Palomino Frias, Silvia Rosa",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374852540",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "M",
+                    "teacher": "Palacios Cruz, Victor Hugo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374858834",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Base de datos ": [
+                {
+                    "section": "A",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374869762",
+                                "day": "Martes",
+                                "start": "18:00",
+                                "end": "21:00"
+                            },
+                            {
+                                "id": "1741374871986",
+                                "day": "Miércoles",
+                                "start": "18:00",
+                                "end": "20:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Diseño de software ": [
+                {
+                    "section": "A",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374882892",
+                                "day": "Martes",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741374885117",
+                                "day": "Martes",
+                                "start": "14:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374887358",
+                                "day": "Jueves",
+                                "start": "13:00",
+                                "end": "15:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374893604",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741374895845",
+                                "day": "Martes",
+                                "start": "17:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741374898078",
+                                "day": "Jueves",
+                                "start": "15:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Ecuaciones diferenciales y métodos numéricos ": [
+                {
+                    "section": "A",
+                    "teacher": "Brenis Delgado, Yesabella Katherine",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374909035",
+                                "day": "Lunes",
+                                "start": "13:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741374911263",
+                                "day": "Lunes",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374913510",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Brenis Delgado, Yesabella Katherine",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374919702",
+                                "day": "Miércoles",
+                                "start": "13:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741374921927",
+                                "day": "Miércoles",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374924167",
+                                "day": "Viernes",
+                                "start": "14:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Electricidad y magnetismo ": [
+                {
+                    "section": "A",
+                    "teacher": "Zuloaga Cachay, Jose Fortunato",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374935158",
+                                "day": "Lunes",
+                                "start": "17:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741374937412",
+                                "day": "Miércoles",
+                                "start": "20:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Estructura de datos y algoritmos ": [
+                {
+                    "section": "A",
+                    "teacher": "Bravo Jaico, Jessie Leila",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374948384",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741374950631",
+                                "day": "Martes",
+                                "start": "17:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741374952843",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Diaz Vidarte, Miguel Orlando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374959121",
+                                "day": "Jueves",
+                                "start": "19:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741374961365",
+                                "day": "Jueves",
+                                "start": "20:00",
+                                "end": "21:00"
+                            },
+                            {
+                                "id": "1741374963596",
+                                "day": "Sábado",
+                                "start": "15:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "5": [
+        {
+            "Administración de base de datos ": [
+                {
+                    "section": "A",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374974607",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741374976827",
+                                "day": "Jueves",
+                                "start": "08:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741374979062",
+                                "day": "Sábado",
+                                "start": "09:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374985321",
+                                "day": "Sábado",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741374987567",
+                                "day": "Sábado",
+                                "start": "16:00",
+                                "end": "20:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741374993623",
+                                "day": "Jueves",
+                                "start": "17:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741374995794",
+                                "day": "Viernes",
+                                "start": "14:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Arquitectura y organización de computadoras ": [
+                {
+                    "section": "A",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375006600",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741375008775",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375014833",
+                                "day": "Martes",
+                                "start": "12:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741375017037",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Diseño web ": [
+                {
+                    "section": "A",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375027935",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741375030174",
+                                "day": "Martes",
+                                "start": "08:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741375032427",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375038621",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375040775",
+                                "day": "Martes",
+                                "start": "11:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741375042984",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Nicho Cordova, Ernesto Ludwin",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375049191",
+                                "day": "Martes",
+                                "start": "14:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741375051418",
+                                "day": "Jueves",
+                                "start": "14:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Estadística y probabilidades ": [
+                {
+                    "section": "A",
+                    "teacher": "Gonzales Hidalgo, Carlos Daniel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375062237",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741375064430",
+                                "day": "Lunes",
+                                "start": "08:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741375066638",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Rodriguez Ortiz, Claudia Emperatriz",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375072837",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741375075036",
+                                "day": "Miércoles",
+                                "start": "08:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741375077282",
+                                "day": "Viernes",
+                                "start": "12:00",
+                                "end": "14:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Ética ": [
+                {
+                    "section": "A",
+                    "teacher": "Estela Salazar, Nancy Emilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375088082",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375094276",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Estela Salazar, Nancy Emilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375100463",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "D",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375106605",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "E",
+                    "teacher": "Bravo Diaz, Cesar Eduardo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375112791",
+                                "day": "Miércoles",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "F",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375118953",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "G",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375125155",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "H",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375131332",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "I",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375137481",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "J",
+                    "teacher": "Torres Rubio, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375143621",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "K",
+                    "teacher": "Mera Rodas, Armando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375149775",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "L",
+                    "teacher": "Limo Figueroa, David Fernando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375155946",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "M",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375162122",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "N",
+                    "teacher": "Jara Cotrina, Araceli",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375168259",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "O",
+                    "teacher": "Limo Figueroa, David Fernando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375174388",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "P",
+                    "teacher": "Torres Rubio, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375180593",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "Q",
+                    "teacher": "Estela Salazar, Nancy Emilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375186727",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Ingeniería de procesos ": [
+                {
+                    "section": "A",
+                    "teacher": "Ñopo Torres, Maria Guadalupe",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375197587",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741375199781",
+                                "day": "Jueves",
+                                "start": "12:00",
+                                "end": "14:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Diaz Espino, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375205927",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741375208137",
+                                "day": "Viernes",
+                                "start": "14:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Ñopo Torres, Maria Guadalupe",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375214246",
+                                "day": "Lunes",
+                                "start": "12:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741375216455",
+                                "day": "Miércoles",
+                                "start": "12:00",
+                                "end": "14:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Teoría general de sistemas ": [
+                {
+                    "section": "A",
+                    "teacher": "Noblecilla Vinces, William Alfredo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375227269",
+                                "day": "Sábado",
+                                "start": "11:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741375229450",
+                                "day": "Sábado",
+                                "start": "12:00",
+                                "end": "14:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Noblecilla Vinces, William Alfredo",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375235634",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375237825",
+                                "day": "Jueves",
+                                "start": "11:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "6": [
+        {
+            "Desarrollo de aplicaciones de escritorio ": [
+                {
+                    "section": "A",
+                    "teacher": "Alarcon Garcia, Roger Ernesto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375248679",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741375250871",
+                                "day": "Martes",
+                                "start": "18:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741375253055",
+                                "day": "Miércoles",
+                                "start": "18:00",
+                                "end": "21:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Desarrollo de aplicaciones web ": [
+                {
+                    "section": "A",
+                    "teacher": "Cachay Maco, Junior Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375263807",
+                                "day": "Lunes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741375265985",
+                                "day": "Lunes",
+                                "start": "09:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741375268171",
+                                "day": "Martes",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Fe y cultura ": [
+                {
+                    "section": "A",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375278958",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375285116",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375291276",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "D",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375297403",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "E",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375303574",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "F",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375309730",
+                                "day": "Lunes",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "G",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375315893",
+                                "day": "Martes",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "H",
+                    "teacher": "Perez Guevara, Luis Enrique",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375322052",
+                                "day": "Miércoles",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "I",
+                    "teacher": "Niño Effio, Alicia Lizet",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375328211",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "J",
+                    "teacher": "Niño Effio, Alicia Lizet",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375334371",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "K",
+                    "teacher": "Niño Effio, Alicia Lizet",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375340542",
+                                "day": "Sábado",
+                                "start": "11:00",
+                                "end": "14:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "L",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375346683",
+                                "day": "Viernes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Inteligencia artificial ": [
+                {
+                    "section": "A",
+                    "teacher": "Villegas Cubas, Juan Elias",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375357490",
+                                "day": "Jueves",
+                                "start": "15:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741375359686",
+                                "day": "Viernes",
+                                "start": "15:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Villegas Cubas, Juan Elias",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375365892",
+                                "day": "Jueves",
+                                "start": "18:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741375368084",
+                                "day": "Viernes",
+                                "start": "17:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741375370280",
+                                "day": "Viernes",
+                                "start": "18:00",
+                                "end": "20:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Investigación de operaciones ": [
+                {
+                    "section": "A",
+                    "teacher": "Rivasplata Sanchez, Absalon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375381025",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375383234",
+                                "day": "Lunes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375385413",
+                                "day": "Viernes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Rivasplata Sanchez, Absalon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375391587",
+                                "day": "Lunes",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375393808",
+                                "day": "Lunes",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741375396024",
+                                "day": "Viernes",
+                                "start": "14:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Sistemas operativos ": [
+                {
+                    "section": "A",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375406784",
+                                "day": "Miércoles",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741375408981",
+                                "day": "Miércoles",
+                                "start": "14:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375415143",
+                                "day": "Jueves",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741375417362",
+                                "day": "Jueves",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375419607",
+                                "day": "Jueves",
+                                "start": "15:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "7": [
+        {
+            "Desarrollo de sistemas inteligentes ": [
+                {
+                    "section": "A",
+                    "teacher": "Valqui Sipiran, Alexanders",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375430370",
+                                "day": "Sábado",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375432567",
+                                "day": "Sábado",
+                                "start": "14:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Valqui Sipiran, Alexanders",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375438733",
+                                "day": "Sábado",
+                                "start": "07:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Fundamentos y diseño de redes de datos ": [
+                {
+                    "section": "A",
+                    "teacher": "Bravo Jaico, Jessie Leila",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375449521",
+                                "day": "Martes",
+                                "start": "09:00",
+                                "end": "10:00"
+                            },
+                            {
+                                "id": "1741375451729",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375453936",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Rojas Cerna, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375460120",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741375462372",
+                                "day": "Martes",
+                                "start": "08:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741375464579",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Rojas Cerna, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375470798",
+                                "day": "Lunes",
+                                "start": "19:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741375473012",
+                                "day": "Lunes",
+                                "start": "20:00",
+                                "end": "22:00"
+                            },
+                            {
+                                "id": "1741375475220",
+                                "day": "Miércoles",
+                                "start": "20:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Ingeniería y calidad de software ": [
+                {
+                    "section": "A",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375485983",
+                                "day": "Martes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375488191",
+                                "day": "Martes",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741375490391",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375496542",
+                                "day": "Martes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375498721",
+                                "day": "Martes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375500914",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Inteligencia de negocios ": [
+                {
+                    "section": "A",
+                    "teacher": "Zelada Valdivieso, Hector Miguel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375511682",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375513875",
+                                "day": "Jueves",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375516067",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375522265",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375524454",
+                                "day": "Viernes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375526652",
+                                "day": "Sábado",
+                                "start": "11:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Investigación en ingeniería ": [
+                {
+                    "section": "A",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375537429",
+                                "day": "Viernes",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375539637",
+                                "day": "Viernes",
+                                "start": "15:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375545802",
+                                "day": "Jueves",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375548034",
+                                "day": "Jueves",
+                                "start": "15:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Moral católica ": [
+                {
+                    "section": "A",
+                    "teacher": "Niño Effio, Alicia Lizet",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375558843",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375564920",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Niño Effio, Alicia Lizet",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375571059",
+                                "day": "Sábado",
+                                "start": "08:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "D",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375577218",
+                                "day": "Lunes",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "E",
+                    "teacher": "Villalobos Peña, Raquel Viviana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375583432",
+                                "day": "Viernes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "F",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375589635",
+                                "day": "Jueves",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "G",
+                    "teacher": "Niño Effio, Alicia Lizet",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375595820",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "H",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375602016",
+                                "day": "Sábado",
+                                "start": "08:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "I",
+                    "teacher": "Fiestas Martinez, Felix",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375608193",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "J",
+                    "teacher": "Cordova Huaman, Milagros Clotilde",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375614351",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "K",
+                    "teacher": "Fernandez Diaz, Jose Elmer",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375620511",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "L",
+                    "teacher": "Carranza Delgado, Jose Marcial",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375626650",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "M",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375632762",
+                                "day": "Martes",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "N",
+                    "teacher": "Alberca Balarezo, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375638938",
+                                "day": "Miércoles",
+                                "start": "19:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "O",
+                    "teacher": "Vallejos Malca, Fabian",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375645097",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "P",
+                    "teacher": "Carranza Delgado, Jose Marcial",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375651252",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Sistemas distribuidos ": [
+                {
+                    "section": "A",
+                    "teacher": "Del Castillo Castro, Consuelo Ivonne",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375662082",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375664289",
+                                "day": "Lunes",
+                                "start": "11:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375666503",
+                                "day": "Miércoles",
+                                "start": "12:00",
+                                "end": "14:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Castillo Zumaran, Segundo Jose",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375672709",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375674906",
+                                "day": "Jueves",
+                                "start": "11:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741375677114",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "8": [
+        {
+            "Configuración y administración de redes de datos ": [
+                {
+                    "section": "A",
+                    "teacher": "Leon Tenorio, Gregorio Manuel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375687954",
+                                "day": "Martes",
+                                "start": "13:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375690160",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Leon Tenorio, Gregorio Manuel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375696291",
+                                "day": "Martes",
+                                "start": "15:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741375698491",
+                                "day": "Jueves",
+                                "start": "14:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Desarrollo de aplicaciones móviles ": [
+                {
+                    "section": "A",
+                    "teacher": "Mera Montenegro, Huilder Juanito",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375709306",
+                                "day": "Miércoles",
+                                "start": "14:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741375711521",
+                                "day": "Miércoles",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741375713724",
+                                "day": "Jueves",
+                                "start": "14:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Cachay Maco, Junior Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375719908",
+                                "day": "Lunes",
+                                "start": "17:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741375722096",
+                                "day": "Miércoles",
+                                "start": "13:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375724300",
+                                "day": "Miércoles",
+                                "start": "15:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Doctrina social de la iglesia ": [
+                {
+                    "section": "A",
+                    "teacher": "Arqueros Chicoma, Marlyn Rosseline",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375735113",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Cuyate Reque, Jesus Simon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375741299",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Cuyate Reque, Jesus Simon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375747466",
+                                "day": "Miércoles",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "D",
+                    "teacher": "Cieza Dominguez, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375753639",
+                                "day": "Sábado",
+                                "start": "08:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "E",
+                    "teacher": "Cuyate Reque, Jesus Simon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375759801",
+                                "day": "Jueves",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "F",
+                    "teacher": "Cuyate Reque, Jesus Simon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375765983",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "G",
+                    "teacher": "Cieza Dominguez, Marco Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375772191",
+                                "day": "Sábado",
+                                "start": "11:00",
+                                "end": "14:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "H",
+                    "teacher": "Burga Ludeña, Jose Marco",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375778332",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "I",
+                    "teacher": "Segura Gonzales, Elky",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375784606",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "J",
+                    "teacher": "Segura Gonzales, Elky",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375790801",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "K",
+                    "teacher": "Cuyate Reque, Jesus Simon",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375797010",
+                                "day": "Viernes",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "L",
+                    "teacher": "Limo Figueroa, David Fernando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375803174",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Gobierno y gestión de tecnologías de información ": [
+                {
+                    "section": "A",
+                    "teacher": "Rojas Cerna, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375813986",
+                                "day": "Lunes",
+                                "start": "15:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741375816196",
+                                "day": "Miércoles",
+                                "start": "17:00",
+                                "end": "20:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Minería de datos y big data ": [
+                {
+                    "section": "A",
+                    "teacher": "Chavarry Chankay, Mariana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375826945",
+                                "day": "Lunes",
+                                "start": "17:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741375829122",
+                                "day": "Lunes",
+                                "start": "18:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741375831321",
+                                "day": "Sábado",
+                                "start": "10:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Chavarry Chankay, Mariana",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375837476",
+                                "day": "Lunes",
+                                "start": "20:00",
+                                "end": "21:00"
+                            },
+                            {
+                                "id": "1741375839690",
+                                "day": "Lunes",
+                                "start": "21:00",
+                                "end": "22:00"
+                            },
+                            {
+                                "id": "1741375841886",
+                                "day": "Sábado",
+                                "start": "07:00",
+                                "end": "10:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Proyecto de investigación ": [
+                {
+                    "section": "A",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375852680",
+                                "day": "Martes",
+                                "start": "17:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741375854858",
+                                "day": "Martes",
+                                "start": "18:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Aquino Trujillo, Jury Yesenia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375861046",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741375863243",
+                                "day": "Viernes",
+                                "start": "08:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Aquino Trujillo, Jury Yesenia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375869395",
+                                "day": "Miércoles",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741375871608",
+                                "day": "Miércoles",
+                                "start": "08:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "9": [
+        {
+            "Configuración y administración de servidores ": [
+                {
+                    "section": "A",
+                    "teacher": "Rojas Cerna, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375882393",
+                                "day": "Miércoles",
+                                "start": "15:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741375884579",
+                                "day": "Viernes",
+                                "start": "15:00",
+                                "end": "18:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Rojas Cerna, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375890723",
+                                "day": "Lunes",
+                                "start": "17:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741375892960",
+                                "day": "Viernes",
+                                "start": "18:00",
+                                "end": "21:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Deontología y legislación laboral e informática ": [
+                {
+                    "section": "A",
+                    "teacher": "Torres Benavides, Juan Antonio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375903723",
+                                "day": "Lunes",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375905922",
+                                "day": "Lunes",
+                                "start": "15:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Gestión de riesgos y seguridad de la información ": [
+                {
+                    "section": "A",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375916634",
+                                "day": "Miércoles",
+                                "start": "10:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375918847",
+                                "day": "Jueves",
+                                "start": "09:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375925020",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741375927214",
+                                "day": "Miércoles",
+                                "start": "14:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Gestión de servicios de tecnologías de información ": [
+                {
+                    "section": "A",
+                    "teacher": "Diaz Espino, Miguel Angel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375937981",
+                                "day": "Martes",
+                                "start": "09:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741375940194",
+                                "day": "Miércoles",
+                                "start": "18:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741375942413",
+                                "day": "Miércoles",
+                                "start": "19:00",
+                                "end": "21:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Negocios electrónicos y marketing digital ": [
+                {
+                    "section": "A",
+                    "teacher": "Cachay Maco, Junior Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375953209",
+                                "day": "Lunes",
+                                "start": "10:00",
+                                "end": "12:00"
+                            },
+                            {
+                                "id": "1741375955390",
+                                "day": "Lunes",
+                                "start": "12:00",
+                                "end": "13:00"
+                            },
+                            {
+                                "id": "1741375957596",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "09:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Cachay Maco, Junior Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375963747",
+                                "day": "Jueves",
+                                "start": "15:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741375965936",
+                                "day": "Viernes",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741375968147",
+                                "day": "Viernes",
+                                "start": "15:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Seminario de tesis i ": [
+                {
+                    "section": "A",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375978907",
+                                "day": "Viernes",
+                                "start": "07:00",
+                                "end": "08:00"
+                            },
+                            {
+                                "id": "1741375981104",
+                                "day": "Viernes",
+                                "start": "08:00",
+                                "end": "12:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375987255",
+                                "day": "Martes",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741375989444",
+                                "day": "Martes",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741375991661",
+                                "day": "Jueves",
+                                "start": "10:00",
+                                "end": "13:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "C",
+                    "teacher": "Vilchez Rivas, Marlon Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741375997814",
+                                "day": "Jueves",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741376000004",
+                                "day": "Jueves",
+                                "start": "16:00",
+                                "end": "17:00"
+                            },
+                            {
+                                "id": "1741376002187",
+                                "day": "Viernes",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ],
+    "10": [
+        {
+            "Auditoría de sistemas de información ": [
+                {
+                    "section": "A",
+                    "teacher": "Barreto Stein, Karla Vanessa",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376012961",
+                                "day": "Lunes",
+                                "start": "20:00",
+                                "end": "22:00"
+                            },
+                            {
+                                "id": "1741376015156",
+                                "day": "Martes",
+                                "start": "19:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741376017356",
+                                "day": "Martes",
+                                "start": "20:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Desarrollo de video juegos e": [
+                {
+                    "section": "A",
+                    "teacher": "Robles Pizarro, Luis David",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376028158",
+                                "day": "Martes",
+                                "start": "09:00",
+                                "end": "11:00"
+                            },
+                            {
+                                "id": "1741376030359",
+                                "day": "Jueves",
+                                "start": "09:00",
+                                "end": "11:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Emprendimiento de base tecnológica ": [
+                {
+                    "section": "A",
+                    "teacher": "Reyes Burgos, Karla Cecilia",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376041115",
+                                "day": "Lunes",
+                                "start": "16:00",
+                                "end": "18:00"
+                            },
+                            {
+                                "id": "1741376043303",
+                                "day": "Viernes",
+                                "start": "15:00",
+                                "end": "17:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Gestión de proyectos de sistemas de información ": [
+                {
+                    "section": "A",
+                    "teacher": "Iman Espinoza, Ricardo David",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376054068",
+                                "day": "Jueves",
+                                "start": "17:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741376056249",
+                                "day": "Jueves",
+                                "start": "19:00",
+                                "end": "20:00"
+                            },
+                            {
+                                "id": "1741376058466",
+                                "day": "Viernes",
+                                "start": "17:00",
+                                "end": "20:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Seguridad informática ": [
+                {
+                    "section": "A",
+                    "teacher": "Zuñe Bispo, Luis Augusto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376069212",
+                                "day": "Lunes",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741376071391",
+                                "day": "Lunes",
+                                "start": "15:00",
+                                "end": "16:00"
+                            },
+                            {
+                                "id": "1741376073641",
+                                "day": "Jueves",
+                                "start": "13:00",
+                                "end": "16:00"
+                            }
+                        ]
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Cachay Maco, Junior Eugenio",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376079774",
+                                "day": "Jueves",
+                                "start": "13:00",
+                                "end": "14:00"
+                            },
+                            {
+                                "id": "1741376081973",
+                                "day": "Jueves",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741376084175",
+                                "day": "Viernes",
+                                "start": "17:00",
+                                "end": "20:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Seminario de tesis ii ": [
+                {
+                    "section": "A",
+                    "teacher": "Aranguri Garcia, Maria Ysabel",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376094975",
+                                "day": "Martes",
+                                "start": "14:00",
+                                "end": "15:00"
+                            },
+                            {
+                                "id": "1741376097253",
+                                "day": "Martes",
+                                "start": "15:00",
+                                "end": "19:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Sistemas erp e": [
+                {
+                    "section": "A",
+                    "teacher": "Alarcon Garcia, Roger Ernesto",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376108050",
+                                "day": "Martes",
+                                "start": "07:00",
+                                "end": "09:00"
+                            },
+                            {
+                                "id": "1741376110252",
+                                "day": "Jueves",
+                                "start": "07:00",
+                                "end": "09:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        },
+        {
+            "Tópicos avanzados en desarrollo de software": [
+                {
+                    "section": "A",
+                    "teacher": "Diaz Vidarte, Miguel Orlando",
+                    "horario": [
+                        [
+                            {
+                                "id": "1741376121045",
+                                "day": "Miércoles",
+                                "start": "18:00",
+                                "end": "19:00"
+                            },
+                            {
+                                "id": "1741376123252",
+                                "day": "Miércoles",
+                                "start": "19:00",
+                                "end": "22:00"
+                            },
+                            {
+                                "id": "1741376125443",
+                                "day": "Viernes",
+                                "start": "20:00",
+                                "end": "22:00"
+                            }
+                        ]
+                    ]
+                }
+            ]
+        }
+    ]
+}
