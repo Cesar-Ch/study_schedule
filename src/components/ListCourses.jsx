@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { PropTypes } from 'prop-types'
-import { IconX, UsatLogo } from "./Icons";
+import { Accordion, GraduationCap, IconX, Trash, UsatLogo } from "./Icons";
 
 const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setShowToast, setMessage, showAcdCourses, setShowAcdCourses, setTypeToast }) => {
     const [openSection, setOpenSection] = useState(null);
@@ -10,11 +10,10 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
         setOpenSection(openSection === section ? null : section);
     };
 
-    const deleteCourse = (e, curso, j) => {
+    const deleteSingleSchedule = (e, curso, j) => {
 
         // saber el input al que esta asociado el boton
         const input = e.target.closest(".relative").querySelector("input[type='radio']")
-        console.log(input)
 
         if (input.checked) {
             setSelectedCourse((prevSelectedCourse) => {
@@ -31,6 +30,12 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
             }
             return cursosActualizados;
         });
+    }
+    const deleteCourse = (e, course) => {
+        e.stopPropagation()
+        const prevDatos = { ...datos }
+        delete prevDatos[course]
+        setDatos(prevDatos)
     }
 
     const checkCross = (e, curso, dato) => {
@@ -103,58 +108,46 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
         <section className="mt-6 section-custom">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-2xl font-semibold  ">Lista de cursos</h2>
-                <div className="dark:hover:bg-[#3c3c3f] px-1 rounded-lg hover:bg-gray-100" onClick={() => setShowAcdCourses(!showAcdCourses)}>
-                    <UsatLogo />
+                <div className="flex items-center py-2 px-3 rounded-sm border text-blue-600 font-medium dark:text-blue-400 dark:bg-slate-950 transition hover:bg-slate-100  hover:cursor-pointer dark:hover:bg-slate-900 gap-2" onClick={() => setShowAcdCourses(!showAcdCourses)}>
+                    <GraduationCap />
+                    Cursos USAT
                 </div>
             </div>
 
             {
                 Object.keys(datos).map((curso, i) => (
-                    <div key={curso}>
-                        <h2 id={`accordion-collapse-heading-${i}`}>
-                            <button
-                                type="button"
-                                className={`flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border  border-gray-200   dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#27272a] gap-3 ${openSection === i ? "bg-gray-100 dark:bg-[#27272a]" : ""
-                                    }`}
-                                onClick={() => toggleSection(i)}
-                            >
-                                <span>{curso}</span>
-                                <svg
-                                    data-accordion-icon
-                                    className={`w-3 h-3 transform ${openSection === i ? "rotate-180" : ""
-                                        } shrink-0`}
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 10 6"
-                                >
-                                    <path
-                                        stroke="currentColor"
-                                        strokeLinecap="round"
-                                        strokeLinejoin="round"
-                                        strokeWidth="2"
-                                        d="M9 5 5 1 1 5"
-                                    />
-                                </svg>
+                    <div key={curso} className="mb-2">
+                        <div
+                            className={`flex items-center justify-between w-full p-4 font-medium rtl:text-right text-gray-500 border rounded-lg  border-gray-200   dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#27272a] gap-3 ${openSection === i ? "bg-gray-100 dark:bg-[#27272a] rounded-b-none" : ""
+                                }`}
+                            onClick={() => toggleSection(i)}
+                        >
+                            <div className="flex items-center gap-2 text-sm">
+                                <Accordion i={i} openSection={openSection} />
+                                <span>{curso}</span> 
+                            </div>
+                            <button className="rounded p-1 text-red-400 hover:bg-red-300/30 dark:hover:bg-red-900/50 dark:hover:text-red-300" onClick={(e) => deleteCourse(e, curso)}>
+                                <Trash />
                             </button>
-                        </h2>
+                        </div>
+
                         {
                             datos[curso].map((dato, j) => (
 
                                 <div key={`${curso}-${j}`}
-                                    id={`accordion-collapse-body-${i}`}
-                                    className={`relative ${openSection === i ? "flex" : "hidden"} p-5 dark:bg-[#0e0e11] border  border-gray-200 dark:border-gray-700 items-center`}
+                                    className={`relative ${openSection === i ? "flex" : "hidden"} p-4 dark:bg-[#0e0e11] border  border-gray-200 dark:border-gray-700 items-center`}
                                 >
-                                    <div className="absolute right-3" onClick={(e) => deleteCourse(e, curso, j)}>
+                                    <div className="absolute right-3" onClick={(e) => deleteSingleSchedule(e, curso, j)}>
                                         <IconX />
                                     </div>
                                     <div className="flex items-center justify-center">
                                         <input id={`schedule-${i}-${j}`} type="radio" value="" name={`course-${i}`} className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 dark:bg-gray-700 dark:border-gray-600"
                                             onChange={(e) => editSelectedCourse(e, curso, dato)} onClick={(e) => editSelectedCourse(e, curso, dato)} />
-                                        <label htmlFor={`schedule-${i}-${j}`} className="ms-2 text-sm font-medium text-gray-900 dark:text-gray-300">{dato.teacher} ({dato.section})
+                                        <label htmlFor={`schedule-${i}-${j}`} className="ms-2 text-xs font-medium text-gray-900 dark:text-gray-300">{dato.teacher} ({dato.section})
                                             <div className="flex items-center gap-2">
                                                 {
                                                     dato.horario[0].map((horario, k) => (
-                                                        <span key={`${curso}-${j}-${k}`} className="text-gray-500 dark:text-gray-400">{horario.day} {horario.start} - {horario.end}</span>
+                                                        <span key={`${curso}-${j}-${k}`} className="text-gray-500 dark:text-gray-400 text-xs">{horario.day} {horario.start} - {horario.end}</span>
                                                     ))
                                                 }
                                             </div>

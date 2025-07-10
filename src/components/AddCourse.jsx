@@ -4,7 +4,7 @@ import { IconX } from "./Icons"
 import Button from "./Button"
 
 const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) => {
-    const [cursos, setCursos] = useState([])
+    const [cursos, setCursos] = useState()
 
     const [horarios, setHorarios] = useState([{
         id: 1,
@@ -100,6 +100,9 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
         }
     }
 
+    console.log(cursos)
+    console.log(Object.keys(datos))
+
     return (
         <section className="section-custom">
             <form onSubmit={guardarCurso}>
@@ -107,7 +110,7 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
                 <input list="courses" type="text" id="course" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
                 <datalist id="courses">
                     {
-                        cursos.map((curso, i) => (
+                        Object.keys(datos).map((curso, i) => (
                             <option key={i} value={curso} ></option>
                         ))
                     }

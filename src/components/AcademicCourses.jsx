@@ -1,10 +1,11 @@
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import { IconAdd, IconCheck, IconX } from "./Icons"
 import courseData from '../data/cursos.json'
 
 const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setTypeToast, setMessage, showToast, datos, setDatos }) => {
     const [cicloAdd, setCicloAdd] = useState(Array.from({ length: 10 }).map(() => false))
     const timeoutRef = useRef(false)
+    const modalRef = useRef(null)
 
     const handleAddCiclo = (i) => {
 
@@ -52,14 +53,25 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
 
     }
 
-    console.log(courseData)
-    console.log(Object.values(courseData[1][0])[0])
-    console.log(datos)
+    useEffect(() => {
+        const controlClickExt = (e) => {
+            if(modalRef.current && !modalRef.current.contains(e.target)) {
+                setShowAcdCourses(false)
+            }
+        }
+
+        if(showAcdCourses) {
+            document.addEventListener('mousedown', controlClickExt)
+        }
+        return () => {
+            document.removeEventListener('mousedown', controlClickExt)
+        }
+    },[showAcdCourses])
 
     return (
 
         <section className='top-0 left-0 fixed w-screen h-screen  z-30 dark:bg-black/50 bg-black/80  backdrop-blur-[4px] place-content-center grid text-white '>
-            <div className="rounded-lg border p-5 border-white bg-black/30 ">
+            <div ref={modalRef} className="rounded-lg border p-5 border-white bg-black/30 ">
                 <div className="flex justify-between items-center mb-5">
                     <h3 className="text-white ">Ciclo: 25 - I</h3>
                     <div className=" top-10 right-10 hover:text-black dark:hover:text-white" onClick={() => setShowAcdCourses(!showAcdCourses)}>
