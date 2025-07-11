@@ -7,14 +7,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 )
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker
-      .register('/study_schedule/dev-dist/sw.js')
-      .then((registration) => {
-        console.log('[SW] Registrado con éxito:', registration);
-      })
-      .catch((error) => {
-        console.error('[SW] Error al registrar:', error);
+  navigator.serviceWorker.getRegistrations().then(registrations => {
+    for (let registration of registrations) {
+      registration.unregister().then(success => {
+        if (success) {
+          console.log('✔ Service Worker eliminado correctamente');
+        }
       });
+    }
   });
 }
