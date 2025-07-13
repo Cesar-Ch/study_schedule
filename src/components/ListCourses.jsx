@@ -12,7 +12,6 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
 
     const deleteSingleSchedule = (e, curso, j) => {
 
-        // saber el input al que esta asociado el boton
         const input = e.target.closest(".relative").querySelector("input[type='radio']")
 
         if (input.checked) {
