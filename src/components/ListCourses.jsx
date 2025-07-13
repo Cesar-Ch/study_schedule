@@ -104,6 +104,9 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
         }
     }
 
+    console.log(selectedCourse["Comprensión de textos y redacción básica "])
+    console.log(datos)
+
     return (
         <section className="mt-6 section-custom">
             <div className="flex justify-between items-center mb-4">
@@ -118,13 +121,16 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
                 Object.keys(datos).map((curso, i) => (
                     <div key={curso} className="mb-2">
                         <div
-                            className={`flex items-center justify-between w-full p-4 font-medium rtl:text-right text-gray-500 border rounded-lg  border-gray-200   dark:border-gray-700 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-[#27272a] gap-3 ${openSection === i ? "bg-gray-100 dark:bg-[#27272a] rounded-b-none" : ""
+                            className={`relative overflow-hidden flex items-center justify-between w-full p-4 font-medium rtl:text-right border rounded-lg  border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#27272a] gap-3 ${openSection === i ? "bg-gray-100 dark:bg-[#27272a] rounded-b-none" : ""
                                 }`}
                             onClick={() => toggleSection(i)}
                         >
                             <div className="flex items-center gap-2 text-sm">
+                            <div className={`w-1 absolute top-0 left-0 h-full  ${curso in selectedCourse ? "flex bg-[#155dfc]":"hidden"}`}>
+                                </div>
                                 <Accordion i={i} openSection={openSection} />
-                                <span>{curso}</span> 
+                                <span className={`${curso in selectedCourse ? "text-gray-800 dark:text-gray-200":"text-gray-600 dark:text-gray-400"}`}>{curso}</span> 
+                                <span className={`text-white bg-[#155dfc] px-2 py-1 rounded-lg  ${curso in selectedCourse ? "flex":"hidden"}`}> ({selectedCourse[curso]?.section}) </span>
                             </div>
                             <button className="rounded p-1 text-red-400 hover:bg-red-300/30 dark:hover:bg-red-900/50 dark:hover:text-red-300" onClick={(e) => deleteCourse(e, curso)}>
                                 <Trash />

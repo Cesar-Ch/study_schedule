@@ -26,3 +26,4 @@ dist-ssr
 package-lock.json
 
 /dev-dist/
+/dev-dist/sw.js

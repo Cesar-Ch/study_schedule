@@ -5,15 +5,3 @@ import './index.css'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <App />
 )
-
-if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.getRegistrations().then(registrations => {
-    for (let registration of registrations) {
-      registration.unregister().then(success => {
-        if (success) {
-          console.log('✔ Service Worker eliminado correctamente');
-        }
-      });
-    }
-  });
-}
