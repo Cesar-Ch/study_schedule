@@ -100,9 +100,6 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
         }
     }
 
-    console.log(cursos)
-    console.log(Object.keys(datos))
-
     return (
         <section className="section-custom">
             <form onSubmit={guardarCurso}>

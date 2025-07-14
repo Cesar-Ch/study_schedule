@@ -22,7 +22,7 @@ const Schedule = ({ selectedCourse }) => {
 
             })
     }
-    console.log()
+
     return (
         <div>
             <section className='section-custom'>

@@ -13,6 +13,7 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
     const handleCiclo = (i) => {
         if (i == 'all') {
             setSelectedCicle(courseData)
+            return 
         }
 
         const newSelectedCicle = {
@@ -178,20 +179,20 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                         <IconX />
                     </div>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between flex-wrap">
                     <div>
                         <h3 className="text-black dark:text-white">
                             Cursos
                         </h3>
                     </div>
-                    <div className="gap-3 flex">
-                        <select name="career" id="" className="dark:bg-black border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10">
+                    <div className="gap-3 flex flex-wrap justify-end">
+                        <select name="career" id="" className="w-full sm:w-auto dark:bg-black border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10">
                             <option value="all">Todas las carreras</option>
                             <option value="sis">Ingeniería de sistemas</option>
                         </select>
 
 
-                        <select name="cycle" id="" className="dark:bg-black border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10" onChange={(e) => handleCiclo(e.target.value)}>
+                        <select name="cycle" id="" className="w-full sm:w-auto dark:bg-black border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10" onChange={(e) => handleCiclo(e.target.value)}>
                             <option value="all" className="dark:bg-black">Todos los ciclos</option>
                             {
                                 Array.from({ length: 10 }).map((_, i) => (

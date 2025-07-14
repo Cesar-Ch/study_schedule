@@ -103,9 +103,6 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
         }
     }
 
-    console.log(selectedCourse["Comprensión de textos y redacción básica "])
-    console.log(datos)
-
     return (
         <section className="mt-6 section-custom">
             <div className="flex justify-between items-center mb-4">
