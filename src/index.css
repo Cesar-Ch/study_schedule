@@ -5,15 +5,15 @@
 
 @theme {
     --font-poppins: "Poppins", sans-serif;
-    --color-primary: #0a0a0a;
-    --color-primary-hover: #383838;
-    --color-dark-primary: #d2d8e5;
-    --color-dark-hover: #aab5cf;
+    --color-light-pri: #f1f3f4;
+    --color-dark-pri: #282e3d;
+    --color-dark-sec: #1a1d23;
+
 }
 
 .section-custom {
-    @apply p-6 rounded-lg border bg-[#eff3ff]/10 backdrop-blur-lg border-black dark:border-white dark:bg-[#172754]/10;
-  }
+    @apply p-6 rounded-lg border bg-white backdrop-blur-lg border-black dark:bg-dark-sec dark:border-gray-800;
+}
 
 
 .animation__toast {

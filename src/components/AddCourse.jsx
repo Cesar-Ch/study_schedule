@@ -130,7 +130,7 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
 
                                 <span className="text-sm text-gray-900 dark:text-white">Día:</span>
 
-                                <select id="day" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black  p-2.5 dark:bg-[#0f1118] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-white"
+                                <select id="day" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-black focus:border-black  p-2.5 dark:bg-dark-sec dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-white dark:focus:border-white"
                                     onChange={(e) => updateSchedule(horario.id, e.target.value, 'day')} required>
                                     <option value="Lunes">Lunes</option>
                                     <option value="Martes">Martes</option>

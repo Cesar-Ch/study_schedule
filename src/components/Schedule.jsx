@@ -33,9 +33,9 @@ const Schedule = ({ selectedCourse }) => {
                             <table className="w-full">
                                 <thead>
                                     <tr>
-                                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] font-bold dark:bg-[#0f1117] dark:text-[#a1a1aa]">Hora</th>
+                                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] font-bold dark:bg-black/10 dark:text-[#a1a1aa]">Hora</th>
                                         {dias.map((dia) => (
-                                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] font-bold dark:bg-[#0f1117] dark:text-[#a1a1aa]">
+                                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] font-bold dark:bg-black/10 dark:text-[#a1a1aa]">
                                                 {dia}
                                             </th>
                                         ))}
@@ -44,10 +44,10 @@ const Schedule = ({ selectedCourse }) => {
                                 <tbody>
                                     {horas.map((hora) => (
                                         <tr key={hora}>
-                                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-[#f1f5f9] text-[#314257] dark:bg-[#0f1117] dark:text-[#a1a1aa] text-center min-w-[150px]">{`${hora}`}</td>
+                                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] dark:bg-black/10 dark:text-[#a1a1aa] text-center min-w-[150px]">{`${hora}`}</td>
                                             {
                                                 dias.map((dia) => (
-                                                    <td key={`${dia}-${hora}`} className="border border-[#64748b]/20 dark:border-[#a1a1aa]/20 p-2 dark:bg-[#0f1117]">
+                                                    <td key={`${dia}-${hora}`} className="border border-[#64748b]/20 dark:border-[#a1a1aa]/20 p-2 dark:bg-dark-sec">
                                                         {
                                                             Object.values(selectedCourse).map((curso, i) => {
 
@@ -63,7 +63,7 @@ const Schedule = ({ selectedCourse }) => {
 
                                                                     if (horario.day === dia && ((currentStart >= start && currentEnd <= end) || (currentStart <= start && currentEnd >= end) || (currentStart <= start && currentEnd > start) || (currentStart < end && currentEnd >= end))) {
                                                                         return (
-                                                                            <div key={`${i}-${j}`} className="p-1 rounded text-[10px] text-white bg-blue-700 dark:bg-blue-600 max-w-[120px] h-full overflow-hidden">
+                                                                            <div key={`${i}-${j}`} className="p-1 rounded text-[10px] text-white bg-[#1579ff]  max-w-[120px] h-full overflow-hidden">
                                                                                 <p className="font-bold text-nowrap   overflow-hidden overflow-ellipsis">{Object.keys(selectedCourse)[i]} ({curso.section})  </p>
 
                                                                                 <p className=" overflow-hidden overflow-ellipsis text-nowrap">{curso.teacher}</p>
@@ -85,7 +85,7 @@ const Schedule = ({ selectedCourse }) => {
                             <div className='flex flex-col items-center text-gray-600 dark:text-gray-400 p-8 gap-4'>
                                 <Calendar size={50} />
                                 <h3 className='text-gray-400 dark:text-gray-200 text-lg font-medium'>Tu horario esta vacío</h3>
-                                <p className='text-gray-500 text-sm dark:text-gray-300'>Selecciona los cursos para ver tu horario</p>
+                                <p className='text-gray-500 text-sm dark:text-gray-300'>Selecciona cursos para ver tu horario</p>
                             </div>
                         )
                 }

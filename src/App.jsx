@@ -24,8 +24,8 @@ function App() {
   }, [datos])
 
   return (
-    <div className="">
-      <header className="border-b-1">
+    <div className="dark:bg-dark-pri bg-light-pri h-screen min-h-min">
+      <header className="border-b-1 dark:bg-dark-sec dark:border-gray-800 bg-white">
         <div className="flex justify-between items-center mx-auto px-6 py-3">
           <div className="flex items-center gap-2 transition-all duration-500 ease-in-out">
             <IconLogo className="text-white dark:text-black" />

@@ -171,11 +171,11 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
 
     return (
 
-        <section className='top-0 left-0 fixed w-screen h-screen  z-30 dark:bg-black/50 bg-black/80  backdrop-blur-[4px] place-content-center grid text-white'>
-            <div ref={modalRef} className="rounded-lg border p-5  bg-white dark:bg-black border-gray-500 w-[90vw]">
+        <section className='top-0 left-0 fixed w-screen h-screen  z-30 dark:bg-black/10 bg-black/50  backdrop-blur-[4px] place-content-center grid text-white'>
+            <div ref={modalRef} className="rounded-lg border p-5  bg-white dark:bg-dark-sec border-gray-500 w-[90vw]">
                 <div className="flex justify-between items-center mb-5">
                     <h3 className="text-black dark:text-white ">Ciclo: 25 - II</h3>
-                    <div className=" top-10 right-10 hover:text-black dark:hover:text-white" onClick={() => setShowAcdCourses(!showAcdCourses)}>
+                    <div className="text-black dark:text-white top-10 right-10 hover:text-black dark:hover:text-white" onClick={() => setShowAcdCourses(!showAcdCourses)}>
                         <IconX />
                     </div>
                 </div>
@@ -186,13 +186,13 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                         </h3>
                     </div>
                     <div className="gap-3 flex flex-wrap justify-end">
-                        <select name="career" id="" className="w-full sm:w-auto dark:bg-black border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10">
+                        <select name="career" id="" className="w-full sm:w-auto dark:bg-dark-sec border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10">
                             <option value="all">Todas las carreras</option>
                             <option value="sis">Ingeniería de sistemas</option>
                         </select>
 
 
-                        <select name="cycle" id="" className="w-full sm:w-auto dark:bg-black border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10" onChange={(e) => handleCiclo(e.target.value)}>
+                        <select name="cycle" id="" className="w-full sm:w-auto dark:bg-dark-sec border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10" onChange={(e) => handleCiclo(e.target.value)}>
                             <option value="all" className="dark:bg-black">Todos los ciclos</option>
                             {
                                 Array.from({ length: 10 }).map((_, i) => (
@@ -210,17 +210,17 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                                 <div className="flex justify-between items-center">
                                     <h3 className="font-semibold text-gray-900 dark:text-gray-100 my-7">Ciclo {key}</h3>
 
-                                    <button className="transition-all duration-200 bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-md px-3 cursor-pointer text-sm h-9 w-50 flex justify-center items-center" onClick={() => AddCicle(key)}>{cicloAdd[key]?.added ? <IconCheck /> : 'Agregar todos los cursos'}</button>
+                                    <button className="transition-all duration-200 bg-[#1579ff] hover:bg-blue-600 text-white rounded-md px-3 cursor-pointer text-sm h-9 w-50 flex justify-center items-center" onClick={() => AddCicle(key)}>{cicloAdd[key]?.added ? <IconCheck /> : 'Agregar todos los cursos'}</button>
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     {
                                         value.map((curso, i) => (
-                                            <div key={i} className="flex items-center justify-between p-3 rounded-lg border  border-gray-200 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-700/50 transition-all duration-200 ">
+                                            <div key={i} className="flex items-center justify-between p-3 rounded-lg border  border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-gray-700/50 transition-all duration-200 ">
                                                 <p className="font-medium text-gray-900 dark:text-gray-100 ">
                                                     {Object.keys(curso)}
                                                 </p>
 
-                                                <button className="transition-all duration-200 bg-blue-600 hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-700 text-white rounded-md px-3 cursor-pointer text-sm h-9 w-20 flex justify-center items-center" onClick={() => AddCorse(key, i, Object.keys(curso))}>
+                                                <button className="transition-all duration-200 bg-[#1579ff] hover:bg-blue-600  text-white rounded-md px-3 cursor-pointer text-sm h-9 w-20 flex justify-center items-center" onClick={() => AddCorse(key, i, Object.keys(curso))}>
                                                     {cicloAdd[key]?.courses[Object.keys(curso)]?.added ? <IconCheck /> : 'Agregar'}
                                                 </button>
 

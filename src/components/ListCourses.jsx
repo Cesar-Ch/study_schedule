@@ -107,7 +107,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
         <section className="mt-6 section-custom">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-2xl font-semibold  ">Lista de cursos</h2>
-                <div className="flex items-center py-2 px-3 rounded-sm border text-blue-600 font-medium dark:text-blue-400 dark:bg-slate-950 transition hover:bg-slate-100  hover:cursor-pointer dark:hover:bg-slate-900 gap-2" onClick={() => setShowAcdCourses(!showAcdCourses)}>
+                <div className="flex items-center py-2 px-3 rounded-sm border text-black font-medium dark:text-white dark:bg-transparent transition hover:bg-light-pri/50  hover:cursor-pointer dark:hover:bg-dark-pri gap-2" onClick={() => setShowAcdCourses(!showAcdCourses)}>
                     <GraduationCap />
                     Cursos USAT
                 </div>
@@ -117,18 +117,18 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
                 Object.keys(datos).map((curso, i) => (
                     <div key={curso} className="mb-2">
                         <div
-                            className={`relative overflow-hidden flex items-center justify-between w-full p-4 font-medium rtl:text-right border rounded-lg  border-gray-200 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-[#27272a] gap-3 ${openSection === i ? "bg-gray-100 dark:bg-[#27272a] rounded-b-none" : ""
+                            className={`relative overflow-hidden flex items-center justify-between w-full p-4 font-medium rtl:text-right border rounded-lg  border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-dark-pri gap-3 ${openSection === i ? "bg-gray-100 dark:bg-dark-pri rounded-b-none" : ""
                                 }`}
                             onClick={() => toggleSection(i)}
                         >
                             <div className="flex items-center gap-2 text-sm">
-                            <div className={`w-1 absolute top-0 left-0 h-full  ${curso in selectedCourse ? "flex bg-[#155dfc]":"hidden"}`}>
+                            <div className={`w-1 absolute top-0 left-0 h-full  ${curso in selectedCourse ? "flex bg-[#1579ff]":"hidden"}`}>
                                 </div>
                                 <Accordion i={i} openSection={openSection} />
                                 <span className={`${curso in selectedCourse ? "text-gray-800 dark:text-gray-200":"text-gray-600 dark:text-gray-400"}`}>{curso}</span> 
-                                <span className={`text-white bg-[#155dfc] px-2 py-1 rounded-lg  ${curso in selectedCourse ? "flex":"hidden"}`}> ({selectedCourse[curso]?.section}) </span>
+                                <span className={`text-white bg-[#1579ff] px-2 py-1 rounded-lg  ${curso in selectedCourse ? "flex":"hidden"}`}> ({selectedCourse[curso]?.section}) </span>
                             </div>
-                            <button className="rounded p-1 text-red-400 hover:bg-red-300/30 dark:hover:bg-red-900/50 dark:hover:text-red-300" onClick={(e) => deleteCourse(e, curso)}>
+                            <button className="rounded p-1 text-[#f1364e] hover:bg-red-300/30 dark:hover:bg-red-900/50 dark:hover:text-red-300" onClick={(e) => deleteCourse(e, curso)}>
                                 <Trash />
                             </button>
                         </div>
@@ -137,7 +137,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
                             datos[curso].map((dato, j) => (
 
                                 <div key={`${curso}-${j}`}
-                                    className={`relative ${openSection === i ? "flex" : "hidden"} p-4 dark:bg-[#0e0e11] border  border-gray-200 dark:border-gray-700 items-center`}
+                                    className={`relative ${openSection === i ? "flex" : "hidden"} p-4 dark:bg border  border-gray-200 dark:border-gray-700 items-center`}
                                 >
                                     <div className="absolute right-3" onClick={(e) => deleteSingleSchedule(e, curso, j)}>
                                         <IconX />
