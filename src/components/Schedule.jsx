@@ -29,13 +29,13 @@ const Schedule = ({ selectedCourse }) => {
                 {
 
                     Object.keys(selectedCourse).length > 0 ?
-                        (<div className="overflow-x-auto w-full flex  flex-col justify-center items-start relative">
+                        (<div className="overflow-x-auto w-full flex  flex-col justify-center items-start relative bg-light-pri dark:bg-dark-sec">
                             <table className="w-full">
                                 <thead>
                                     <tr>
-                                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] font-bold dark:bg-black/10 dark:text-[#a1a1aa]">Hora</th>
+                                        <th className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] font-bold dark:bg-dark-sec dark:text-[#a1a1aa]">Hora</th>
                                         {dias.map((dia) => (
-                                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] font-bold dark:bg-black/10 dark:text-[#a1a1aa]">
+                                            <th key={dia} className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] font-bold dark:bg-dark-sec dark:text-[#a1a1aa]">
                                                 {dia}
                                             </th>
                                         ))}
@@ -44,7 +44,7 @@ const Schedule = ({ selectedCourse }) => {
                                 <tbody>
                                     {horas.map((hora) => (
                                         <tr key={hora}>
-                                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] dark:bg-black/10 dark:text-[#a1a1aa] text-center min-w-[150px]">{`${hora}`}</td>
+                                            <td className="border border-[#64748b]/50 dark:border-[#a1a1aa]/50 p-2 bg-light-pri text-[#314257] dark:bg-dark-sec dark:text-[#a1a1aa] text-center min-w-[150px]">{`${hora}`}</td>
                                             {
                                                 dias.map((dia) => (
                                                     <td key={`${dia}-${hora}`} className="border border-[#64748b]/20 dark:border-[#a1a1aa]/20 p-2 dark:bg-dark-sec">
