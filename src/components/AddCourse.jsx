@@ -4,7 +4,6 @@ import { IconX } from "./Icons"
 import Button from "./Button"
 
 const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) => {
-    const [cursos, setCursos] = useState()
 
     const [horarios, setHorarios] = useState([{
         id: 1,
@@ -62,12 +61,7 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
                 return cursosActualizados;
             });
 
-            setCursos((prevCursos) => {
-                if (!prevCursos.some((curso) => curso === name)) {
-                    return [...prevCursos, name];
-                }
-                return prevCursos;
-            })
+            
             setHorarios([
                 {
                     id: 1,
