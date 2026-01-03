@@ -9,23 +9,23 @@ import AcademicCourses from "./components/AcademicCourses"
 
 function App() {
 
-  const [datos, setDatos] = useState(() => {
-    const storedDatos = localStorage.getItem('datos')
+  const [userCourses, setUserCourses] = useState(() => {
+    const storedDatos = localStorage.getItem('userCourses')
     return storedDatos ? JSON.parse(storedDatos) : {}
   })
   const [selectedCourse, setSelectedCourse] = useState({})
   const [showToast, setShowToast] = useState(false)
   const [message, setMessage] = useState('')
   const [typeToast, setTypeToast] = useState('')
-  const [showAcdCourses, setShowAcdCourses] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
-    localStorage.setItem('datos', JSON.stringify(datos))
-  }, [datos])
+    localStorage.setItem('userCourses', JSON.stringify(userCourses))
+  }, [userCourses])
 
   return (
     <div className="dark:bg-dark-pri bg-light-pri h-screen min-h-min">
-      <header className="border-b-1 dark:bg-dark-sec dark:border-gray-800 bg-white">
+      <header className="border-b dark:bg-dark-sec dark:border-gray-800 bg-white">
         <div className="flex justify-between items-center mx-auto px-6 py-3">
           <div className="flex items-center gap-2 transition-all duration-500 ease-in-out">
             <IconLogo className="text-white dark:text-black" />
@@ -43,14 +43,14 @@ function App() {
           showToast && <Toast typeToast={typeToast}>{message}</Toast>
         }
         {
-          showAcdCourses && <AcademicCourses setShowAcdCourses={setShowAcdCourses} showAcdCourses={showAcdCourses} setShowToast={setShowToast} setTypeToast={setTypeToast} setMessage={setMessage} showToast={showToast} datos={datos} setDatos={setDatos} />
+          isModalOpen && <AcademicCourses setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} setShowToast={setShowToast} setTypeToast={setTypeToast} setMessage={setMessage} showToast={showToast} userCourses={userCourses} setUserCourses={setUserCourses} />
         }
         <div>
-          <AddCourse setDatos={setDatos} datos={datos} setShowToast={setShowToast} setMessage={setMessage} setTypeToast={setTypeToast} />
+          {/* <AddCourse setUserCourses={setUserCourses} userCourses={userCourses} setShowToast={setShowToast} setMessage={setMessage} setTypeToast={setTypeToast} /> */}
 
-          <ListCourses setDatos={setDatos} datos={datos} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} setShowToast={setShowToast} setMessage={setMessage} setShowAcdCourses={setShowAcdCourses} showAcdCourses={showAcdCourses} setTypeToast={setTypeToast} />
+          <ListCourses setUserCourses={setUserCourses} userCourses={userCourses} selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} setShowToast={setShowToast} setMessage={setMessage} setIsModalOpen={setIsModalOpen} isModalOpen={isModalOpen} setTypeToast={setTypeToast} />
         </div>
-        <Schedule selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} />
+        {/* <Schedule selectedCourse={selectedCourse} setSelectedCourse={setSelectedCourse} /> */}
       </div>
     </div>
   )

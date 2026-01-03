@@ -1,4 +1,3 @@
-import { PropTypes } from 'prop-types'
 import Button from './Button'
 import { Calendar } from './Icons'
 const dias = ["Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado"]
@@ -92,11 +91,6 @@ const Schedule = ({ selectedCourse }) => {
             </section>
         </div>
     )
-}
-
-Schedule.propTypes = {
-    selectedCourse: PropTypes.object.isRequired,
-    setSelectedCourse: PropTypes.func.isRequired
 }
 
 export default Schedule

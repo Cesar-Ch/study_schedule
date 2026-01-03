@@ -2,34 +2,35 @@ import { useEffect, useRef, useState } from "react"
 import { IconCheck, IconX } from "./Icons"
 import courseData from '../data/cursos.json'
 
-const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setTypeToast, setMessage, showToast, datos, setDatos }) => {
+const AcademicCourses = ({ setIsModalOpen, isModalOpen, setShowToast, setTypeToast, setMessage, showToast, userCourses, setUserCourses }) => {
 
-    const [selectedCicle, setSelectedCicle] = useState(courseData)
-    const [cicloAdd, setCicloAdd] = useState({})
+    const [filteredCycles, setFilteredCycles] = useState(courseData)
+    const [cycleAddStatus, setCycleAddStatus] = useState({})
     const timeoutRef = useRef(false)
     const modalRef = useRef(null)
-    const timeoutRefs = useRef({});
+    const timeoutRefs = useRef({})
 
-    const handleCiclo = (i) => {
-        if (i == 'all') {
-            setSelectedCicle(courseData)
-            return 
+
+    const handleCycleFilter = (cycleNumber) => {
+        if (cycleNumber == 'all') {
+            setFilteredCycles(courseData)
+            return
         }
 
-        const newSelectedCicle = {
-            [i]: courseData[i]
+        const filteredData = {
+            [cycleNumber]: courseData[cycleNumber]
         }
 
-        setSelectedCicle(newSelectedCicle)
+        setFilteredCycles(filteredData)
     }
 
     const AddCicle = (i) => {
 
         for (let j = 0; j < courseData[i].length; j++) {
 
-            if (!datos[Object.keys(courseData[i][j])]) {
+            if (!userCourses[Object.keys(courseData[i][j])]) {
 
-                setDatos((prevDatos) => {
+                setUserCourses((prevDatos) => {
                     const newDatos = { ...prevDatos };
                     newDatos[Object.keys(courseData[i][j])] = [...Object.values(courseData[i][j])[0]]
                     return newDatos;
@@ -37,9 +38,9 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
             }
         }
 
-        setCicloAdd(
+        setCycleAddStatus(
             (prevCicloAdd) => {
-                const newCicloAdd = {...prevCicloAdd};
+                const newCicloAdd = { ...prevCicloAdd };
                 newCicloAdd[i] = { ...newCicloAdd[i], added: true };
                 return newCicloAdd;
             }
@@ -55,8 +56,8 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
 
         timeoutRef.current = setTimeout(
             () => {
-                setCicloAdd((prevCicloAdd) => {
-                    const newCicloAdd = {...prevCicloAdd};
+                setCycleAddStatus((prevCicloAdd) => {
+                    const newCicloAdd = { ...prevCicloAdd };
                     newCicloAdd[i] = { ...newCicloAdd[i], added: false };
                     return newCicloAdd;
                 });
@@ -69,19 +70,19 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
 
     }
 
-    const AddCorse = (i, j, c) => {
+    const handleAddCourse = (i, j, c) => {
 
-        if (!datos[c]) {
-            setDatos((prevDatos) => {
+        if (!userCourses[c]) {
+            setUserCourses((prevDatos) => {
                 const newDatos = { ...prevDatos }
                 newDatos[c] = courseData[i][j][c]
                 return newDatos
             })
         }
 
-        setCicloAdd(
+        setCycleAddStatus(
             (prevCicloAdd) => {
-                const newCicloAdd = {...prevCicloAdd};
+                const newCicloAdd = { ...prevCicloAdd };
                 const ciclo = { ...newCicloAdd[i] };
                 const courses = { ...ciclo.courses };
 
@@ -104,8 +105,8 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
 
         timeoutRefs.current[c] = setTimeout(
             () => {
-                setCicloAdd((prevCicloAdd) => {
-                    const newCicloAdd = {...prevCicloAdd};
+                setCycleAddStatus((prevCicloAdd) => {
+                    const newCicloAdd = { ...prevCicloAdd };
                     const ciclo = { ...newCicloAdd[i] };
                     const courses = { ...ciclo.courses };
 
@@ -127,17 +128,17 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
     useEffect(() => {
         const controlClickExt = (e) => {
             if (modalRef.current && !modalRef.current.contains(e.target)) {
-                setShowAcdCourses(false)
+                setIsModalOpen(false)
             }
         }
 
-        if (showAcdCourses) {
+        if (isModalOpen) {
             document.addEventListener('mousedown', controlClickExt)
         }
         return () => {
             document.removeEventListener('mousedown', controlClickExt)
         }
-    }, [showAcdCourses])
+    }, [isModalOpen])
 
 
     useEffect(() => {
@@ -165,17 +166,17 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
         };
 
         const cursosTransformados = addStatus(courseData);
-        setCicloAdd(cursosTransformados)
+        setCycleAddStatus(cursosTransformados)
     }, []);
 
 
     return (
 
-        <section className='top-0 left-0 fixed w-screen h-screen  z-30 dark:bg-black/10 bg-black/50  backdrop-blur-[4px] place-content-center grid text-white'>
+        <section className='top-0 left-0 fixed w-screen h-screen  z-30 dark:bg-black/10 bg-black/50  backdrop-blur-xs place-content-center grid text-white'>
             <div ref={modalRef} className="rounded-lg border p-5  bg-white dark:bg-dark-sec border-gray-500 w-[90vw]">
                 <div className="flex justify-between items-center mb-5">
                     <h3 className="text-black dark:text-white ">Ciclo: 25 - II</h3>
-                    <div className="text-black dark:text-white top-10 right-10 hover:text-black dark:hover:text-white" onClick={() => setShowAcdCourses(!showAcdCourses)}>
+                    <div className="text-black dark:text-white top-10 right-10 hover:text-black dark:hover:text-white" onClick={() => setIsModalOpen(!isModalOpen)}>
                         <IconX />
                     </div>
                 </div>
@@ -192,7 +193,7 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                         </select>
 
 
-                        <select name="cycle" id="" className="w-full sm:w-auto dark:bg-dark-sec border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10" onChange={(e) => handleCiclo(e.target.value)}>
+                        <select name="cycle" id="" className="w-full sm:w-auto dark:bg-dark-sec border rounded-md text-gray-900 dark:text-gray-100 px-3 py-2 text-sm h-10" onChange={(e) => handleCycleFilter(e.target.value)}>
                             <option value="all" className="dark:bg-black">Todos los ciclos</option>
                             {
                                 Array.from({ length: 10 }).map((_, i) => (
@@ -205,12 +206,12 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                 </div>
                 <div className="overflow-auto h-80 ">
                     {
-                        Array.from(Object.entries(selectedCicle), ([key, value]) => (
+                        Array.from(Object.entries(filteredCycles), ([key, value]) => (
                             <div>
                                 <div className="flex justify-between items-center">
                                     <h3 className="font-semibold text-gray-900 dark:text-gray-100 my-7">Ciclo {key}</h3>
 
-                                    <button className="transition-all duration-200 bg-[#1579ff] hover:bg-blue-600 text-white rounded-md px-3 cursor-pointer text-sm h-9 w-50 flex justify-center items-center" onClick={() => AddCicle(key)}>{cicloAdd[key]?.added ? <IconCheck /> : 'Agregar todos los cursos'}</button>
+                                    <button className="transition-all duration-200 bg-[#1579ff] hover:bg-blue-600 text-white rounded-md px-3 cursor-pointer text-sm h-9 w-50 flex justify-center items-center" onClick={() => AddCicle(key)}>{cycleAddStatus[key]?.added ? <IconCheck /> : 'Agregar todos los cursos'}</button>
                                 </div>
                                 <div className="flex flex-col gap-2">
                                     {
@@ -220,8 +221,8 @@ const AcademicCourses = ({ setShowAcdCourses, showAcdCourses, setShowToast, setT
                                                     {Object.keys(curso)}
                                                 </p>
 
-                                                <button className="transition-all duration-200 bg-[#1579ff] hover:bg-blue-600  text-white rounded-md px-3 cursor-pointer text-sm h-9 w-20 flex justify-center items-center" onClick={() => AddCorse(key, i, Object.keys(curso))}>
-                                                    {cicloAdd[key]?.courses[Object.keys(curso)]?.added ? <IconCheck /> : 'Agregar'}
+                                                <button className="transition-all duration-200 bg-[#1579ff] hover:bg-blue-600  text-white rounded-md px-3 cursor-pointer text-sm h-9 w-20 flex justify-center items-center" onClick={() => handleAddCourse(key, i, Object.keys(curso))}>
+                                                    {cycleAddStatus[key]?.courses[Object.keys(curso)]?.added ? <IconCheck /> : 'Agregar'}
                                                 </button>
 
                                             </div>

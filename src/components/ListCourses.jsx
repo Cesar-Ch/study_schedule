@@ -1,8 +1,7 @@
 import { useState } from "react";
-import { PropTypes } from 'prop-types'
 import { Accordion, GraduationCap, IconX, Trash, UsatLogo } from "./Icons";
 
-const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setShowToast, setMessage, showAcdCourses, setShowAcdCourses, setTypeToast }) => {
+const ListCourses = ({ userCourses, setUserCourses, selectedCourse, setSelectedCourse, setShowToast, setMessage, showAcdCourses, setShowAcdCourses, setTypeToast }) => {
     const [openSection, setOpenSection] = useState(null);
 
 
@@ -21,7 +20,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
                 return selectedCourseCopy
             })
         }
-        setDatos((prevdatos) => {
+        setUserCourses((prevdatos) => {
             const cursosActualizados = { ...prevdatos };
             cursosActualizados[curso].splice(j, 1)
             if (cursosActualizados[curso].length === 0) {
@@ -32,9 +31,9 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
     }
     const deleteCourse = (e, course) => {
         e.stopPropagation()
-        const prevDatos = { ...datos }
+        const prevDatos = { ...userCourses }
         delete prevDatos[course]
-        setDatos(prevDatos)
+        setUserCourses(prevDatos)
     }
 
     const checkCross = (e, curso, dato) => {
@@ -114,7 +113,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
             </div>
 
             {
-                Object.keys(datos).map((curso, i) => (
+                Object.keys(userCourses).map((curso, i) => (
                     <div key={curso} className="mb-2">
                         <div
                             className={`relative overflow-hidden flex items-center justify-between w-full p-4 font-medium rtl:text-right border rounded-lg  border-gray-300 dark:border-gray-700 hover:bg-gray-100 dark:hover:bg-dark-pri gap-3 ${openSection === i ? "bg-gray-100 dark:bg-dark-pri rounded-b-none" : ""
@@ -134,7 +133,7 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
                         </div>
 
                         {
-                            datos[curso].map((dato, j) => (
+                            userCourses[curso].map((dato, j) => (
 
                                 <div key={`${curso}-${j}`}
                                     className={`relative ${openSection === i ? "flex" : "hidden"} p-4 dark:bg border  border-gray-200 dark:border-gray-700 items-center`}
@@ -164,16 +163,5 @@ const ListCourses = ({ datos, setDatos, selectedCourse, setSelectedCourse, setSh
         </section>
     );
 };
-
-ListCourses.propTypes = {
-    datos: PropTypes.object.isRequired,
-    setDatos: PropTypes.func.isRequired,
-    selectedCourse: PropTypes.object.isRequired,
-    setSelectedCourse: PropTypes.func.isRequired,
-    setShowToast: PropTypes.func.isRequired,
-    setMessage: PropTypes.func.isRequired,
-    showAcdCourses: PropTypes.bool.isRequired,
-    setShowAcdCourses: PropTypes.func.isRequired
-}
 
 export default ListCourses;

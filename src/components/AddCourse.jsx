@@ -1,9 +1,8 @@
 import { useState } from "react"
-import { PropTypes } from 'prop-types'
 import { IconX } from "./Icons"
 import Button from "./Button"
 
-const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) => {
+const AddCourse = ({  userCourses, setUserCourses, setShowToast, setMessage, setTypeToast }) => {
 
     const [horarios, setHorarios] = useState([{
         id: 1,
@@ -39,7 +38,7 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
             }
 
 
-            setDatos((prevdatos) => {
+            setUserCourses((prevdatos) => {
                 const cursosActualizados = { ...prevdatos };
 
                 if (!cursosActualizados[name]) {
@@ -101,7 +100,7 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
                 <input list="courses" type="text" id="course" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg  block w-full p-2.5 dark:bg-transparent dark:border-gray-600 dark:placeholder-gray-400 dark:text-white " placeholder="Nombre del curso" required />
                 <datalist id="courses">
                     {
-                        Object.keys(datos).map((curso, i) => (
+                        Object.keys(userCourses).map((curso, i) => (
                             <option key={i} value={curso} ></option>
                         ))
                     }
@@ -157,14 +156,6 @@ const AddCourse = ({ datos, setDatos, setShowToast, setMessage, setTypeToast }) 
             </form>
         </section>
     )
-}
-
-AddCourse.propTypes = {
-    datos: PropTypes.object.isRequired,
-    setDatos: PropTypes.func.isRequired,
-    setShowToast: PropTypes.func.isRequired,
-    setMessage: PropTypes.func.isRequired,
-    setTypeToast: PropTypes.func.isRequired
 }
 
 export default AddCourse

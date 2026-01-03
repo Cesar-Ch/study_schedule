@@ -12,7 +12,6 @@ const Toast = ({ typeToast, children }) => {
                 )
             }
             <p className="mx-2 text-sm font-medium">{children}</p>
-
         </div>
     )
 }
