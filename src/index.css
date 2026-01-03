@@ -46,3 +46,7 @@
   --color-text-primary: var(--color-text-main);
   --color-text-secondary: var(--color-text-muted);
 }
+
+.card {
+    @apply p-6 rounded-lg border backdrop-blur-lg border-black bg-bg-card dark:border-gray-800;
+}

@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="bg-bg-app h-screen min-h-min">
       <Header />
-      <main className="grid grid-cols-2 p-4">
+      <main className="grid sm:grid-cols-2 p-4 ">
         <div>
           <ListCourses />
         </div>
