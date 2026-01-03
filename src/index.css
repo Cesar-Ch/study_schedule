@@ -3,31 +3,46 @@
 @import "tailwindcss";
 
 
+:root {
+  --color-brand-500: #3b82f6;
+  --color-brand-600: #2563eb;
+  --color-brand-700: #1d4ed8;
+
+  --color-bg-page: #f3f4f6;
+  --color-bg-surface: #ffffff;
+  --color-bg-input: #f9fafb;
+
+  --color-border-base: #e5e7eb;
+
+  --color-text-main: #111827;
+  --color-text-muted: #6b7280;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg-page: #0f1012;
+    --color-bg-surface: #18181b;
+    --color-bg-input: #27272a;
+
+    --color-border-base: #3f3f46;
+
+    --color-text-main: #f3f4f6;
+    --color-text-muted: #9ca3af;
+  }
+}
+
+
 @theme {
-    --font-poppins: "Poppins", sans-serif;
-    --color-light-pri: #f1f3f4;
-    --color-dark-pri: #282e3d;
-    --color-dark-sec: #1a1d23;
+  --color-brand: var(--color-brand-600);
+  --color-brand-hover: var(--color-brand-700);
 
-}
+  --color-bg-app: var(--color-bg-page);
+  --color-bg-card: var(--color-bg-surface);
+  --color-bg-field: var(--color-bg-input);
 
-.section-custom {
-    @apply p-6 rounded-lg border bg-white backdrop-blur-lg border-black dark:bg-dark-sec dark:border-gray-800;
-}
+  --color-border-field: var(--color-border-base);
 
-
-.animation__toast {
-    animation: toast 500ms ease-in-out;
-}
-
-@keyframes toast {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  --color-text-primary: var(--color-text-main);
+  --color-text-secondary: var(--color-text-muted);
 }
