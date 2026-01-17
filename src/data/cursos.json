@@ -5,6 +5,7 @@
       "nombre": "Ingeniería de Sistemas y Computación",
       "codigo": "ISC",
       "facultad": "Ingeniería",
+      "num_ciclos": 10,
       "ciclos": {
         "1": [
           {
