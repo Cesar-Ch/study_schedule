@@ -1,4 +1,4 @@
-const Button = ({ children, variant = "primary", className = "", ...props }) => {
+export const Button = ({ children, variant = "primary", className = "", ...props }) => {
     const baseStyles = "font-medium rounded-lg text-sm px-5 py-2.5 transition transition-all duration-300 ease-in-out";
     
     const variants = {
@@ -12,5 +12,3 @@ const Button = ({ children, variant = "primary", className = "", ...props }) => 
         </button>
     );
 };
-
-export default Button
