@@ -48,6 +48,48 @@
               }
             ]
           }
+        ],
+        "2": [
+          {
+            "Comprensión de textos y redacción básica ": [
+              {
+                "section": "A",
+                "teacher": "Chumacero Ancajima, Shirley Veronica",
+                "horario": [
+                  {
+                    "id": "1754085642929",
+                    "day": "Lunes",
+                    "start": "07:00",
+                    "end": "10:00"
+                  },
+                  {
+                    "id": "1754085645149",
+                    "day": "Miércoles",
+                    "start": "10:00",
+                    "end": "12:00"
+                  }
+                ]
+              },
+              {
+                "section": "B",
+                "teacher": "Rumiche Chavarry, Rocio Del Pilar",
+                "horario": [
+                  {
+                    "id": "1754085651364",
+                    "day": "Lunes",
+                    "start": "10:00",
+                    "end": "13:00"
+                  },
+                  {
+                    "id": "1754085653556",
+                    "day": "Jueves",
+                    "start": "09:00",
+                    "end": "11:00"
+                  }
+                ]
+              }
+            ]
+          }
         ]
       }
     }

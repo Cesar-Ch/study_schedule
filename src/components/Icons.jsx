@@ -62,6 +62,12 @@ const UsatLogo = () => {
     )
 }
 
+const Plus = ({ ...props }) => {
+    return (
+        <svg c className={props.className} width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+    )
+}
+
 const IconCheck = () => {
     return (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l5 5l10 -10" /></svg>
@@ -114,10 +120,10 @@ const Calendar = ({ size }) => {
     )
 }
 
-const Download = ({ size }) => {
+const Download = ({ ...props }) => {
     return (
-        <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+        <svg  className={props.className} width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
     )
 }
 
-export { IconX, IconToastError, IconLogo, IconGithub, UsatLogo, IconCheck, ToastCheck, GraduationCap, Accordion, Trash, Calendar,Download }
+export { IconX, IconToastError, IconLogo, IconGithub, UsatLogo, IconCheck, ToastCheck, GraduationCap, Accordion, Trash, Calendar, Download, Plus }

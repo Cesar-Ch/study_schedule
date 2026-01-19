@@ -11,7 +11,7 @@ export const Schedule = () => {
       <div className="flex items-center justify-between py-4 px-6 gap-4">
         <h2 className="text-lg font-semibold">Ciclo Académico 2026-I</h2>
         <Button className="flex justify-between items-center gap-2">
-          <Download size={16} /> Descargar
+          <Download className="size-5"  /> Descargar
         </Button>
       </div>
 
