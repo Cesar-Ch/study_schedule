@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Accordion, GraduationCap, IconX, Trash, UsatLogo } from "./Icons"
 import { CoursesModal } from "./CoursesModal"
 import { useCourses } from "../context/CoursesContext"
+import { Button } from "./Button"
 
 
 
@@ -20,11 +21,13 @@ export const ListCourses = () => {
         <section className=" card p-6">
             <div className="flex justify-between items-center mb-4">
                 <h2 className="text-xl font-bold text-black dark:text-white ">Lista de cursos</h2>
-                <div className="flex items-center py-2 px-3 rounded-sm border text-black font-medium dark:text-white dark:bg-transparent transition hover:bg-light-pri/50 hover:cursor-pointer dark:hover:bg-dark-pri gap-2"
-                    onClick={() => setIsModalOpen(true)}>
-                    <GraduationCap />
-                    Cursos USAT
-                </div>
+                <Button className="border text-black font-medium dark:text-white dark:bg-transparent hover:bg-light-pri/50 hover:cursor-pointer dark:hover:bg-dark-pri" onClick={() => setIsModalOpen(true)}>
+                    <GraduationCap className="size-4" />
+                    <p >
+                        Cursos USAT
+                    </p>
+                </Button>
+
             </div>
             <div className="space-y-3">
                 {selectedCourses.length === 0 ? (
@@ -50,7 +53,7 @@ export const ListCourses = () => {
                                             <h3 className="font-bold text-xs text-black dark:text-white">
                                                 {course.nombre}
                                             </h3>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -71,9 +74,11 @@ export const ListCourses = () => {
                                         <div
                                             key={index}
                                             className="p-4 border-b last:border-b-0 border-[#444]
-                                            transition-all"
+                                            transition-all flex justify-start items-center gap-4"
                                         >
-                                            <div className="flex flex-col gap-1">
+                                            <input type="radio" className="size-3 accent-cyan-400" name={course.nombre} id={`${course.nombre}-section-${index}`}
+                                            />
+                                            <label htmlFor={`${course.nombre}-section-${index}`} className="flex flex-col gap-1">
                                                 <div className="flex justify-between items-start ">
                                                     <div >
                                                         <p className="font-semibold text-xs text-black dark:text-white mb-1">
@@ -94,7 +99,7 @@ export const ListCourses = () => {
                                                                 className="text-[10px]  flex gap-2 justify-start items-center text-zinc-500 dark:text-zinc-400"
                                                             >
                                                                 <span className="w-1 h-1  rounded-full bg-zinc-500"></span>
-                                                                <span className="flex items-center gap-1">{horario.day.slice(0,3)}:</span>
+                                                                <span className="flex items-center gap-1">{horario.day.slice(0, 3)}:</span>
                                                                 <span>
                                                                     {horario.start} - {horario.end}
                                                                 </span>
@@ -103,7 +108,7 @@ export const ListCourses = () => {
                                                         ))}
                                                     </div>
                                                 )}
-                                            </div>
+                                            </label>
                                         </div>
                                     ))}
                                 </div>
