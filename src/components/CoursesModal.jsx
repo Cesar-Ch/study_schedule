@@ -1,14 +1,17 @@
 import { useRef, useEffect, useState } from 'react'
-import { IconX, Plus } from "./Icons"
+import { IconX, Plus,Check } from "./Icons"
 import { createPortal } from "react-dom"
 import { useCoursesData } from '../hooks/useCoursesData'
+import { useCourses } from '../context/CoursesContext'
 
 export const CoursesModal = ({ isOpen, onClose }) => {
     const modalRef = useRef(null)
-
     const { coursesData, isLoading, error } = useCoursesData()
+    const { addCourse } = useCourses()
+
     const [selectedCareer, setSelectedCareer] = useState("")
     const [selectedCycle, setSelectedCycle] = useState("")
+    const [addedCourses, setAddedCourses] = useState(new Set())
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -83,11 +86,39 @@ export const CoursesModal = ({ isOpen, onClose }) => {
 
     const coursesByCycle = getCourses()
 
+    const handleAddCourse = (course) => {
+        const courseId = `${course.careerId}-${course.cycle}-${course.name.trim()}`
+            .replace(/\s+/g, '-')
+
+        const newCourse = {
+            id: courseId,
+            nombre: course.name,
+            sections: course.sections,
+            carrera: course.careerName,
+            carreraCodigo: course.careerCode,
+            carreraId: course.careerId,
+            ciclo: course.cycle,
+        }
+
+        addCourse(newCourse)
+
+        setAddedCourses(prev => new Set(prev).add(courseId))
+
+
+        setTimeout(() => {
+            setAddedCourses(prev => {
+                const newSet = new Set(prev)
+                newSet.delete(courseId)
+                return newSet
+            })
+        }, 2000)
+    }
+
     return createPortal(
         <section className='top-0 left-0 p-4 fixed w-full h-full z-30 dark:bg-black/10 bg-black/50 backdrop-blur-sm place-content-center grid text-white'>
-            <div ref={modalRef} className="rounded-lg border p-5 bg-white dark:bg-bg-card border-gray-500 w-[90vw] max-w-5xl max-h-[90vh] flex flex-col overflow-hidden">
+            <div ref={modalRef} className="rounded-lg border  bg-white dark:bg-bg-card border-gray-500 w-[90vw] max-w-5xl max-h-[90vh] flex flex-col overflow-hidden">
                 {/* Header */}
-                <div className="flex justify-between items-center mb-5">
+                <div className="pt-5 px-5 flex justify-between items-center mb-5">
                     <h3 className="text-black dark:text-white font-bold">Cursos</h3>
                     <button className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition" onClick={onClose}>
                         <IconX />
@@ -109,8 +140,8 @@ export const CoursesModal = ({ isOpen, onClose }) => {
 
                 {/* Filters */}
                 {!isLoading && !error && (
-                    <div className="flex items-center justify-between flex-wrap gap-3 mb-4 w-full">
-                        <div className="gap-3 flex flex-wrap  w-full">
+                    <div className="px-5 flex items-center justify-between flex-wrap gap-3 w-full border-b pb-3 border-[#444] ">
+                        <div className="gap-3 flex flex-wrap  w-full  ">
                             <select
                                 name="career"
                                 id="career"
@@ -162,65 +193,52 @@ export const CoursesModal = ({ isOpen, onClose }) => {
                     )}
 
                     {selectedCareer && coursesByCycle.length > 0 && (
-                        <div className="space-y-6">
+                        <div className="space-y-6 px-5 pb-5">
                             {coursesByCycle.map((cycleGroup, cycleIdx) => (
                                 <div key={cycleIdx}>
 
-                                    <h3 className="text-lg font-bold text-black dark:text-white mb-3 pb-2 border-b border-[#333]">
+                                    <h3 className="text-lg font-bold text-black dark:text-white mb-3 pb-2 border-b border-[#333] pt-1">
                                         Ciclo {cycleGroup.cycle}
                                     </h3>
 
 
                                     <div className="space-y-3">
-                                        {cycleGroup.courses.map((course, idx) => (
-                                            <div
+                                        {cycleGroup.courses.map((course, idx) => {
+                                            const courseId = `${course.careerId}-${course.cycle}-${course.name}`
+                                                .replace(/\s+/g, '-')
+
+                                            const showCheck = addedCourses.has(courseId)
+
+                                            return (<div
                                                 key={idx}
-                                                className="border border-[#444] rounded-lg p-4 "
+                                                className="border border-[#444] rounded-lg p-4 flex justify-between items-center "
                                             >
-                                                <h4 className="font-semibold text-black dark:text-white mb-3">
-                                                    {course.name}
-                                                </h4>
+                                                <div>
+                                                    <h4 className="font-semibold text-black dark:text-white mb-2">
+                                                        {course.name}
+                                                    </h4>
 
-                                                <div className="space-y-2">
-                                                    {course.sections.map((section, secIdx) => (
-                                                        <div
-                                                            key={secIdx}
-                                                            className="p-3 dark:bg-bg-card rounded-lg border border-[#444]"
-                                                        >
-                                                            <div className="flex justify-between items-center gap-3 flex-wrap">
-                                                                <div className="flex-1">
-                                                                    <span className="inline-block px-2 py-1 bg-bg-field text-black dark:text-white text-xs font-semibold rounded-2xl mb-2">
-                                                                        Sección {section.section}
-                                                                    </span>
-                                                                    <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
-                                                                        {section.teacher}
-                                                                    </p>
-
-                                                                    <div className="flex flex-wrap gap-2">
-                                                                        {section.horario.map((schedule) => (
-                                                                            <span
-                                                                                key={schedule.id}
-                                                                                className="text-xs 
-                                                                                bg-bg-field text-gray-700 dark:text-gray-300 px-2 py-1 rounded-2xl"
-                                                                            >
-                                                                                {schedule.day}: {schedule.start} - {schedule.end}
-                                                                            </span>
-                                                                        ))}
-                                                                    </div>
-                                                                </div>
-
-                                                                <button
-                                                                    onClick={() => console.log('Add:', course.name, section.section)}
-                                                                    className="p-3 border border-[#444] text-white rounded-full transition"
-                                                                >
-                                                                    <Plus />
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                    ))}
+                                                    <span className="inline-block px-2 py-1 bg-bg-field text-black dark:text-white text-xs rounded-2xl ">
+                                                        {course.sections.length}
+                                                        {course.sections.length === 1 ? ' sección' : ' secciones'}
+                                                    </span>
                                                 </div>
+                                                <button
+                                                    onClick={() => handleAddCourse(course)}
+                                                    disabled={showCheck} 
+                                                    className={`p-3 border border-[#444] rounded-full transition ${showCheck
+                                                            ? 'bg-brand border-brand-hover'
+                                                            : 'text-white hover:bg-bg-field'
+                                                        }`}
+                                                >
+                                                    {showCheck ? <Check /> : <Plus />}
+                                                </button>
+
+
+
                                             </div>
-                                        ))}
+                                            )
+                                        })}
                                     </div>
                                 </div>
                             ))}

@@ -64,11 +64,11 @@ const UsatLogo = () => {
 
 const Plus = ({ ...props }) => {
     return (
-        <svg c className={props.className} width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-plus"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
+        <svg className={props.className} width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M12 5l0 14" /><path d="M5 12l14 0" /></svg>
     )
 }
 
-const IconCheck = () => {
+const Check = () => {
     return (
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" ><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 12l5 5l10 -10" /></svg>
     )
@@ -87,12 +87,15 @@ const GraduationCap = () => {
     )
 }
 
-const Accordion = ({ i, openSection }) => {
+const Accordion = ({
+    ...props
+}) => {
     return (
         <svg
             data-accordion-icon
-            className={`w-3 h-3 transform ${openSection === i ? "rotate-180" : ""
-                } shrink-0`}
+            className={props.className}
+            width="20"
+            height="20"
 
             fill="none"
             viewBox="0 0 10 6"
@@ -108,9 +111,9 @@ const Accordion = ({ i, openSection }) => {
     )
 }
 
-const Trash = () => {
+const Trash = ({ ...props }) => {
     return (
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
+        <svg className={props.className} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 7l16 0" /><path d="M10 11l0 6" /><path d="M14 11l0 6" /><path d="M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2 -2l1 -12" /><path d="M9 7v-3a1 1 0 0 1 1 -1h4a1 1 0 0 1 1 1v3" /></svg>
     )
 }
 
@@ -122,8 +125,8 @@ const Calendar = ({ size }) => {
 
 const Download = ({ ...props }) => {
     return (
-        <svg  className={props.className} width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-download"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
+        <svg  className={props.className} width="24" height="24"  viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2 -2v-2" /><path d="M7 11l5 5l5 -5" /><path d="M12 4l0 12" /></svg>
     )
 }
 
-export { IconX, IconToastError, IconLogo, IconGithub, UsatLogo, IconCheck, ToastCheck, GraduationCap, Accordion, Trash, Calendar, Download, Plus }
+export { IconX, IconToastError, IconLogo, IconGithub, UsatLogo, Check, ToastCheck, GraduationCap, Accordion, Trash, Calendar, Download, Plus }

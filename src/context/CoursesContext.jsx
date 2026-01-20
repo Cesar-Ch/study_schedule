@@ -4,9 +4,9 @@ import { createContext } from "react"
 
 const CoursesContext = createContext()
 
-export const CoursesProvider = ({children}) => {
+export const CoursesProvider = ({ children }) => {
     const [selectedCourses, setSelectedCourses] = useState(() => {
-        const savedCourses = localStorage.getItem("selectedCourses") 
+        const savedCourses = localStorage.getItem("selectedCourses")
         return savedCourses ? JSON.parse(savedCourses) : []
     })
 
@@ -14,8 +14,32 @@ export const CoursesProvider = ({children}) => {
         localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses))
     }, [selectedCourses])
 
+    
+    const addCourse = (course) => {
+        setSelectedCourses(prev => {
+            if (!course.id) {
+                console.error('El curso debe tener un ID');
+                return prev;
+            }
+
+            const exists = prev.some(c => c.id === course.id);
+            if (exists) {
+                console.warn('El curso ya está agregado');
+                return prev;
+            }
+
+            return [...prev, course];
+        });
+    };
+
+    const removeCourse = (courseId) => {
+        setSelectedCourses(prev => prev.filter(c => c.id !== courseId));
+    };
+
     const value = {
-        selectedCourses
+        selectedCourses,
+        addCourse,
+        removeCourse
     }
     return (
         <CoursesContext.Provider value={value}>
