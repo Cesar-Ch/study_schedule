@@ -9,7 +9,7 @@ function App() {
     <div className="bg-bg-app h-screen min-h-min" >
       <Toast />
       <Header />
-      <main className="grid sm:grid-cols-2 p-4 gap-6 mt-20">
+      <main className="grid md:grid-cols-2 p-4 gap-6 mt-20 xl:grid-cols-[600px_1fr]">
         <div>
           <ListCourses />
         </div>

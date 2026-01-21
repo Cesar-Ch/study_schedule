@@ -4,14 +4,15 @@ import { CoursesModal } from "./CoursesModal"
 import { useCourses } from "../context/CoursesContext"
 import { Button } from "./Button"
 import { useToast } from "../context/ToastContext"
+import { getCourseColor } from "../utils"
 
 
 
 export const ListCourses = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [expandedCourses, setExpandedCourses] = useState({})
-    const { selectedCourses, removeCourse, selectedSchedule, addSchedule,removeAllSchedulesFromCourse } = useCourses()
-    const {showToast} = useToast()
+    const { selectedCourses, removeCourse, selectedSchedule, addSchedule, removeAllSchedulesFromCourse } = useCourses()
+    const { showToast } = useToast()
 
     const toggleCourse = (courseId) => {
         setExpandedCourses(prev => ({
@@ -85,7 +86,6 @@ export const ListCourses = () => {
         addSchedule(newSchedule)
     }
 
-    console.log(selectedSchedule)
     return (
         <section className=" card p-6">
             <div className="flex justify-between items-center mb-4">
@@ -115,12 +115,19 @@ export const ListCourses = () => {
 
                                 >
                                     <div className="flex items-center gap-2">
+                                        <div className={`w-1.25 h-7 rounded-full  ${getCourseColor(course.nombre, selectedCourses)['indicator']}`}></div>
+
                                         <div className={`transform transition-transform ${expandedCourses[course.id] ? 'rotate-180' : ''}`}>
                                             <Accordion className="size-2.5 text-black dark:text-white" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-xs text-black dark:text-white">
                                                 {course.nombre}
+                                                {selectedSchedule.find(s => s.nombre === course.nombre) && (
+                                                    <span className={`ml-2 text-[10px] font-bold rounded-lg p-1.5 ${getCourseColor(course.nombre, selectedCourses)['section']}`}>
+                                                        ( {selectedSchedule.find(s => s.nombre === course.nombre).schedule.section} )
+                                                    </span>
+                                                )}
                                             </h3>
 
                                         </div>
@@ -146,8 +153,7 @@ export const ListCourses = () => {
                                             transition-all flex justify-start items-center gap-4"
 
                                         >
-                                            <input type="checkbox" className="size-3 rounded-full appearance-none border-2 border-gray-400 
-                           checked:bg-brand checked:border-brand-hover" name={course.nombre} id={`${course.nombre}-section-${index}`}
+                                            <input type="checkbox" className={`size-3 rounded appearance-none border-2  ${getCourseColor(course.nombre, selectedCourses)['list']}`} name={course.nombre} id={`${course.nombre}-section-${index}`}
                                                 checked={selectedSchedule.some(sch => sch.id === `${course.carreraId}-schedule-${course.nombre}-${course.ciclo}` && sch.schedule.section === section.section)}
                                                 onChange={() => {
                                                     handleAddSchedule(course, section)

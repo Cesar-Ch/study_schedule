@@ -28,7 +28,11 @@ export const Toast = () => {
                     <div key={toast.id} className={`toast  pointer-events-auto bg-bg-field border border-border-dim/80 border-l-4  rounded-xl p-4 shadow-2xl shadow-black/50 flex items-center gap-4 overflow-hidden group  transition-all backdrop-blur-xl opacity-100 ${toastBorder[toast.type]}`}>
                         <div className={`p-2 rounded-full shrink-0 flex items-center justify-center ring-1 ${toastColor[toast.type]}`} >
                             <span className="text-xl leading-none">
-                                <Check />
+                                {
+                                    toast.type === 'success' ? <Check /> :
+                                        <IconX />
+
+                                }
                             </span>
                         </div>
                         <div className=" py-0.5">
