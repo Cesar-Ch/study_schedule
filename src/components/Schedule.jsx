@@ -11,8 +11,8 @@ export const Schedule = () => {
       <div className="flex items-center justify-between py-4 px-6 gap-4">
         <h2 className="text-lg font-semibold">Ciclo Académico 2026-I</h2>
         <Button className="bg-brand hover:bg-brand-hover ">
-          <Download className="size-4 " />
-          <p >Descargar</p>
+          <Download className="size-4 text-white" />
+          <p className="text-white">Descargar</p>
         </Button>
       </div>
 

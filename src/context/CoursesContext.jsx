@@ -31,7 +31,7 @@ export const CoursesProvider = ({ children }) => {
 
             const exists = prev.some(c => c.id === course.id);
             if (exists) {
-                
+
                 return prev;
             }
 
@@ -40,18 +40,38 @@ export const CoursesProvider = ({ children }) => {
     };
 
     const removeCourse = (courseId) => {
+        const courseToRemove = selectedCourses.find(c => c.id === courseId);
+
         setSelectedCourses(prev => prev.filter(c => c.id !== courseId));
+
+        if (courseToRemove) {
+            setSelectedSchedule(prev => prev.filter(s => s.nombre !== courseToRemove.nombre));
+        }
     };
 
     const addSchedule = (schedule) => {
         setSelectedSchedule(prev => {
-            const exists = prev.some(s => s.id === schedule.id);
-            if (exists) {
+            const existingSameSection = prev.find(s => s.id === schedule.id && s.schedule.section === schedule.schedule.section);
+
+            if (existingSameSection) {
+                return prev.filter(s => !(s.id === schedule.id && s.schedule.section === schedule.schedule.section));
+            }
+            const existingDifferentSection = prev.find(s => s.id === schedule.id);
+
+            if (existingDifferentSection) {
                 return prev.map(s => s.id === schedule.id ? { ...s, schedule: schedule.schedule } : s);
             }
-            return [...prev, schedule];
 
+            return [...prev, schedule];
         });
+    }
+
+    const removeSchedule = (scheduleId, section) => {
+        setSelectedSchedule(prev => prev.filter(s => !(s.id === scheduleId && s.schedule.section === section)));
+    }
+
+    const removeAllSchedulesFromCourse = (courseName) => {
+        setSelectedSchedule(prev => prev.filter(s => s.nombre !== courseName));
     }
 
 
@@ -60,7 +80,9 @@ export const CoursesProvider = ({ children }) => {
         addCourse,
         removeCourse,
         selectedSchedule,
-        addSchedule
+        addSchedule,
+        removeSchedule,
+        removeAllSchedulesFromCourse
     }
     return (
         <CoursesContext.Provider value={value}>

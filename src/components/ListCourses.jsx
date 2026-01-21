@@ -3,19 +3,67 @@ import { Accordion, GraduationCap, IconX, Trash, UsatLogo } from "./Icons"
 import { CoursesModal } from "./CoursesModal"
 import { useCourses } from "../context/CoursesContext"
 import { Button } from "./Button"
+import { useToast } from "../context/ToastContext"
 
 
 
 export const ListCourses = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [expandedCourses, setExpandedCourses] = useState({})
-    const { selectedCourses, removeCourse, selectedSchedule, addSchedule } = useCourses()
+    const { selectedCourses, removeCourse, selectedSchedule, addSchedule,removeAllSchedulesFromCourse } = useCourses()
+    const {showToast} = useToast()
 
     const toggleCourse = (courseId) => {
         setExpandedCourses(prev => ({
             [courseId]: !prev[courseId]
         }))
     }
+
+    const checkScheduleConflict = (newSchedule) => {
+        const scheduleId = `${newSchedule.carreraId}-schedule-${newSchedule.nombre}-${newSchedule.ciclo}`
+        const isAlreadySelected = selectedSchedule.some(sch => sch.id === scheduleId && sch.schedule.section === newSchedule.schedule.section)
+
+        if (isAlreadySelected) {
+            return false
+        }
+
+        const timeToMinutes = (time) => {
+            const [hours, minutes] = time.split(':').map(Number)
+            return hours * 60 + minutes
+        }
+
+        for (const existingSchedule of selectedSchedule) {
+            if (existingSchedule.nombre === newSchedule.nombre) continue
+
+            for (const newHorario of newSchedule.schedule.horario) {
+                for (const existingHorario of existingSchedule.schedule.horario) {
+                    if (newHorario.day === existingHorario.day) {
+                        const newStart = timeToMinutes(newHorario.start)
+                        const newEnd = timeToMinutes(newHorario.end)
+                        const existingStart = timeToMinutes(existingHorario.start)
+                        const existingEnd = timeToMinutes(existingHorario.end)
+
+                        const hasConflict = (
+                            (newStart >= existingStart && newStart < existingEnd) ||
+                            (newEnd > existingStart && newEnd <= existingEnd) ||
+                            (newStart <= existingStart && newEnd >= existingEnd)
+                        )
+
+                        if (hasConflict) {
+                            showToast(
+                                "¡Conflicto de horario!",
+                                "error"
+                            )
+                            return true
+                        }
+                    }
+                }
+            }
+        }
+
+        return false
+    }
+
 
     const handleAddSchedule = (course, schedule) => {
         const scheduleId = `${course.carreraId}-schedule-${course.nombre}-${course.ciclo}`
@@ -28,11 +76,15 @@ export const ListCourses = () => {
             carreraId: course.carreraId,
             ciclo: course.ciclo,
         }
-        
+
+        if (checkScheduleConflict(newSchedule)) {
+            removeAllSchedulesFromCourse(course.nombre)
+            return
+        }
+
         addSchedule(newSchedule)
     }
 
-    // console.log(selectedCourses)
     console.log(selectedSchedule)
     return (
         <section className=" card p-6">
@@ -92,13 +144,14 @@ export const ListCourses = () => {
                                             key={index}
                                             className="p-4 border-b last:border-b-0 border-[#444]
                                             transition-all flex justify-start items-center gap-4"
-                                            
+
                                         >
                                             <input type="checkbox" className="size-3 rounded-full appearance-none border-2 border-gray-400 
                            checked:bg-brand checked:border-brand-hover" name={course.nombre} id={`${course.nombre}-section-${index}`}
-                           checked={selectedSchedule.some(sch => sch.id === `${course.carreraId}-schedule-${course.nombre}-${course.ciclo}` && sch.schedule.section === section.section)} 
-                           onChange={() => {
-                             handleAddSchedule(course, section)}}
+                                                checked={selectedSchedule.some(sch => sch.id === `${course.carreraId}-schedule-${course.nombre}-${course.ciclo}` && sch.schedule.section === section.section)}
+                                                onChange={() => {
+                                                    handleAddSchedule(course, section)
+                                                }}
                                             />
                                             <label htmlFor={`${course.nombre}-section-${index}`} className="flex flex-col gap-1">
                                                 <div className="flex justify-between items-start ">

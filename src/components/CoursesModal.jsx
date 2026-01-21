@@ -233,7 +233,7 @@ export const CoursesModal = ({ isOpen, onClose }) => {
                                                     disabled={showCheck}
                                                     className={`p-3 border border-[#444] rounded-full transition ${showCheck
                                                         ? 'bg-brand border-brand-hover'
-                                                        : 'text-white hover:bg-bg-field'
+                                                        : 'text-black dark:text-white hover:bg-bg-field'
                                                         }`}
                                                 >
                                                     {showCheck ? <Check /> : <Plus />}
