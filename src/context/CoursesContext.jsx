@@ -9,22 +9,29 @@ export const CoursesProvider = ({ children }) => {
         const savedCourses = localStorage.getItem("selectedCourses")
         return savedCourses ? JSON.parse(savedCourses) : []
     })
+    const [selectedSchedule, setSelectedSchedule] = useState(() => {
+        const savedSchedule = localStorage.getItem("selectedSchedule")
+        return savedSchedule ? JSON.parse(savedSchedule) : []
+    })
 
     useEffect(() => {
         localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses))
     }, [selectedCourses])
 
-    
+    useEffect(() => {
+        localStorage.setItem("selectedSchedule", JSON.stringify(selectedSchedule))
+    }, [selectedSchedule])
+
+
     const addCourse = (course) => {
         setSelectedCourses(prev => {
             if (!course.id) {
-                console.error('El curso debe tener un ID');
                 return prev;
             }
 
             const exists = prev.some(c => c.id === course.id);
             if (exists) {
-                console.warn('El curso ya está agregado');
+                
                 return prev;
             }
 
@@ -36,10 +43,24 @@ export const CoursesProvider = ({ children }) => {
         setSelectedCourses(prev => prev.filter(c => c.id !== courseId));
     };
 
+    const addSchedule = (schedule) => {
+        setSelectedSchedule(prev => {
+            const exists = prev.some(s => s.id === schedule.id);
+            if (exists) {
+                return prev.map(s => s.id === schedule.id ? { ...s, schedule: schedule.schedule } : s);
+            }
+            return [...prev, schedule];
+
+        });
+    }
+
+
     const value = {
         selectedCourses,
         addCourse,
-        removeCourse
+        removeCourse,
+        selectedSchedule,
+        addSchedule
     }
     return (
         <CoursesContext.Provider value={value}>

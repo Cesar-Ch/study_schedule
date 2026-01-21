@@ -1,13 +1,15 @@
 import { useRef, useEffect, useState } from 'react'
-import { IconX, Plus,Check } from "./Icons"
+import { IconX, Plus, Check } from "./Icons"
 import { createPortal } from "react-dom"
 import { useCoursesData } from '../hooks/useCoursesData'
 import { useCourses } from '../context/CoursesContext'
+import { useToast } from '../context/ToastContext'
 
 export const CoursesModal = ({ isOpen, onClose }) => {
     const modalRef = useRef(null)
     const { coursesData, isLoading, error } = useCoursesData()
     const { addCourse } = useCourses()
+    const { showToast } = useToast()
 
     const [selectedCareer, setSelectedCareer] = useState("")
     const [selectedCycle, setSelectedCycle] = useState("")
@@ -15,7 +17,9 @@ export const CoursesModal = ({ isOpen, onClose }) => {
 
     useEffect(() => {
         const handleClickOutside = (event) => {
-            if (modalRef.current && !modalRef.current.contains(event.target)) {
+            if (modalRef.current && !modalRef.current.contains(event.target)
+                && !event.target.closest('.toast')
+            ) {
                 onClose()
             }
         }
@@ -25,7 +29,7 @@ export const CoursesModal = ({ isOpen, onClose }) => {
         return () => {
             document.removeEventListener('mousedown', handleClickOutside)
         }
-    }, [isOpen])
+    }, [isOpen, onClose])
 
     if (!isOpen) return null
 
@@ -101,6 +105,7 @@ export const CoursesModal = ({ isOpen, onClose }) => {
         }
 
         addCourse(newCourse)
+        showToast('Curso agregado exitosamente', 'success', 2000)
 
         setAddedCourses(prev => new Set(prev).add(courseId))
 
@@ -115,13 +120,13 @@ export const CoursesModal = ({ isOpen, onClose }) => {
     }
 
     return createPortal(
-        <section className='top-0 left-0 p-4 fixed w-full h-full z-30 dark:bg-black/10 bg-black/50 backdrop-blur-sm place-content-center grid text-white'>
+        <section className='top-0 left-0 p-4 fixed w-full h-full z-70 dark:bg-black/10 bg-black/50 backdrop-blur-sm place-content-center grid text-white'>
             <div ref={modalRef} className="rounded-lg border  bg-white dark:bg-bg-card border-gray-500 w-[90vw] max-w-5xl max-h-[90vh] flex flex-col overflow-hidden">
                 {/* Header */}
                 <div className="pt-5 px-5 flex justify-between items-center mb-5">
                     <h3 className="text-black dark:text-white font-bold">Cursos</h3>
                     <button className="text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition" onClick={onClose}>
-                        <IconX />
+                        <IconX className="rounded-md hover:scale-110  dark:hover:bg-[#3c3c3f] hover:bg-gray-100 p-1" />
                     </button>
                 </div>
 
@@ -225,10 +230,10 @@ export const CoursesModal = ({ isOpen, onClose }) => {
                                                 </div>
                                                 <button
                                                     onClick={() => handleAddCourse(course)}
-                                                    disabled={showCheck} 
+                                                    disabled={showCheck}
                                                     className={`p-3 border border-[#444] rounded-full transition ${showCheck
-                                                            ? 'bg-brand border-brand-hover'
-                                                            : 'text-white hover:bg-bg-field'
+                                                        ? 'bg-brand border-brand-hover'
+                                                        : 'text-white hover:bg-bg-field'
                                                         }`}
                                                 >
                                                     {showCheck ? <Check /> : <Plus />}

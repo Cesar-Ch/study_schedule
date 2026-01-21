@@ -9,14 +9,31 @@ import { Button } from "./Button"
 export const ListCourses = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [expandedCourses, setExpandedCourses] = useState({})
-    const { selectedCourses, removeCourse } = useCourses()
+    const { selectedCourses, removeCourse, selectedSchedule, addSchedule } = useCourses()
 
     const toggleCourse = (courseId) => {
         setExpandedCourses(prev => ({
             [courseId]: !prev[courseId]
         }))
     }
-    console.log(selectedCourses)
+
+    const handleAddSchedule = (course, schedule) => {
+        const scheduleId = `${course.carreraId}-schedule-${course.nombre}-${course.ciclo}`
+
+        const newSchedule = {
+            id: scheduleId,
+            nombre: course.nombre,
+            schedule: schedule,
+            carrera: course.carrera,
+            carreraId: course.carreraId,
+            ciclo: course.ciclo,
+        }
+        
+        addSchedule(newSchedule)
+    }
+
+    // console.log(selectedCourses)
+    console.log(selectedSchedule)
     return (
         <section className=" card p-6">
             <div className="flex justify-between items-center mb-4">
@@ -40,10 +57,10 @@ export const ListCourses = () => {
                             key={course.id}
                             className="flex flex-col justify-between items-center  dark:bg-bg-card rounded-lg border-[#444] border"
                         >
-                            <div className="w-full flex justify-between items-center p-3  transition">
+                            <div className="w-full flex justify-between items-center p-3  transition" onClick={() => toggleCourse(course.id)}>
                                 <div
                                     className="flex-1 cursor-pointer"
-                                    onClick={() => toggleCourse(course.id)}
+
                                 >
                                     <div className="flex items-center gap-2">
                                         <div className={`transform transition-transform ${expandedCourses[course.id] ? 'rotate-180' : ''}`}>
@@ -75,8 +92,13 @@ export const ListCourses = () => {
                                             key={index}
                                             className="p-4 border-b last:border-b-0 border-[#444]
                                             transition-all flex justify-start items-center gap-4"
+                                            
                                         >
-                                            <input type="radio" className="size-3 accent-cyan-400" name={course.nombre} id={`${course.nombre}-section-${index}`}
+                                            <input type="checkbox" className="size-3 rounded-full appearance-none border-2 border-gray-400 
+                           checked:bg-brand checked:border-brand-hover" name={course.nombre} id={`${course.nombre}-section-${index}`}
+                           checked={selectedSchedule.some(sch => sch.id === `${course.carreraId}-schedule-${course.nombre}-${course.ciclo}` && sch.schedule.section === section.section)} 
+                           onChange={() => {
+                             handleAddSchedule(course, section)}}
                                             />
                                             <label htmlFor={`${course.nombre}-section-${index}`} className="flex flex-col gap-1">
                                                 <div className="flex justify-between items-start ">

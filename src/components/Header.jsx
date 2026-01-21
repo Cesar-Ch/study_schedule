@@ -2,7 +2,7 @@ import { IconGithub, IconLogo } from './Icons'
 
 export const Header = () => {
     return (
-        <header className="border-b dark:border-gray-800 bg-bg-card ">
+        <header className="fixed w-full top-0 left-0 border-b dark:border-gray-800 bg-bg-card z-50">
             <div className="flex justify-between items-center mx-auto px-6 py-3">
                 <div className="flex items-center gap-2 transition-all duration-500 ease-in-out text-black dark:text-white">
                     <IconLogo />
