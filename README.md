@@ -1,3 +1,3 @@
 # study schedule
 
-![project image](image.png)
+![project image](image.jpeg)
