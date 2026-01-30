@@ -2,6 +2,7 @@ import { Header } from "@/components/Header"
 import { ListCourses } from "@/components/ListCourses"
 import { Schedule } from "./components/Schedule"
 import { Toast } from "./components/Toast"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Schedule />
 
       </main>
+      <Footer />
     </div>
   )
 }

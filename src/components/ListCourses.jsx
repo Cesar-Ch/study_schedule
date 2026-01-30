@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { Accordion, GraduationCap, IconX, Trash, UsatLogo } from "./Icons"
 import { CoursesModal } from "./CoursesModal"
 import { useCourses } from "../context/CoursesContext"
@@ -85,6 +85,21 @@ export const ListCourses = () => {
 
         addSchedule(newSchedule)
     }
+
+    useEffect(() => {
+        const handleKeyDown = (e) => {
+            if ((e.ctrlKey || e.metaKey) && e.key === 'k') {
+                e.preventDefault()
+                setIsModalOpen(prev => !prev)
+            }
+        }
+
+        window.addEventListener('keydown', handleKeyDown)
+
+        return () => {
+            window.removeEventListener('keydown', handleKeyDown)
+        }
+    }, [])
 
     return (
         <section className=" card p-6">
