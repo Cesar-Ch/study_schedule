@@ -3683,5 +3683,36 @@
                 ]
             }
         }
-    }
+    },
+    "talleres": [
+        {
+            "nombre": "Próximamente",
+            "sections": [
+                {
+                    "section": "A",
+                    "teacher": "Próximamente",
+                    "horario": [
+                        {
+                            "id": "1754085700001",
+                            "day": "Martes",
+                            "start": "15:00",
+                            "end": "17:00"
+                        }
+                    ]
+                },
+                {
+                    "section": "B",
+                    "teacher": "Próximamente",
+                    "horario": [
+                        {
+                            "id": "1754085700002",
+                            "day": "Jueves",
+                            "start": "18:00",
+                            "end": "20:00"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
 }
