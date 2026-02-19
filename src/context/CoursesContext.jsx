@@ -1,25 +1,19 @@
-import { use } from "react"
-import { useState, useEffect } from "react"
-import { createContext } from "react"
+import { use, useState, useEffect, createContext } from "react"
+import { getFromStorage, setToStorage } from "@/utils/storage"
+
 
 const CoursesContext = createContext()
 
 export const CoursesProvider = ({ children }) => {
-    const [selectedCourses, setSelectedCourses] = useState(() => {
-        const savedCourses = localStorage.getItem("selectedCourses")
-        return savedCourses ? JSON.parse(savedCourses) : []
-    })
-    const [selectedSchedule, setSelectedSchedule] = useState(() => {
-        const savedSchedule = localStorage.getItem("selectedSchedule")
-        return savedSchedule ? JSON.parse(savedSchedule) : []
-    })
+    const [selectedCourses, setSelectedCourses] = useState(() => getFromStorage("selectedCourses", []))
+    const [selectedSchedule, setSelectedSchedule] = useState(() => getFromStorage("selectedSchedule", []))
 
     useEffect(() => {
-        localStorage.setItem("selectedCourses", JSON.stringify(selectedCourses))
+        setToStorage("selectedCourses", selectedCourses)
     }, [selectedCourses])
 
     useEffect(() => {
-        localStorage.setItem("selectedSchedule", JSON.stringify(selectedSchedule))
+        setToStorage("selectedSchedule", selectedSchedule)
     }, [selectedSchedule])
 
 

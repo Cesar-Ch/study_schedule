@@ -1,8 +1,6 @@
-import { use } from "react"
-import { useState, useEffect } from "react"
-import { createContext } from "react"
+import { use, useState, createContext } from "react"
 
- const ToastContext = createContext()
+const ToastContext = createContext()
 
 export const ToastProvider = ({ children }) => {
     const [toasts, setToasts] = useState([])
