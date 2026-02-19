@@ -11,15 +11,13 @@ export const useDownloadSchedule = (ref) => {
         if (!original) return
 
         const clone = original.cloneNode(true)
-        clone.style.cssText = `
-            width: ${original.scrollWidth}px;
-            max-width: none;
-            position: absolute;
-            top: -9999px;
-            left: 0;
-            overflow: visible;
-            background: #ffffff;
-        `
+        clone.style.width = `${original.scrollWidth}px`
+        clone.style.maxWidth = 'none'
+        clone.style.position = 'absolute'
+        clone.style.top = '-9999px'
+        clone.style.left = '0'
+        clone.style.overflow = 'visible'
+        clone.style.background = '#ffffff'
         document.body.appendChild(clone)
 
         try {
