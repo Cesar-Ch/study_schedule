@@ -10,8 +10,8 @@ export const useCoursesData = () => {
       try {
         setIsLoading(true);
         
-        const data = await import('../data/cursos.json');
-        setCoursesData(data.default);
+        const data = await fetch('http://localhost:3000/data').then(res => res.json())
+        setCoursesData(data);
         
         setError(null);
       } catch (err) {
