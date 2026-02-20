@@ -10,7 +10,8 @@ export const useCoursesData = () => {
       try {
         setIsLoading(true);
         
-        const data = await fetch('http://localhost:3000/data').then(res => res.json())
+        const data = await fetch('https://study-schedule-api.onrender.com/data')
+        .then(res => res.json())
         setCoursesData(data);
         
         setError(null);
