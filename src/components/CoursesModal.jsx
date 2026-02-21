@@ -1,14 +1,12 @@
 import { useRef, useEffect, useState } from 'react'
 import { IconX } from "./Icons"
 import { createPortal } from "react-dom"
-import { useCoursesData } from '@/hooks/useCoursesData'
 import { useModalCourses } from '@/hooks/useModalCourses'
 import { getCyclesByCareer, getCoursesByCycle } from '@/utils/courseHelpers'
 import { CourseCard } from './CourseCard'
 
-export const CoursesModal = ({ isOpen, onClose }) => {
+export const CoursesModal = ({ onClose, coursesData, isLoading, error }) => {
     const modalRef = useRef(null)
-    const { coursesData, isLoading, error } = useCoursesData()
     const { addedCourses, handleAddCourse, handleAddTaller } = useModalCourses()
 
     const [viewMode, setViewMode] = useState("carreras")
@@ -24,17 +22,15 @@ export const CoursesModal = ({ isOpen, onClose }) => {
         const handleKeyDown = (e) => {
             if (e.key === 'Escape') onClose()
         }
-        if (isOpen) {
-            document.addEventListener('mousedown', handleClickOutside)
-            document.addEventListener('keydown', handleKeyDown)
-        }
+       
+        document.addEventListener('mousedown', handleClickOutside)
+        document.addEventListener('keydown', handleKeyDown)
+        
         return () => {
             document.removeEventListener('mousedown', handleClickOutside)
             document.removeEventListener('keydown', handleKeyDown)
         }
-    }, [isOpen, onClose])
-
-    if (!isOpen) return null
+    }, [onClose])
 
     const careers = coursesData ? Object.entries(coursesData.carreras) : []
     const talleres = coursesData?.talleres || []

@@ -5,12 +5,14 @@ import { useCourses } from "@/context/CoursesContext"
 import { Button } from "./Button"
 import { useScheduleActions } from "@/hooks/useScheduleActions"
 import { CourseItem } from "./CourseItem"
+import { useCoursesData } from '@/hooks/useCoursesData'
 
 export const ListCourses = () => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [expandedCourses, setExpandedCourses] = useState({})
     const { selectedCourses, removeCourse } = useCourses()
     const { handleAddSchedule } = useScheduleActions()
+    const { coursesData, isLoading, error } = useCoursesData()
 
     const toggleCourse = (courseId) => {
         setExpandedCourses(prev => ({
@@ -60,8 +62,15 @@ export const ListCourses = () => {
                     ))
                 )}
             </div>
+            {
+                isModalOpen && (
+                    <CoursesModal onClose={() => setIsModalOpen(false)}
+                        coursesData={coursesData}
+                        isLoading={isLoading}
+                        error={error} />
+                )
+            }
 
-            <CoursesModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
         </section>
     )
 }
